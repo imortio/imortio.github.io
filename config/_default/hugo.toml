@@ -1,0 +1,82 @@
+baseurl = "/"
+languageCode = "en-us"
+# Add it only if you keep the theme in the `themes` directory.
+# Remove it if you use the theme as a remote Hugo Module.
+theme = "terminal"
+
+[pagination]
+pagerSize = 5
+
+[params]
+  # dir name of your main content (default is `content/posts`).
+  # the list of set content will show up on your index page (baseurl).
+  contentTypeName = "posts"
+
+  mainMenu = true
+
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 4
+
+  # show selector to switch language
+  showLanguageSelector = true
+
+  # set theme to full screen width
+  fullWidthTheme = false
+
+  # center theme with default width
+  centerTheme = true
+
+  # if your resource directory contains an image called `cover.(jpg|png|webp)`,
+  # then the file will be used as a cover automatically.
+  # With this option you don't have to put the `cover` param in a front-matter.
+  autoCover = true
+
+  # set post to show the last updated
+  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
+  enableGitInfo = true
+
+  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
+  # updatedDatePrefix = "Updated"
+
+  # whether to show a page's estimated reading time
+  readingTime = true # default
+
+  # whether to show a table of contents
+  # can be overridden in a page's front-matter
+  # Toc = true # default false
+
+  # set title for the table of contents
+  # can be overridden in a page's front-matter
+  # TocTitle = "Table of Contents" # default
+
+  author = "arxnoire"
+  owner = "arxnoire"
+  copyright = "arxnoire"
+
+  defaultContentLanguage = "id"
+
+  showSearch = true
+  enableRobotsTXT = true
+  enableSitemap = true
+
+[params.logo]
+  logoText = "arxnoire"
+  logoHomeLink = "/"
+
+[languages.en]
+  languageName = "English"
+  title = "arxnoire"
+  weight = 1
+
+[languages.id]
+  languageName = "Bahasa Indonesia"
+  title = "arxnoire"
+  weight = 2
+
+[module]
+  # In case you would like to make changes to the theme and keep it locally in you repository,
+  # uncomment the line below (and correct the local path if necessary).
+  # --
+  replacements = "github.com/panr/hugo-theme-terminal/v4 -> terminal"
+[[module.imports]]
+  path = 'github.com/panr/hugo-theme-terminal/v4'

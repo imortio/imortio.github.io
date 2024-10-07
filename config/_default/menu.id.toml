@@ -1,0 +1,5 @@
+[[main]]
+identifier = "postingan"
+name = "Postingan"
+url = "/id/posts"
+weight = 1
