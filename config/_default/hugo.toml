@@ -63,7 +63,7 @@ theme = "terminal"
   enableSitemap = true
 
 [params.logo]
-  logoText = "arxnoire"
+  logoText = "imortio"
   logoHomeLink = "/"
 
 [languages.en]
