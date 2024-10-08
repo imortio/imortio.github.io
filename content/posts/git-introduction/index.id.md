@@ -1,7 +1,7 @@
 +++
 title = "Git Gud dengan Git"
 date = "2024-10-06T13:09:21Z"
-author = "arxnoire"
+author = "imortio"
 authorTwitter = "" #do not include @
 cover = "cover.png"
 tags = ["perkenalan", "git", "versioncontrolsystem"]

@@ -1,7 +1,7 @@
 +++
 title = "{{ replace .TranslationBaseName "-" " " | title }}"
 date = "{{ .Date }}"
-author = "arxnoire"
+author = "imortio"
 authorTwitter = "" #do not include @
 cover = ""
 tags = ["", ""]
