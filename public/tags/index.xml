@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on imortio</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on imortio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 06 Oct 2024 13:09:21 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git</title>
+      <link>/tags/git/</link>
+      <pubDate>Sun, 06 Oct 2024 13:09:21 +0000</pubDate>
+      
+      <guid>/tags/git/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>/tags/introduction/</link>
+      <pubDate>Sun, 06 Oct 2024 13:09:21 +0000</pubDate>
+      
+      <guid>/tags/introduction/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Versioncontrolsystem</title>
+      <link>/tags/versioncontrolsystem/</link>
+      <pubDate>Sun, 06 Oct 2024 13:09:21 +0000</pubDate>
+      
+      <guid>/tags/versioncontrolsystem/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Homepage</title>
+      <link>/tags/homepage/</link>
+      <pubDate>Sun, 06 Oct 2024 12:21:01 +0000</pubDate>
+      
+      <guid>/tags/homepage/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+  </channel>
+</rss>

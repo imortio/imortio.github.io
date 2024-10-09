@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beranda on arxnoire</title>
+    <link>//localhost:1313/id/tags/beranda/</link>
+    <description>Recent content in Beranda on arxnoire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id</language>
+    <lastBuildDate>Sun, 06 Oct 2024 09:46:02 +0000</lastBuildDate><atom:link href="//localhost:1313/id/tags/beranda/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Selamat Datang!</title>
+      <link>//localhost:1313/id/</link>
+      <pubDate>Sun, 06 Oct 2024 09:46:02 +0000</pubDate>
+      
+      <guid>//localhost:1313/id/</guid>
+      <description>&lt;p&gt;Halo&lt;/p&gt;</description>
+      <content>&lt;p&gt;Halo&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
