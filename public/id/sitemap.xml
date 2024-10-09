@@ -2,97 +2,97 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/id/tags/git/</loc>
+    <loc>https://imortio.github.io/id/tags/git/</loc>
     <lastmod>2024-10-06T13:09:21+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/git/"
+                href="https://imortio.github.io/tags/git/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="id"
-                href="/id/tags/git/"
+                href="https://imortio.github.io/id/tags/git/"
                 />
   </url><url>
-    <loc>/id/posts/git-introduction/</loc>
+    <loc>https://imortio.github.io/id/posts/git-introduction/</loc>
     <lastmod>2024-10-06T13:09:21+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/posts/git-introduction/"
+                href="https://imortio.github.io/posts/git-introduction/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="id"
-                href="/id/posts/git-introduction/"
+                href="https://imortio.github.io/id/posts/git-introduction/"
                 />
   </url><url>
-    <loc>/id/tags/perkenalan/</loc>
+    <loc>https://imortio.github.io/id/tags/perkenalan/</loc>
     <lastmod>2024-10-06T13:09:21+00:00</lastmod>
   </url><url>
-    <loc>/id/posts/</loc>
-    <lastmod>2024-10-06T13:09:21+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id"
-                href="/id/posts/"
-                />
-  </url><url>
-    <loc>/id/tags/</loc>
+    <loc>https://imortio.github.io/id/posts/</loc>
     <lastmod>2024-10-06T13:09:21+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="https://imortio.github.io/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="id"
-                href="/id/tags/"
+                href="https://imortio.github.io/id/posts/"
                 />
   </url><url>
-    <loc>/id/tags/versioncontrolsystem/</loc>
+    <loc>https://imortio.github.io/id/tags/</loc>
     <lastmod>2024-10-06T13:09:21+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/versioncontrolsystem/"
+                href="https://imortio.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="id"
-                href="/id/tags/versioncontrolsystem/"
+                href="https://imortio.github.io/id/tags/"
                 />
   </url><url>
-    <loc>/id/</loc>
+    <loc>https://imortio.github.io/id/tags/versioncontrolsystem/</loc>
+    <lastmod>2024-10-06T13:09:21+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://imortio.github.io/tags/versioncontrolsystem/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id"
+                href="https://imortio.github.io/id/tags/versioncontrolsystem/"
+                />
+  </url><url>
+    <loc>https://imortio.github.io/id/</loc>
     <lastmod>2024-10-06T12:21:04+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="https://imortio.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="id"
-                href="/id/"
+                href="https://imortio.github.io/id/"
                 />
   </url><url>
-    <loc>/id/categories/</loc>
+    <loc>https://imortio.github.io/id/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
+                href="https://imortio.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="id"
-                href="/id/categories/"
+                href="https://imortio.github.io/id/categories/"
                 />
   </url>
 </urlset>
