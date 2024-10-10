@@ -29,7 +29,7 @@ So, Git is a distributed version control system, which allow you to monitor chan
 
 Yeah you may say that when you have like less than 15 different file revision, but how about if you want to make a quick rollback?, how about if you just mess up with your other files? or just simply cant remember which one is the right file when its come to rollback?, this is where Git do its job, Git simply said serve as your 'checkpoint' tool (in git we call it commits), which allow you to make 'quicksave' without duplicating the file or making you directory become mess, you also able to give label to your commits so you may simply take a quick glance at the commit history and know which one that you want to use.
 
-Imagine like you are having a task to make movie script, but its keep getting revised everytime you show them, you may change some or many things in each revision, but there is a probability that you may use some scene from older scenario to adds up to your newer revision, so you save the files with different name, like **scene.txt**, then get revised so you renamed to **scene_old.txt**, its get revised again so you need to rename it to **scene_old_1.txt**, then again and again, until you have like 20 different files, such a painfull things aint it?
+Imagine like you are having a task to make movie script, but its keep getting revised everytime you show them, you may change some or many things in each revision, but there is a probability that you may use some scene from older scenario to adds up to your newer revision, so you save the files with different name, like **scene.txt**, then get revised so you renamed to **scene_old.txt**, its get revised again so you need to rename it to **scene_old_1.txt**, then again and again, until you have like 20 different files, such a painful things aint it?
 
 Your files will eventualy looks like this
 ![duplicated file](example.png)
@@ -61,6 +61,6 @@ Now, have you see a bit of the usefulness of git?, exactly, so here is the concl
 - **What exactly is Commit and Track Changes?**:
   A commit is a checkpoint, or snapshot of your project's state at a specific time, including a unique identifier and a description of changes. Tracking changes allows you to monitor modifications, identifying who changes them and when, it helps to maintaining a project history.
 
-So in short, Git is an essential tool for developers, and the sooner you familiarize yourself with it, the more neat and efficient your coding journey will become. Stay tuned for the next article where we dive into setting up Git on your computer. see ya! :D
+So in short, Git is an essential tool for developers, and the sooner you familiarize yourself with it, the more neat and efficient your coding journey will become. Stay tuned for the next article where we dive into how to install and configure Git on your devices. see ya! :D
 
 > **Note:** This article is not yet perfect, could you provide suggestions for changes or feedback so I can improve it later. Feel free to contact me anytime if you'd like here: [Email Me](mailto:nixvoid@proton.me) or [Chat Me on Whatsapp](https://wa.me/+6282284528116)

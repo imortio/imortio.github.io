@@ -61,6 +61,6 @@ Jadi, kalian sudah paham sedikit kegunaan dari git? tepat sekali, inilah kesimpu
 - **Apa sebenarnya yang dimaksud dengan Commit dan Track Changes?**:
  Commit adalah sebuah checkpoint, atau potongan status proyek kalian pada waktu tertentu, termasuk ID unik dan deskripsi perubahan. Track Changes memungkinkan kalian memantau modifikasi, mengidentifikasi siapa yang mengubahnya dan kapan, hal ini membantu untuk mempertahankan riwayat proyek yang solid.
 
-Jadi singkatnya, Git adalah alat yang sangat penting bagi para developer, dan semakin cepat kalian membiasakan diri dengan Git, semakin rapi dan efisien perjalanan koding kalian. Artikel selanjutnya yang akan membahas cara mengatur Git di perangkat kalian masing masing. sampai jumpa! :D
+Jadi singkatnya, Git adalah alat yang sangat penting bagi para developer, dan semakin cepat kalian membiasakan diri dengan Git, semakin rapi dan efisien perjalanan koding kalian. Artikel selanjutnya yang akan membahas bagaimana cara menginstall dan mengkonfigurasikan Git di perangkat kalian masing masing. sampai jumpa! :D
 
 > **Note:** Artikel ini belum sempurna, kalian sangat diharapkan memberikan saran untuk perubahan atau umpan balik agar saya dapat memperbaikinya nanti. Jangan ragu untuk menghubungiku kapan saja jika kalian mau, di sini: [Email](mailto:nixvoid@proton.me) atau [Chat di Whatsapp](https://wa.me/+6282284528116)
