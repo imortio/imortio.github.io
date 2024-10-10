@@ -1,42 +1,63 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Versioncontrolsystem on imortio</title><link>https://imortio.github.io/id/tags/versioncontrolsystem/</link><description>Recent content in Versioncontrolsystem on imortio</description><generator>Hugo -- gohugo.io</generator><language>id</language><lastBuildDate>Sun, 06 Oct 2024 13:09:21 +0000</lastBuildDate><atom:link href="https://imortio.github.io/id/tags/versioncontrolsystem/index.xml" rel="self" type="application/rss+xml"/><item><title>Git Gud dengan Git</title><link>https://imortio.github.io/id/posts/git-introduction/</link><pubDate>Sun, 06 Oct 2024 13:09:21 +0000</pubDate><guid>https://imortio.github.io/id/posts/git-introduction/</guid><description>Pengenalan Git Untuk Pemula</description><content>&lt;h2 id="git-sebuah-alat-yang-memudahkanmu-untuk-_git-gud_-pada-version-control">Git, sebuah alat yang memudahkanmu untuk &lt;em>git gud&lt;/em> pada version control.&lt;/h2>
-&lt;p>Git, telah menjadi hal yang populer di kalangan pengembang selama beberapa tahun, namun begitu banyak orang yang masih belum mengetahui apa itu Git. Kalian mungkin pernah menemukannya saat menelusuri media sosial, atau mungkin forum seperti stackoverflow, di mana orang-orang cukup sering menyebutkannya dalam komentar atau postingan mereka seperti &lt;em>“Hey, coba lihat ini, proyek Github terbaru ku, kalian bisa gunakan git untuk mengambil dan memodifikasinya sendiri”&lt;/em> atau hal lain yang menyebutkan Git atau Github.&lt;/p>
-&lt;p>Mungkin kalian berpikir, “Apa yang membuat Git begitu istimewa?”, “Mengapa begitu banyak orang yang membicarakannya?”, atau “Apa untungnya bagi saya jika saya mulai menggunakannya?” Jangan khawatir, kamu tidak sendirian, karena saya juga memiliki pertanyaan yang sama saat pertama kali mengenal Git :)&lt;/p>
-&lt;p>Dalam artikel ini, kita akan memperjelas apa itu Git, mengapa Git menjadi alat yang sangat penting dalam industri pemrograman, tetapi bagaimana dengan Github? Itu bisa dipelajari nanti, karena Git dan Github sangat terkait satu sama lain, jadi pada saat kalian belajar Git, Kalian akan terbiasa dengan Github juga, dan percayalah, Github dapat membuat hidup kalian sebagai seorang programmer menjadi lebih mudah.&lt;/p>
-&lt;p>&lt;img alt="Git Logo" src="https://imortio.github.io/posts/git-introduction/git.png">&lt;/p>
-&lt;p>Jadi, Git adalah sistem kontrol versi terdistribusi, yang memungkinkan kalian untuk memantau perubahan pada kode kalian dari waktu ke waktu, yang pada akhirnya memudahkan untuk melihat apa yang telah diubah dan oleh siapa (meskipun hanya diubah oleh kalian sendiri, hal ini dapat membingungkan jika kalian memiliki banyak revisi). Git sangat ideal untuk berkolaborasi dengan developer lain karena memungkinkan semua orang untuk mengerjakan proyek yang sama tanpa berselisih. Git juga membuat kalian dapat mempertahankan banyak versi proyek kalian, memungkinkan kalian untuk mencoba ide-ide baru tanpa mengacaukan proyek utama, kembali ke versi sebelumnya, atau mengerjakan banyak fitur pada saat yang sama tanpa kehilangan progress.&lt;/p>
-&lt;h1 id="mengapa-aku-harus-menggunakannya-aku-biasa-saja-dengan-beberapa-file-berbeda-yang-mewakili-versi-yang-berbeda">Mengapa aku harus menggunakannya? aku biasa saja dengan beberapa file berbeda yang mewakili versi yang berbeda&lt;/h1>
-&lt;p>Yah, kalian mungkin mengatakan bahwa ketika kalian memiliki kurang dari 15 revisi file yang berbeda, tetapi bagaimana jika kalian ingin melakukan rollback dengan cepat? Bagaimana jika kalian tanpa sengaja mengacak-acak file kalian yang lain? atau sekedar tidak dapat mengingat file mana yang tepat untuk sigunakan ketika harus melakukan rollback?. Di sinilah Git melakukan tugasnya, Git secara sederhana dapat dikatakan berfungsi sebagai alat &amp;lsquo;checkpoint&amp;rsquo; kalian (dalam Git kita menyebutnya commit), yang memungkinkan kalian untuk melakukan &amp;lsquo;quicksave&amp;rsquo; tanpa menduplikasi file atau membuat direktori kalian jadi berantakan dengan banyaknya file, kalian juga dapat memberikan label pada commit kalian sehingga kalian dapat dengan mudah melihat sekilas pada riwayat commit dan mengetahui mana yang ingin kalian gunakan.&lt;/p>
-&lt;p>Bayangkan seolah kalian memiliki tugas untuk membuat naskah film, tetapi terus direvisi setiap kali kalian menunjukkannya, kalian mungkin mengubah beberapa atau banyak hal dalam setiap revisi, tetapi ada kemungkinan kalian menggunakan beberapa adegan dari skenario lama untuk ditambahkan ke revisi kalian yang lebih baru, jadi kalian menyimpan file dengan nama yang berbeda, seperti &lt;strong>scene.txt&lt;/strong>, kemudian direvisi jadi kalian ganti namanya menjadi &lt;strong>scene_old.txt&lt;/strong>, direvisi lagi sehingga kalian harus mengganti namanya menjadi &lt;strong>scene_old_1.txt&lt;/strong>, kemudian lagi dan lagi, sampai kalian memiliki sekitar 20 file yang berbeda, sangat menyebalkan bukan?&lt;/p>
-&lt;p>File kalian pada akhirnya bakalan seperti ini:
-&lt;img alt="duplicated file" src="https://imortio.github.io/posts/git-introduction/example.png">&lt;/p>
-&lt;p>Sangat banyak file yang berbeda, meskipun semuanya memiliki tujuan yang sama, jadi mengapa kalian ingin folder yang seberantakan ini? Jika jika bisa membuat satu file saja dengan banyak versi yang berbeda menggunakan git, maka folder kalian akan terlihat lebih rapi dan terorganisir, seperti ini:
-&lt;img alt="after using git" src="https://imortio.github.io/posts/git-introduction/example_2.png">&lt;/p>
-&lt;p>“Tapi di mana versi yang berbeda nya? Aku tidak melihatnya di tempat lain di direktori ku?” file-file tersebut disimpan di Git, dan kalian bisa mengecek revisi kalian di Git, berikut caranya.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git log
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Dan kalian akan melihat hasil seperti ini:
-&lt;img alt="git log result" src="https://imortio.github.io/posts/git-introduction/gitlog.png">&lt;/p>
-&lt;p>Seperti yang kalian lihat, ada 3 versi yang berbeda tetapi file utama masih satu file, bersama dengan pesan commit yang sangat membantu untuk melacak perubahan kalian tetap pada jalurnya dengan beberapa kata kunci yang terkait tanpa perlu melihat setiap isi file secara manual.&lt;/p>
-&lt;p>Itu tadi sedikit tentang Git, masih banyak lagi kemampuan Git seperti membandingkan dua versi commit dan melihat apa yang berubah di antara keduanya, juga membuat versi file yang jauh berbeda pada saat yang sama dengan tetap menjaga file utama tetap utuh, dan masih banyak lagi hal-hal keren lainnya, tetapi jangan terburu-buru, kita akan mempelajarinya nanti sedikit demi sedikit, pastikan kalian sudah memahami dengan baik satu topik lebih dulu sebelum melanjutkan ke topik lainnya, itu akan membuat kalian lebih mudah untuk mempelajari hal lain yang berkaitan kedepannya.&lt;/p>
-&lt;p>Jadi, kalian sudah paham sedikit kegunaan dari git? tepat sekali, inilah kesimpulannya:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Apa itu Git?&lt;/strong>:
-Git adalah sistem kontrol versi terdistribusi yang membantu kalian untuk melacak perubahan dalam proyek kalian, mengelola versi yang berbeda, dan berkolaborasi secara efisien dengan orang lain.&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Apa itu Version Control System?&lt;/strong>:
-Sistem Kontrol Versi, juga dikenal sebagai VCS, sangat penting untuk mengelola perubahan kode secara efisien. Sistem ini melacak perubahan, memungkinkan restorasi yang mudah, dan mendukung kolaborasi tanpa bentrok antar file.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Kenapa menggunakan Git?&lt;/strong>:
-Git mengatur proyek kalian, meminimalisir kalian dari memiliki banyak file duplikat, dan memungkinkan kalian untuk mengembalikan perubahan dengan mudah tanpa mengacaukan direktori.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Apa sebenarnya yang dimaksud dengan Commit dan Track Changes?&lt;/strong>:
-Commit adalah sebuah checkpoint, atau potongan status proyek kalian pada waktu tertentu, termasuk ID unik dan deskripsi perubahan. Track Changes memungkinkan kalian memantau modifikasi, mengidentifikasi siapa yang mengubahnya dan kapan, hal ini membantu untuk mempertahankan riwayat proyek yang solid.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>Jadi singkatnya, Git adalah alat yang sangat penting bagi para developer, dan semakin cepat kalian membiasakan diri dengan Git, semakin rapi dan efisien perjalanan koding kalian. Artikel selanjutnya yang akan membahas cara mengatur Git di perangkat kalian masing masing. sampai jumpa! :D&lt;/p>
-&lt;blockquote>
-&lt;p>&lt;strong>Note:&lt;/strong> Artikel ini belum sempurna, kalian sangat diharapkan memberikan saran untuk perubahan atau umpan balik agar saya dapat memperbaikinya nanti. Jangan ragu untuk menghubungiku kapan saja jika kalian mau, di sini: &lt;a href="mailto:nixvoid@proton.me">Email&lt;/a> atau &lt;a href="https://wa.me/+6282284528116">Chat di Whatsapp&lt;/a>&lt;/p>
-&lt;/blockquote></content></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Versioncontrolsystem on imortio</title>
+    <link>//localhost:1313/id/tags/versioncontrolsystem/</link>
+    <description>Recent content in Versioncontrolsystem on imortio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id</language>
+    <lastBuildDate>Sun, 06 Oct 2024 13:09:21 +0000</lastBuildDate><atom:link href="//localhost:1313/id/tags/versioncontrolsystem/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Gud dengan Git</title>
+      <link>//localhost:1313/id/posts/git-introduction/</link>
+      <pubDate>Sun, 06 Oct 2024 13:09:21 +0000</pubDate>
+      
+      <guid>//localhost:1313/id/posts/git-introduction/</guid>
+      <description>Pengenalan Git Untuk Pemula</description>
+      <content>&lt;h2 id=&#34;git-sebuah-alat-yang-memudahkanmu-untuk-_git-gud_-pada-version-control&#34;&gt;Git, sebuah alat yang memudahkanmu untuk &lt;em&gt;git gud&lt;/em&gt; pada version control.&lt;/h2&gt;
+&lt;p&gt;Git, telah menjadi hal yang populer di kalangan pengembang selama beberapa tahun, namun begitu banyak orang yang masih belum mengetahui apa itu Git. Kalian mungkin pernah menemukannya saat menelusuri media sosial, atau mungkin forum seperti stackoverflow, di mana orang-orang cukup sering menyebutkannya dalam komentar atau postingan mereka seperti &lt;em&gt;“Hey, coba lihat ini, proyek Github terbaru ku, kalian bisa gunakan git untuk mengambil dan memodifikasinya sendiri”&lt;/em&gt; atau hal lain yang menyebutkan Git atau Github.&lt;/p&gt;
+&lt;p&gt;Mungkin kalian berpikir, “Apa yang membuat Git begitu istimewa?”, “Mengapa begitu banyak orang yang membicarakannya?”, atau “Apa untungnya bagi saya jika saya mulai menggunakannya?” Jangan khawatir, kamu tidak sendirian, karena saya juga memiliki pertanyaan yang sama saat pertama kali mengenal Git :)&lt;/p&gt;
+&lt;p&gt;Dalam artikel ini, kita akan memperjelas apa itu Git, mengapa Git menjadi alat yang sangat penting dalam industri pemrograman, tetapi bagaimana dengan Github? Itu bisa dipelajari nanti, karena Git dan Github sangat terkait satu sama lain, jadi pada saat kalian belajar Git, Kalian akan terbiasa dengan Github juga, dan percayalah, Github dapat membuat hidup kalian sebagai seorang programmer menjadi lebih mudah.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Git Logo&#34; src=&#34;//localhost:1313/posts/git-introduction/git.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Jadi, Git adalah sistem kontrol versi terdistribusi, yang memungkinkan kalian untuk memantau perubahan pada kode kalian dari waktu ke waktu, yang pada akhirnya memudahkan untuk melihat apa yang telah diubah dan oleh siapa (meskipun hanya diubah oleh kalian sendiri, hal ini dapat membingungkan jika kalian memiliki banyak revisi). Git sangat ideal untuk berkolaborasi dengan developer lain karena memungkinkan semua orang untuk mengerjakan proyek yang sama tanpa berselisih. Git juga membuat kalian dapat mempertahankan banyak versi proyek kalian, memungkinkan kalian untuk mencoba ide-ide baru tanpa mengacaukan proyek utama, kembali ke versi sebelumnya, atau mengerjakan banyak fitur pada saat yang sama tanpa kehilangan progress.&lt;/p&gt;
+&lt;h1 id=&#34;mengapa-aku-harus-menggunakannya-aku-biasa-saja-dengan-beberapa-file-berbeda-yang-mewakili-versi-yang-berbeda&#34;&gt;Mengapa aku harus menggunakannya? aku biasa saja dengan beberapa file berbeda yang mewakili versi yang berbeda&lt;/h1&gt;
+&lt;p&gt;Yah, kalian mungkin mengatakan bahwa ketika kalian memiliki kurang dari 15 revisi file yang berbeda, tetapi bagaimana jika kalian ingin melakukan rollback dengan cepat? Bagaimana jika kalian tanpa sengaja mengacak-acak file kalian yang lain? atau sekedar tidak dapat mengingat file mana yang tepat untuk sigunakan ketika harus melakukan rollback?. Di sinilah Git melakukan tugasnya, Git secara sederhana dapat dikatakan berfungsi sebagai alat &amp;lsquo;checkpoint&amp;rsquo; kalian (dalam Git kita menyebutnya commit), yang memungkinkan kalian untuk melakukan &amp;lsquo;quicksave&amp;rsquo; tanpa menduplikasi file atau membuat direktori kalian jadi berantakan dengan banyaknya file, kalian juga dapat memberikan label pada commit kalian sehingga kalian dapat dengan mudah melihat sekilas pada riwayat commit dan mengetahui mana yang ingin kalian gunakan.&lt;/p&gt;
+&lt;p&gt;Bayangkan seolah kalian memiliki tugas untuk membuat naskah film, tetapi terus direvisi setiap kali kalian menunjukkannya, kalian mungkin mengubah beberapa atau banyak hal dalam setiap revisi, tetapi ada kemungkinan kalian menggunakan beberapa adegan dari skenario lama untuk ditambahkan ke revisi kalian yang lebih baru, jadi kalian menyimpan file dengan nama yang berbeda, seperti &lt;strong&gt;scene.txt&lt;/strong&gt;, kemudian direvisi jadi kalian ganti namanya menjadi &lt;strong&gt;scene_old.txt&lt;/strong&gt;, direvisi lagi sehingga kalian harus mengganti namanya menjadi &lt;strong&gt;scene_old_1.txt&lt;/strong&gt;, kemudian lagi dan lagi, sampai kalian memiliki sekitar 20 file yang berbeda, sangat menyebalkan bukan?&lt;/p&gt;
+&lt;p&gt;File kalian pada akhirnya bakalan seperti ini:
+&lt;img alt=&#34;duplicated file&#34; src=&#34;//localhost:1313/posts/git-introduction/example.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Sangat banyak file yang berbeda, meskipun semuanya memiliki tujuan yang sama, jadi mengapa kalian ingin folder yang seberantakan ini? Jika jika bisa membuat satu file saja dengan banyak versi yang berbeda menggunakan git, maka folder kalian akan terlihat lebih rapi dan terorganisir, seperti ini:
+&lt;img alt=&#34;after using git&#34; src=&#34;//localhost:1313/posts/git-introduction/example_2.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;“Tapi di mana versi yang berbeda nya? Aku tidak melihatnya di tempat lain di direktori ku?” file-file tersebut disimpan di Git, dan kalian bisa mengecek revisi kalian di Git, berikut caranya.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git log
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Dan kalian akan melihat hasil seperti ini:
+&lt;img alt=&#34;git log result&#34; src=&#34;//localhost:1313/posts/git-introduction/gitlog.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Seperti yang kalian lihat, ada 3 versi yang berbeda tetapi file utama masih satu file, bersama dengan pesan commit yang sangat membantu untuk melacak perubahan kalian tetap pada jalurnya dengan beberapa kata kunci yang terkait tanpa perlu melihat setiap isi file secara manual.&lt;/p&gt;
+&lt;p&gt;Itu tadi sedikit tentang Git, masih banyak lagi kemampuan Git seperti membandingkan dua versi commit dan melihat apa yang berubah di antara keduanya, juga membuat versi file yang jauh berbeda pada saat yang sama dengan tetap menjaga file utama tetap utuh, dan masih banyak lagi hal-hal keren lainnya, tetapi jangan terburu-buru, kita akan mempelajarinya nanti sedikit demi sedikit, pastikan kalian sudah memahami dengan baik satu topik lebih dulu sebelum melanjutkan ke topik lainnya, itu akan membuat kalian lebih mudah untuk mempelajari hal lain yang berkaitan kedepannya.&lt;/p&gt;
+&lt;p&gt;Jadi, kalian sudah paham sedikit kegunaan dari git? tepat sekali, inilah kesimpulannya:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Apa itu Git?&lt;/strong&gt;:
+Git adalah sistem kontrol versi terdistribusi yang membantu kalian untuk melacak perubahan dalam proyek kalian, mengelola versi yang berbeda, dan berkolaborasi secara efisien dengan orang lain.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Apa itu Version Control System?&lt;/strong&gt;:
+Sistem Kontrol Versi, juga dikenal sebagai VCS, sangat penting untuk mengelola perubahan kode secara efisien. Sistem ini melacak perubahan, memungkinkan restorasi yang mudah, dan mendukung kolaborasi tanpa bentrok antar file.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Kenapa menggunakan Git?&lt;/strong&gt;:
+Git mengatur proyek kalian, meminimalisir kalian dari memiliki banyak file duplikat, dan memungkinkan kalian untuk mengembalikan perubahan dengan mudah tanpa mengacaukan direktori.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Apa sebenarnya yang dimaksud dengan Commit dan Track Changes?&lt;/strong&gt;:
+Commit adalah sebuah checkpoint, atau potongan status proyek kalian pada waktu tertentu, termasuk ID unik dan deskripsi perubahan. Track Changes memungkinkan kalian memantau modifikasi, mengidentifikasi siapa yang mengubahnya dan kapan, hal ini membantu untuk mempertahankan riwayat proyek yang solid.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Jadi singkatnya, Git adalah alat yang sangat penting bagi para developer, dan semakin cepat kalian membiasakan diri dengan Git, semakin rapi dan efisien perjalanan koding kalian. Artikel selanjutnya yang akan membahas cara mengatur Git di perangkat kalian masing masing. sampai jumpa! :D&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Artikel ini belum sempurna, kalian sangat diharapkan memberikan saran untuk perubahan atau umpan balik agar saya dapat memperbaikinya nanti. Jangan ragu untuk menghubungiku kapan saja jika kalian mau, di sini: &lt;a href=&#34;mailto:nixvoid@proton.me&#34;&gt;Email&lt;/a&gt; atau &lt;a href=&#34;https://wa.me/+6282284528116&#34;&gt;Chat di Whatsapp&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
