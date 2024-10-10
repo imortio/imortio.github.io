@@ -85,6 +85,10 @@ table {
   margin: calc(var(--line-height) * 1.2) 0;
 }
 
+p {
+  text-indent: 20px;
+}
+
 a {
   color: var(--accent);
 }
@@ -209,6 +213,8 @@ input[type="checkbox"]:checked {
 img {
   display: block;
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   border: 8px solid var(--accent);
   border-radius: var(--radius);
   padding: 8px;
