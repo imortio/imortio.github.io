@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Fira+Code:wght@400;700&display=swap");
+
 :root {
   --background: #101010;
   --foreground: #eceae5;
@@ -23,6 +25,10 @@ body {
   margin: 0;
   padding: 0;
   font-family:
+    "Fira Code",
+    Monaco,
+    Consolas,
+     "Ubuntu Mono",
     monospace;
   font-size: 1rem;
   font-weight: 400;
@@ -77,11 +83,6 @@ figure,
 video,
 table {
   margin: calc(var(--line-height) * 1.2) 0;
-}
-
-p {
-  text-indent: 2rem;
-  text-align: justify;
 }
 
 a {
@@ -208,11 +209,9 @@ input[type="checkbox"]:checked {
 img {
   display: block;
   max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   border: 8px solid var(--accent);
   border-radius: var(--radius);
-  padding: 8px; 
+  padding: 8px;
   overflow: hidden;
 }
 
@@ -256,6 +255,10 @@ ol li {
 code,
 kbd {
   font-family:
+    "Fira Code",
+    Monaco,
+    Consolas,
+    Ubuntu Mono,
     monospace !important;
   font-feature-settings: normal;
   background: color-mix(in srgb, var(--foreground) 5%, transparent);
