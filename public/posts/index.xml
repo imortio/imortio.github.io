@@ -1,63 +1,42 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on imortio</title>
-    <link>//localhost:1313/posts/</link>
-    <description>Recent content in Posts on imortio</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 06 Oct 2024 13:09:21 +0000</lastBuildDate><atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Git Gud with Git</title>
-      <link>//localhost:1313/posts/git-introduction/</link>
-      <pubDate>Sun, 06 Oct 2024 13:09:21 +0000</pubDate>
-      
-      <guid>//localhost:1313/posts/git-introduction/</guid>
-      <description>A newbie introduction to Git</description>
-      <content>&lt;h2 id=&#34;git-a-tool-to-ease-your-way-to-be-_git-gud_-at-version-control&#34;&gt;Git, a tool to ease your way to be &lt;em&gt;git gud&lt;/em&gt; at version control.&lt;/h2&gt;
-&lt;p&gt;Git, it has been a popular thing among developers for some years, yet so many people still didnt know what is it exactly. You may have come upon it while scrolling through social media, or maybe forums like stackoverflow, where individuals quite oftenly mention it in their comments or posts like &lt;em&gt;&amp;ldquo;Heyya check out this!, my latest Github project, you can use git to fetch and modify it yourself&amp;rdquo;&lt;/em&gt; or something else like that which mention Git or Github.&lt;/p&gt;
-&lt;p&gt;Perhaps you&amp;rsquo;re thinking, &amp;ldquo;What makes Git so special?&amp;rdquo;, &amp;ldquo;Why are so many people raving about it?&amp;rdquo;, or &amp;ldquo;What&amp;rsquo;s in it for me if I start using it?&amp;rdquo; Don&amp;rsquo;t worry, you aren&amp;rsquo;t alone!, because i had the same question when i first encountered Git too :)&lt;/p&gt;
-&lt;p&gt;In this article, we&amp;rsquo;ll explain what Git is, why it&amp;rsquo;s become such an important tool in the coding industry, but how about Github?, it can be learned later, as for Git and Github is pretty related each other, so by the time youre learning Git you will be get used to Github too, and trust me, it can make your life as a programmer be much simpler.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Git Logo&#34; src=&#34;//localhost:1313/posts/git-introduction/git.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;So, Git is a distributed version control system, which allow you to monitor changes to your code over time, eventually making it simple to see what has been changed and by whom ( even if only changed by yourself it may be confusing tho if you have a bunch of revisions ). It&amp;rsquo;s ideal for collaborating with other developers since it allows everyone to work on the same project without disagreement. Git also makes you able to maintain many versions of your project, allowing you to try out new ideas without messing with the main project, return to prior versions, or work on numerous features at the same time without losing progress.&lt;/p&gt;
-&lt;h1 id=&#34;why-i-must-use-it-im-fine-with-multiple-different-file-that-represent-different-versions&#34;&gt;Why i must use it? im fine with multiple different file that represent different versions&lt;/h1&gt;
-&lt;p&gt;Yeah you may say that when you have like less than 15 different file revision, but how about if you want to make a quick rollback?, how about if you just mess up with your other files? or just simply cant remember which one is the right file when its come to rollback?, this is where Git do its job, Git simply said serve as your &amp;lsquo;checkpoint&amp;rsquo; tool (in git we call it commits), which allow you to make &amp;lsquo;quicksave&amp;rsquo; without duplicating the file or making you directory become mess, you also able to give label to your commits so you may simply take a quick glance at the commit history and know which one that you want to use.&lt;/p&gt;
-&lt;p&gt;Imagine like you are having a task to make movie script, but its keep getting revised everytime you show them, you may change some or many things in each revision, but there is a probability that you may use some scene from older scenario to adds up to your newer revision, so you save the files with different name, like &lt;strong&gt;scene.txt&lt;/strong&gt;, then get revised so you renamed to &lt;strong&gt;scene_old.txt&lt;/strong&gt;, its get revised again so you need to rename it to &lt;strong&gt;scene_old_1.txt&lt;/strong&gt;, then again and again, until you have like 20 different files, such a painfull things aint it?&lt;/p&gt;
-&lt;p&gt;Your files will eventualy looks like this
-&lt;img alt=&#34;duplicated file&#34; src=&#34;//localhost:1313/posts/git-introduction/example.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;So much different files, although they do serve the same purpose, so why would you want this mess? when you can just make one file with many different versions using git, then your directory will look much neat and organized, like this:
-&lt;img alt=&#34;after using git&#34; src=&#34;//localhost:1313/posts/git-introduction/example_2.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;But where is the different versions of the file? i dont see it anywhere else in my directory?&amp;rdquo; they are saved on Git, and you can check your revisions on Git, here is how to do it.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git log
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And you will see the results like this:
-&lt;img alt=&#34;git log result&#34; src=&#34;//localhost:1313/posts/git-introduction/gitlog.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;As you can see there is 3 different versions but the main file is still one file, along with the commit messages that is helpful to keep your changes on track with some related keywords without the need to look into each file manually.&lt;/p&gt;
-&lt;p&gt;That is just a bit about Git, there is much more Git capabilities like comparing two versions and see what changes between them, also makes much different version of file at the same time while keeping the main file intact, and much more other powerful things, but no rush, we will learn about them later step by step, lets be sure to have well understanding about one topic first before move to other, it would make you easier to learn about anything else furthermore.&lt;/p&gt;
-&lt;p&gt;Now, have you see a bit of the usefulness of git?, exactly, so here is the conclusion:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;What is Git?&lt;/strong&gt;:
-Git is a distributed version control system that helps you track changes in your project, manage different versions, and collaborate efficiently with others.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;What is Version Control System?&lt;/strong&gt;:
-Version Control System, also know as VCS, is essential for managing code changes efficiently. It tracks changes, allows easy rollback, and supports collaboration without file clutter.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Why use Git?&lt;/strong&gt;:
-It organizes your project, saves you from having multiple duplicate files, and allows you to roll back changes easily without cluttering your directory.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;What exactly is Commit and Track Changes?&lt;/strong&gt;:
-A commit is a checkpoint, or snapshot of your project&amp;rsquo;s state at a specific time, including a unique identifier and a description of changes. Tracking changes allows you to monitor modifications, identifying who changes them and when, it helps to maintaining a project history.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;So in short, Git is an essential tool for developers, and the sooner you familiarize yourself with it, the more neat and efficient your coding journey will become. Stay tuned for the next article where we dive into setting up Git on your computer. see ya! :D&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This article is not yet perfect, could you provide suggestions for changes or feedback so I can improve it later. Feel free to contact me anytime if you&amp;rsquo;d like here: &lt;a href=&#34;mailto:nixvoid@proton.me&#34;&gt;Email Me&lt;/a&gt; or &lt;a href=&#34;https://wa.me/+6282284528116&#34;&gt;Chat Me on Whatsapp&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on imortio</title><link>https://imortio.github.io/posts/</link><description>Recent content in Posts on imortio</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 06 Oct 2024 13:09:21 +0000</lastBuildDate><atom:link href="https://imortio.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Git Gud with Git</title><link>https://imortio.github.io/posts/git-introduction/</link><pubDate>Sun, 06 Oct 2024 13:09:21 +0000</pubDate><guid>https://imortio.github.io/posts/git-introduction/</guid><description>A newbie introduction to Git</description><content>&lt;h2 id="git-a-tool-to-ease-your-way-to-be-_git-gud_-at-version-control">Git, a tool to ease your way to be &lt;em>git gud&lt;/em> at version control.&lt;/h2>
+&lt;p>Git, it has been a popular thing among developers for some years, yet so many people still didnt know what is it exactly. You may have come upon it while scrolling through social media, or maybe forums like stackoverflow, where individuals quite oftenly mention it in their comments or posts like &lt;em>&amp;ldquo;Heyya check out this!, my latest Github project, you can use git to fetch and modify it yourself&amp;rdquo;&lt;/em> or something else like that which mention Git or Github.&lt;/p>
+&lt;p>Perhaps you&amp;rsquo;re thinking, &amp;ldquo;What makes Git so special?&amp;rdquo;, &amp;ldquo;Why are so many people raving about it?&amp;rdquo;, or &amp;ldquo;What&amp;rsquo;s in it for me if I start using it?&amp;rdquo; Don&amp;rsquo;t worry, you aren&amp;rsquo;t alone!, because i had the same question when i first encountered Git too :)&lt;/p>
+&lt;p>In this article, we&amp;rsquo;ll explain what Git is, why it&amp;rsquo;s become such an important tool in the coding industry, but how about Github?, it can be learned later, as for Git and Github is pretty related each other, so by the time youre learning Git you will be get used to Github too, and trust me, it can make your life as a programmer be much simpler.&lt;/p>
+&lt;p>&lt;img alt="Git Logo" src="https://imortio.github.io/posts/git-introduction/git.png">&lt;/p>
+&lt;p>So, Git is a distributed version control system, which allow you to monitor changes to your code over time, eventually making it simple to see what has been changed and by whom ( even if only changed by yourself it may be confusing tho if you have a bunch of revisions ). It&amp;rsquo;s ideal for collaborating with other developers since it allows everyone to work on the same project without disagreement. Git also makes you able to maintain many versions of your project, allowing you to try out new ideas without messing with the main project, return to prior versions, or work on numerous features at the same time without losing progress.&lt;/p>
+&lt;h1 id="why-i-must-use-it-im-fine-with-multiple-different-file-that-represent-different-versions">Why i must use it? im fine with multiple different file that represent different versions&lt;/h1>
+&lt;p>Yeah you may say that when you have like less than 15 different file revision, but how about if you want to make a quick rollback?, how about if you just mess up with your other files? or just simply cant remember which one is the right file when its come to rollback?, this is where Git do its job, Git simply said serve as your &amp;lsquo;checkpoint&amp;rsquo; tool (in git we call it commits), which allow you to make &amp;lsquo;quicksave&amp;rsquo; without duplicating the file or making you directory become mess, you also able to give label to your commits so you may simply take a quick glance at the commit history and know which one that you want to use.&lt;/p>
+&lt;p>Imagine like you are having a task to make movie script, but its keep getting revised everytime you show them, you may change some or many things in each revision, but there is a probability that you may use some scene from older scenario to adds up to your newer revision, so you save the files with different name, like &lt;strong>scene.txt&lt;/strong>, then get revised so you renamed to &lt;strong>scene_old.txt&lt;/strong>, its get revised again so you need to rename it to &lt;strong>scene_old_1.txt&lt;/strong>, then again and again, until you have like 20 different files, such a painfull things aint it?&lt;/p>
+&lt;p>Your files will eventualy looks like this
+&lt;img alt="duplicated file" src="https://imortio.github.io/posts/git-introduction/example.png">&lt;/p>
+&lt;p>So much different files, although they do serve the same purpose, so why would you want this mess? when you can just make one file with many different versions using git, then your directory will look much neat and organized, like this:
+&lt;img alt="after using git" src="https://imortio.github.io/posts/git-introduction/example_2.png">&lt;/p>
+&lt;p>&amp;ldquo;But where is the different versions of the file? i dont see it anywhere else in my directory?&amp;rdquo; they are saved on Git, and you can check your revisions on Git, here is how to do it.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git log
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>And you will see the results like this:
+&lt;img alt="git log result" src="https://imortio.github.io/posts/git-introduction/gitlog.png">&lt;/p>
+&lt;p>As you can see there is 3 different versions but the main file is still one file, along with the commit messages that is helpful to keep your changes on track with some related keywords without the need to look into each file manually.&lt;/p>
+&lt;p>That is just a bit about Git, there is much more Git capabilities like comparing two versions and see what changes between them, also makes much different version of file at the same time while keeping the main file intact, and much more other powerful things, but no rush, we will learn about them later step by step, lets be sure to have well understanding about one topic first before move to other, it would make you easier to learn about anything else furthermore.&lt;/p>
+&lt;p>Now, have you see a bit of the usefulness of git?, exactly, so here is the conclusion:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>What is Git?&lt;/strong>:
+Git is a distributed version control system that helps you track changes in your project, manage different versions, and collaborate efficiently with others.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>What is Version Control System?&lt;/strong>:
+Version Control System, also know as VCS, is essential for managing code changes efficiently. It tracks changes, allows easy rollback, and supports collaboration without file clutter.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Why use Git?&lt;/strong>:
+It organizes your project, saves you from having multiple duplicate files, and allows you to roll back changes easily without cluttering your directory.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>What exactly is Commit and Track Changes?&lt;/strong>:
+A commit is a checkpoint, or snapshot of your project&amp;rsquo;s state at a specific time, including a unique identifier and a description of changes. Tracking changes allows you to monitor modifications, identifying who changes them and when, it helps to maintaining a project history.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>So in short, Git is an essential tool for developers, and the sooner you familiarize yourself with it, the more neat and efficient your coding journey will become. Stay tuned for the next article where we dive into setting up Git on your computer. see ya! :D&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>Note:&lt;/strong> This article is not yet perfect, could you provide suggestions for changes or feedback so I can improve it later. Feel free to contact me anytime if you&amp;rsquo;d like here: &lt;a href="mailto:nixvoid@proton.me">Email Me&lt;/a> or &lt;a href="https://wa.me/+6282284528116">Chat Me on Whatsapp&lt;/a>&lt;/p>
+&lt;/blockquote></content></item></channel></rss>
