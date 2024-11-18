@@ -56,28 +56,28 @@ Untuk membuat repositori git pertamamu, kalian bisa mengikuti panduan dibawah in
     ```
     Jika reponya sudah berhasil dibuat, kalian akan melihat sebuah pesan menandakan bahwa kalian berada di cabang default. Biasanya cabang ini akan bernama `master` atau `main`, tapi sejak pada artikel sebelumnya kalian sudah mengatur cabang defaultnya menjadi `main` maka secara otomatis semua cabang default kalian akan bernama `main` termasuk yang ini juga.
 
-Begitulah caranya membuat sebuah repoitori Git, dan kalian sudah berhasil membuat satu, sekarang waktunya menambahkan berapa file kedalamnya, dan setelah itu kalian bisa cek lagi meggunakan
-    ```bash
-    git status
-    ```
+Begitulah caranya membuat sebuah repoitori Git, dan kalian sudah berhasil membuat satu, sekarang waktunya menambahkan berapa file kedalamnya, dan setelah itu kalian bisa cek lagi menggunakan:
+```bash
+git status
+```
 Dan kalian akan melihat beberapa output seperti ini
 ![git status setelah ditambahkan file baru](images/gitstatusaftd.webp)
 
 Kalian bisa mengatur status filenya mnejadi `staged` dengan menggunakan perintah:
-    ```bash
-    git add namefile
-    ```
+```bash
+git add namefile
+```
 Atau jika kalian ingin mengatur semua file menjadi `staged` kalian bisa menggunakan ini:
-    ```bash
-    git add .
-    ```
+```bash
+git add .
+```
 Setelah itu jalankan perintah untuk mengecek status lagi dan kalian akan melihat hasil seperti ini:
 ![git setelah staged](images/gitaftstaged.webp)
 
 Kemudian untuk melakukan `commit` terhadap file yang sudah distaging ke penyimpanan git, kalian perlu menjalankan perintah ini:
-    ```bash
-    git commit -m "commit pertama"
-    ```
+```bash
+git commit -m "commit pertama"
+```
 flag `-m` digunakan untuk memberitahu git bahwa kalian ingin menambakan pesan deskripsi ke commit yang kalian lakukan, jadi nantinya kalian tidak akan bingung jika sudah memiliki banyak commit. Kalian bisa mengganti "commit pertama" ke kalimat apapun yang kalian inginkan, tapi jika kalian berkolaborasi dengan developer lain kalian harus membuatnya tetap bersih dan jelas.
 
 ---
@@ -116,7 +116,7 @@ Sudah, selesai, sekarang kalian sudah siap, tapi mungkin kalian ingin membuat se
 
  1. Buka dashboard Githubmu
     + Buka dashboard Github dan arahkan ke tab repositori
-    ![Dashboard Github](images/8-dashboard)
+    ![Dashboard Github](images/8-dashboard.webp)
  2. Klik `Create Repository`
     + Kalian tidak akan punya repositori pada awalnya, jadi untuk membuatnya cukup klik pada `Create Repository` dan kalian akan diberikan sebuah form seperti ini:
     ![Form pembuatan repo Github](images/8.5-repocreation.webp)

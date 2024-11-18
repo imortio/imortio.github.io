@@ -345,19 +345,19 @@ Kalian bisa mengkonfirmasi bahwa repositori tersebut sudah berhasil dibuat denga
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Jika reponya sudah berhasil dibuat, kalian akan melihat sebuah pesan menandakan bahwa kalian berada di cabang default. Biasanya cabang ini akan bernama &lt;code&gt;master&lt;/code&gt; atau &lt;code&gt;main&lt;/code&gt;, tapi sejak pada artikel sebelumnya kalian sudah mengatur cabang defaultnya menjadi &lt;code&gt;main&lt;/code&gt; maka secara otomatis semua cabang default kalian akan bernama &lt;code&gt;main&lt;/code&gt; termasuk yang ini juga.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Begitulah caranya membuat sebuah repoitori Git, dan kalian sudah berhasil membuat satu, sekarang waktunya menambahkan berapa file kedalamnya, dan setelah itu kalian bisa cek lagi meggunakan
-&lt;code&gt;bash git status &lt;/code&gt;
-Dan kalian akan melihat beberapa output seperti ini
+&lt;p&gt;Begitulah caranya membuat sebuah repoitori Git, dan kalian sudah berhasil membuat satu, sekarang waktunya menambahkan berapa file kedalamnya, dan setelah itu kalian bisa cek lagi menggunakan:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git status
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Dan kalian akan melihat beberapa output seperti ini
 &lt;img alt=&#34;git status setelah ditambahkan file baru&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/gitstatusaftd.webp&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Kalian bisa mengatur status filenya mnejadi &lt;code&gt;staged&lt;/code&gt; dengan menggunakan perintah:
-&lt;code&gt;bash git add namefile &lt;/code&gt;
-Atau jika kalian ingin mengatur semua file menjadi &lt;code&gt;staged&lt;/code&gt; kalian bisa menggunakan ini:
-&lt;code&gt;bash git add . &lt;/code&gt;
-Setelah itu jalankan perintah untuk mengecek status lagi dan kalian akan melihat hasil seperti ini:
+&lt;p&gt;Kalian bisa mengatur status filenya mnejadi &lt;code&gt;staged&lt;/code&gt; dengan menggunakan perintah:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add namefile
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Atau jika kalian ingin mengatur semua file menjadi &lt;code&gt;staged&lt;/code&gt; kalian bisa menggunakan ini:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Setelah itu jalankan perintah untuk mengecek status lagi dan kalian akan melihat hasil seperti ini:
 &lt;img alt=&#34;git setelah staged&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/gitaftstaged.webp&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Kemudian untuk melakukan &lt;code&gt;commit&lt;/code&gt; terhadap file yang sudah distaging ke penyimpanan git, kalian perlu menjalankan perintah ini:
-&lt;code&gt;bash git commit -m &amp;quot;commit pertama&amp;quot; &lt;/code&gt;
-flag &lt;code&gt;-m&lt;/code&gt; digunakan untuk memberitahu git bahwa kalian ingin menambakan pesan deskripsi ke commit yang kalian lakukan, jadi nantinya kalian tidak akan bingung jika sudah memiliki banyak commit. Kalian bisa mengganti &amp;ldquo;commit pertama&amp;rdquo; ke kalimat apapun yang kalian inginkan, tapi jika kalian berkolaborasi dengan developer lain kalian harus membuatnya tetap bersih dan jelas.&lt;/p&gt;
+&lt;p&gt;Kemudian untuk melakukan &lt;code&gt;commit&lt;/code&gt; terhadap file yang sudah distaging ke penyimpanan git, kalian perlu menjalankan perintah ini:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;commit pertama&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;flag &lt;code&gt;-m&lt;/code&gt; digunakan untuk memberitahu git bahwa kalian ingin menambakan pesan deskripsi ke commit yang kalian lakukan, jadi nantinya kalian tidak akan bingung jika sudah memiliki banyak commit. Kalian bisa mengganti &amp;ldquo;commit pertama&amp;rdquo; ke kalimat apapun yang kalian inginkan, tapi jika kalian berkolaborasi dengan developer lain kalian harus membuatnya tetap bersih dan jelas.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Selamat! kalian sudah membuat repositori Git pertama dan bahkan menambahkan commit kedalamnya!. Sekarang kita akan ke topik berikutnya yang sedikit lebih lanjut yaitu&lt;/p&gt;
 &lt;h2 id=&#34;2-membuat-akun-github&#34;&gt;2. Membuat Akun Github&lt;/h2&gt;
@@ -411,7 +411,7 @@ Github memberikan kalian beberapa pilihan plan, ini seperti Github premium atau 
 &lt;li&gt;Buka dashboard Githubmu
 &lt;ul&gt;
 &lt;li&gt;Buka dashboard Github dan arahkan ke tab repositori
-&lt;img alt=&#34;Dashboard Github&#34; src=&#34;images/8-dashboard&#34;&gt;&lt;/li&gt;
+&lt;img alt=&#34;Dashboard Github&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/8-dashboard.webp&#34;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Klik &lt;code&gt;Create Repository&lt;/code&gt;

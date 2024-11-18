@@ -348,22 +348,22 @@ Once you have been in your desired folder, run this command to make current fold
 &lt;p&gt;Verify the Repo
 You can confirm that the repository has been succesfully created by checking the status using:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git status
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If the repo is succesfully created, you will see a message indicating that youre in default branch. Usually it will be named &lt;code&gt;master&lt;/code&gt; or &lt;code&gt;main&lt;/code&gt;, but since in the previous article you has been set the default branch name to &lt;code&gt;main&lt;/code&gt; then it will automatically set to &lt;code&gt;main&lt;/code&gt; from the default itself&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If the repo is succesfully created, you will see a message indicating that youre in default branch. Usually it will be named &lt;code&gt;master&lt;/code&gt; or &lt;code&gt;main&lt;/code&gt;, but since in the previous article you has been set the default branch name to &lt;code&gt;main&lt;/code&gt; then it will automatically set to &lt;code&gt;main&lt;/code&gt; from the default itself.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Thats it, now you has been successfully create your first Git repo, now its time to add some file in it, then after that you can check again using
-&lt;code&gt;bash git status &lt;/code&gt;
-And you will see some output like this
+&lt;p&gt;Thats it, now you has been successfully create your first Git repo, now its time to add some file in it, then after that you can check again using:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git status
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And you will see some output like this
 &lt;img alt=&#34;git status after add new file&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/gitstatusaftd.webp&#34;&gt;&lt;/p&gt;
-&lt;p&gt;You can set the file to &lt;code&gt;staged&lt;/code&gt; by using this command:
-&lt;code&gt;bash git add filename &lt;/code&gt;
-Or if you want to set all file to &lt;code&gt;staged&lt;/code&gt; you may use this instead
-&lt;code&gt;bash git add . &lt;/code&gt;
-After that run status check again and you will see some result like this:
+&lt;p&gt;You can set the file to &lt;code&gt;staged&lt;/code&gt; by using this command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; git add filename
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Or if you want to set all file to &lt;code&gt;staged&lt;/code&gt; you may use this instead&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After that run status check again and you will see some result like this:
 &lt;img alt=&#34;git after staged&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/gitaftstaged.webp&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Then to &lt;code&gt;commit&lt;/code&gt; the staged files to git memory, you need to run this command:
-&lt;code&gt;bash git commit -m &amp;quot;first commit&amp;quot; &lt;/code&gt;
-The &lt;code&gt;-m&lt;/code&gt; flag is used to tell git that you want to add description message to your commit, so i will be less confusing if you have many commits. You can change the &amp;ldquo;first commit&amp;rdquo; to anything you want, but in case of collaborations, you must keep it lean and clear.&lt;/p&gt;
+&lt;p&gt;Then to &lt;code&gt;commit&lt;/code&gt; the staged files to git memory, you need to run this command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;first commit&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;code&gt;-m&lt;/code&gt; flag is used to tell git that you want to add description message to your commit, so i will be less confusing if you have many commits. You can change the &amp;ldquo;first commit&amp;rdquo; to anything you want, but in case of collaborations, you must keep it lean and clear.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Congrats! you have been create you first ever Git repo and even put your own first commit!.Now we can move to just a lil bit more advanced topic on&lt;/p&gt;
 &lt;h2 id=&#34;2-creating-github-account&#34;&gt;2. Creating Github Account&lt;/h2&gt;

@@ -202,7 +202,7 @@
   <h1 class="post-title">
     <a href="//localhost:1313/id/posts/git/2-akun-dan-repo/">Git-#2: Akun &amp; Repo</a>
   </h1>
-  <div class="post-meta"><time class="post-date">2024-11-04</time><span class="post-author">imortio</span><span class="post-reading-time">6 menit baca (1095 kata)</span></div>
+  <div class="post-meta"><time class="post-date">2024-11-04</time><span class="post-author">imortio</span><span class="post-reading-time">6 menit baca (1091 kata)</span></div>
 
   
     <span class="post-tags">
@@ -264,19 +264,19 @@ Kalian bisa mengkonfirmasi bahwa repositori tersebut sudah berhasil dibuat denga
 </span></span></code></pre></div><p>Jika reponya sudah berhasil dibuat, kalian akan melihat sebuah pesan menandakan bahwa kalian berada di cabang default. Biasanya cabang ini akan bernama <code>master</code> atau <code>main</code>, tapi sejak pada artikel sebelumnya kalian sudah mengatur cabang defaultnya menjadi <code>main</code> maka secara otomatis semua cabang default kalian akan bernama <code>main</code> termasuk yang ini juga.</p>
 </li>
 </ol>
-<p>Begitulah caranya membuat sebuah repoitori Git, dan kalian sudah berhasil membuat satu, sekarang waktunya menambahkan berapa file kedalamnya, dan setelah itu kalian bisa cek lagi meggunakan
-<code>bash git status </code>
-Dan kalian akan melihat beberapa output seperti ini
+<p>Begitulah caranya membuat sebuah repoitori Git, dan kalian sudah berhasil membuat satu, sekarang waktunya menambahkan berapa file kedalamnya, dan setelah itu kalian bisa cek lagi menggunakan:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git status
+</span></span></code></pre></div><p>Dan kalian akan melihat beberapa output seperti ini
 <img alt="git status setelah ditambahkan file baru" src="/posts/git/2-account-and-repo/images/gitstatusaftd.webp"></p>
-<p>Kalian bisa mengatur status filenya mnejadi <code>staged</code> dengan menggunakan perintah:
-<code>bash git add namefile </code>
-Atau jika kalian ingin mengatur semua file menjadi <code>staged</code> kalian bisa menggunakan ini:
-<code>bash git add . </code>
-Setelah itu jalankan perintah untuk mengecek status lagi dan kalian akan melihat hasil seperti ini:
+<p>Kalian bisa mengatur status filenya mnejadi <code>staged</code> dengan menggunakan perintah:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add namefile
+</span></span></code></pre></div><p>Atau jika kalian ingin mengatur semua file menjadi <code>staged</code> kalian bisa menggunakan ini:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add .
+</span></span></code></pre></div><p>Setelah itu jalankan perintah untuk mengecek status lagi dan kalian akan melihat hasil seperti ini:
 <img alt="git setelah staged" src="/posts/git/2-account-and-repo/images/gitaftstaged.webp"></p>
-<p>Kemudian untuk melakukan <code>commit</code> terhadap file yang sudah distaging ke penyimpanan git, kalian perlu menjalankan perintah ini:
-<code>bash git commit -m &quot;commit pertama&quot; </code>
-flag <code>-m</code> digunakan untuk memberitahu git bahwa kalian ingin menambakan pesan deskripsi ke commit yang kalian lakukan, jadi nantinya kalian tidak akan bingung jika sudah memiliki banyak commit. Kalian bisa mengganti &ldquo;commit pertama&rdquo; ke kalimat apapun yang kalian inginkan, tapi jika kalian berkolaborasi dengan developer lain kalian harus membuatnya tetap bersih dan jelas.</p>
+<p>Kemudian untuk melakukan <code>commit</code> terhadap file yang sudah distaging ke penyimpanan git, kalian perlu menjalankan perintah ini:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;commit pertama&#34;</span>
+</span></span></code></pre></div><p>flag <code>-m</code> digunakan untuk memberitahu git bahwa kalian ingin menambakan pesan deskripsi ke commit yang kalian lakukan, jadi nantinya kalian tidak akan bingung jika sudah memiliki banyak commit. Kalian bisa mengganti &ldquo;commit pertama&rdquo; ke kalimat apapun yang kalian inginkan, tapi jika kalian berkolaborasi dengan developer lain kalian harus membuatnya tetap bersih dan jelas.</p>
 <hr>
 <p>Selamat! kalian sudah membuat repositori Git pertama dan bahkan menambahkan commit kedalamnya!. Sekarang kita akan ke topik berikutnya yang sedikit lebih lanjut yaitu</p>
 <h2 id="2-membuat-akun-github">2. Membuat Akun Github<a href="#2-membuat-akun-github" class="hanchor" ariaLabel="Anchor">#</a> </h2>
@@ -330,7 +330,7 @@ Github memberikan kalian beberapa pilihan plan, ini seperti Github premium atau 
 <li>Buka dashboard Githubmu
 <ul>
 <li>Buka dashboard Github dan arahkan ke tab repositori
-<img alt="Dashboard Github" src="images/8-dashboard"></li>
+<img alt="Dashboard Github" src="/posts/git/2-account-and-repo/images/8-dashboard.webp"></li>
 </ul>
 </li>
 <li>Klik <code>Create Repository</code>

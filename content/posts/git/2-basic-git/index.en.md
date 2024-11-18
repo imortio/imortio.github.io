@@ -54,30 +54,31 @@ To create your first git repository, you may follow this guide below:
     ```bash
     git status
     ```
-    If the repo is succesfully created, you will see a message indicating that youre in default branch. Usually it will be named `master` or `main`, but since in the previous article you has been set the default branch name to `main` then it will automatically set to `main` from the default itself
+    If the repo is succesfully created, you will see a message indicating that youre in default branch. Usually it will be named `master` or `main`, but since in the previous article you has been set the default branch name to `main` then it will automatically set to `main` from the default itself.
 
-Thats it, now you has been successfully create your first Git repo, now its time to add some file in it, then after that you can check again using
-    ```bash
-    git status
-    ```
+Thats it, now you has been successfully create your first Git repo, now its time to add some file in it, then after that you can check again using:
+```bash
+git status
+```
+
 And you will see some output like this
 ![git status after add new file](images/gitstatusaftd.webp)
 
 You can set the file to `staged` by using this command:
-    ```bash
-    git add filename
-    ```
+```bash
+ git add filename
+```
 Or if you want to set all file to `staged` you may use this instead
-    ```bash
-    git add .
-    ```
+```bash
+git add .
+```
 After that run status check again and you will see some result like this:
 ![git after staged](images/gitaftstaged.webp)
 
 Then to `commit` the staged files to git memory, you need to run this command:
-    ```bash
-    git commit -m "first commit"
-    ```
+```bash
+git commit -m "first commit"
+```
 The `-m` flag is used to tell git that you want to add description message to your commit, so i will be less confusing if you have many commits. You can change the "first commit" to anything you want, but in case of collaborations, you must keep it lean and clear.
 
 ---

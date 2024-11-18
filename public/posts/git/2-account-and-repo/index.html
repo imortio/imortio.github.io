@@ -202,7 +202,7 @@
   <h1 class="post-title">
     <a href="//localhost:1313/posts/git/2-account-and-repo/">Git-#2: Account &amp; Repo</a>
   </h1>
-  <div class="post-meta"><time class="post-date">2024-11-04</time><span class="post-author">imortio</span><span class="post-reading-time">6 min read (1207 words)</span></div>
+  <div class="post-meta"><time class="post-date">2024-11-04</time><span class="post-author">imortio</span><span class="post-reading-time">6 min read (1203 words)</span></div>
 
   
     <span class="post-tags">
@@ -261,22 +261,22 @@ Once you have been in your desired folder, run this command to make current fold
 <p>Verify the Repo
 You can confirm that the repository has been succesfully created by checking the status using:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git status
-</span></span></code></pre></div><p>If the repo is succesfully created, you will see a message indicating that youre in default branch. Usually it will be named <code>master</code> or <code>main</code>, but since in the previous article you has been set the default branch name to <code>main</code> then it will automatically set to <code>main</code> from the default itself</p>
+</span></span></code></pre></div><p>If the repo is succesfully created, you will see a message indicating that youre in default branch. Usually it will be named <code>master</code> or <code>main</code>, but since in the previous article you has been set the default branch name to <code>main</code> then it will automatically set to <code>main</code> from the default itself.</p>
 </li>
 </ol>
-<p>Thats it, now you has been successfully create your first Git repo, now its time to add some file in it, then after that you can check again using
-<code>bash git status </code>
-And you will see some output like this
+<p>Thats it, now you has been successfully create your first Git repo, now its time to add some file in it, then after that you can check again using:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git status
+</span></span></code></pre></div><p>And you will see some output like this
 <img alt="git status after add new file" src="/posts/git/2-account-and-repo/images/gitstatusaftd.webp"></p>
-<p>You can set the file to <code>staged</code> by using this command:
-<code>bash git add filename </code>
-Or if you want to set all file to <code>staged</code> you may use this instead
-<code>bash git add . </code>
-After that run status check again and you will see some result like this:
+<p>You can set the file to <code>staged</code> by using this command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> git add filename
+</span></span></code></pre></div><p>Or if you want to set all file to <code>staged</code> you may use this instead</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add .
+</span></span></code></pre></div><p>After that run status check again and you will see some result like this:
 <img alt="git after staged" src="/posts/git/2-account-and-repo/images/gitaftstaged.webp"></p>
-<p>Then to <code>commit</code> the staged files to git memory, you need to run this command:
-<code>bash git commit -m &quot;first commit&quot; </code>
-The <code>-m</code> flag is used to tell git that you want to add description message to your commit, so i will be less confusing if you have many commits. You can change the &ldquo;first commit&rdquo; to anything you want, but in case of collaborations, you must keep it lean and clear.</p>
+<p>Then to <code>commit</code> the staged files to git memory, you need to run this command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;first commit&#34;</span>
+</span></span></code></pre></div><p>The <code>-m</code> flag is used to tell git that you want to add description message to your commit, so i will be less confusing if you have many commits. You can change the &ldquo;first commit&rdquo; to anything you want, but in case of collaborations, you must keep it lean and clear.</p>
 <hr>
 <p>Congrats! you have been create you first ever Git repo and even put your own first commit!.Now we can move to just a lil bit more advanced topic on</p>
 <h2 id="2-creating-github-account">2. Creating Github Account<a href="#2-creating-github-account" class="hanchor" ariaLabel="Anchor">#</a> </h2>
