@@ -383,7 +383,7 @@ Kalian bisa mengkonfirmasi bahwa repositori tersebut sudah berhasil dibuat denga
 &lt;li&gt;Selesaikan captcha
 &lt;ul&gt;
 &lt;li&gt;Biasanya kalian akan diberikan beberapa captcha, ini bertujuan sebagai alasan keamanan, jadi cukup selesaikan saja
-&lt;img alt=&#34;Captcha&#34; src=&#34;images/3-capthca.webp&#34;&gt;&lt;/li&gt;
+&lt;img alt=&#34;Captcha&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/3-captcha.webp&#34;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Verifikasi emailmu

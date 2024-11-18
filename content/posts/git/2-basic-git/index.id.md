@@ -98,7 +98,7 @@ Setelah kalian belajar bagaimana membuat repositori Git pertama kalinya, kalian 
    ![Form pendaftaran sudah diisi](images/2-credentials.webp)
  4. Selesaikan captcha
     + Biasanya kalian akan diberikan beberapa captcha, ini bertujuan sebagai alasan keamanan, jadi cukup selesaikan saja
-    ![Captcha](images/3-capthca.webp)
+    ![Captcha](images/3-captcha.webp)
  5. Verifikasi emailmu
     + Biasanya, untuk alasan keamanan, Github akan meminta kalian untuk mengkonfirmasi email yang kalian gunakan saat mendaftar ke Github, jadi cek inbox emailmu dan cari email yang berasal dari pihak Github, lalu konfirmasi dengan mengklik tombol Verify
     ![Verifikasi email terkonfirmasi](images/4-verify.webp)
