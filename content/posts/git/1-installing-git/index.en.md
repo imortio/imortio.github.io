@@ -305,6 +305,6 @@ Mine is not too much because I only set the most important ones. Anyway, it will
 
 By now, you should have Git fully installed and configured on your machine, whether you're on Linux, macOS, or yes, even Windows. You've also set up your username and email, which are crucial for tracking changes across your repositories. With Git up and running, you're ready to start managing your projects with powerful version control.
 
-Next, we'll dive into creating your first repository, linking it to GitHub, and going over the basic commands that will take your Git knowledge to the next level. Stay tuned and see you in the next topic :D
+Next, we'll dive into creating your first repository, and then creating a new github account. Stay tuned and see you in the next topic :D
 
 > **Note:** This article is not yet perfect, could you provide suggestions for changes or feedback so I can improve it later. Feel free to contact me anytime if you'd like here: [Email Me](mailto:nixvoid@proton.me) or [Chat Me on Whatsapp](https://wa.me/+6282284528116)

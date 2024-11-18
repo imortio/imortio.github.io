@@ -1,1 +1,121 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tags on imortio</title><link>https://imortio.github.io/id/tags/</link><description>Recent content in Tags on imortio</description><generator>Hugo -- gohugo.io</generator><language>id</language><lastBuildDate>Fri, 11 Oct 2024 09:08:37 +0000</lastBuildDate><atom:link href="https://imortio.github.io/id/tags/index.xml" rel="self" type="application/rss+xml"/><item><title>Git</title><link>https://imortio.github.io/id/tags/git/</link><pubDate>Fri, 11 Oct 2024 09:08:37 +0000</pubDate><guid>https://imortio.github.io/id/tags/git/</guid><description/><content/></item><item><title>Instal</title><link>https://imortio.github.io/id/tags/instal/</link><pubDate>Fri, 11 Oct 2024 09:08:37 +0000</pubDate><guid>https://imortio.github.io/id/tags/instal/</guid><description/><content/></item><item><title>Sistemversi</title><link>https://imortio.github.io/id/tags/sistemversi/</link><pubDate>Fri, 11 Oct 2024 09:08:37 +0000</pubDate><guid>https://imortio.github.io/id/tags/sistemversi/</guid><description/><content/></item><item><title>Tutorial</title><link>https://imortio.github.io/id/tags/tutorial/</link><pubDate>Fri, 11 Oct 2024 09:08:37 +0000</pubDate><guid>https://imortio.github.io/id/tags/tutorial/</guid><description/><content/></item><item><title>Perkenalan</title><link>https://imortio.github.io/id/tags/perkenalan/</link><pubDate>Sun, 06 Oct 2024 13:09:21 +0000</pubDate><guid>https://imortio.github.io/id/tags/perkenalan/</guid><description/><content/></item><item><title>Versioncontrolsystem</title><link>https://imortio.github.io/id/tags/versioncontrolsystem/</link><pubDate>Sun, 06 Oct 2024 13:09:21 +0000</pubDate><guid>https://imortio.github.io/id/tags/versioncontrolsystem/</guid><description/><content/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on imortio</title>
+    <link>//localhost:1313/id/tags/</link>
+    <description>Recent content in Tags on imortio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id</language>
+    <lastBuildDate>Mon, 04 Nov 2024 14:20:47 +0000</lastBuildDate><atom:link href="//localhost:1313/id/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git</title>
+      <link>//localhost:1313/id/tags/git/</link>
+      <pubDate>Mon, 04 Nov 2024 14:20:47 +0000</pubDate>
+      
+      <guid>//localhost:1313/id/tags/git/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Init</title>
+      <link>//localhost:1313/id/tags/init/</link>
+      <pubDate>Mon, 04 Nov 2024 14:20:47 +0000</pubDate>
+      
+      <guid>//localhost:1313/id/tags/init/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Kontrolsistemversi</title>
+      <link>//localhost:1313/id/tags/kontrolsistemversi/</link>
+      <pubDate>Mon, 04 Nov 2024 14:20:47 +0000</pubDate>
+      
+      <guid>//localhost:1313/id/tags/kontrolsistemversi/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Repo</title>
+      <link>//localhost:1313/id/tags/repo/</link>
+      <pubDate>Mon, 04 Nov 2024 14:20:47 +0000</pubDate>
+      
+      <guid>//localhost:1313/id/tags/repo/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Tutorial</title>
+      <link>//localhost:1313/id/tags/tutorial/</link>
+      <pubDate>Mon, 04 Nov 2024 14:20:47 +0000</pubDate>
+      
+      <guid>//localhost:1313/id/tags/tutorial/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Donasi</title>
+      <link>//localhost:1313/id/tags/donasi/</link>
+      <pubDate>Sun, 20 Oct 2024 05:00:33 +0000</pubDate>
+      
+      <guid>//localhost:1313/id/tags/donasi/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Dukungan</title>
+      <link>//localhost:1313/id/tags/dukungan/</link>
+      <pubDate>Sun, 20 Oct 2024 05:00:33 +0000</pubDate>
+      
+      <guid>//localhost:1313/id/tags/dukungan/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Instal</title>
+      <link>//localhost:1313/id/tags/instal/</link>
+      <pubDate>Fri, 11 Oct 2024 09:08:37 +0000</pubDate>
+      
+      <guid>//localhost:1313/id/tags/instal/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Sistemversi</title>
+      <link>//localhost:1313/id/tags/sistemversi/</link>
+      <pubDate>Fri, 11 Oct 2024 09:08:37 +0000</pubDate>
+      
+      <guid>//localhost:1313/id/tags/sistemversi/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Perkenalan</title>
+      <link>//localhost:1313/id/tags/perkenalan/</link>
+      <pubDate>Sun, 06 Oct 2024 13:09:21 +0000</pubDate>
+      
+      <guid>//localhost:1313/id/tags/perkenalan/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Versioncontrolsystem</title>
+      <link>//localhost:1313/id/tags/versioncontrolsystem/</link>
+      <pubDate>Sun, 06 Oct 2024 13:09:21 +0000</pubDate>
+      
+      <guid>//localhost:1313/id/tags/versioncontrolsystem/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+  </channel>
+</rss>

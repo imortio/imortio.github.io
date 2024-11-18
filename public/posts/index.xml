@@ -1,281 +1,460 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on imortio</title><link>https://imortio.github.io/posts/</link><description>Recent content in Posts on imortio</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 11 Oct 2024 09:08:37 +0000</lastBuildDate><atom:link href="https://imortio.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Git Gud with Git</title><link>https://imortio.github.io/posts/git/introduction-to-git/</link><pubDate>Sun, 06 Oct 2024 13:09:21 +0000</pubDate><guid>https://imortio.github.io/posts/git/introduction-to-git/</guid><description>A newbie introduction to Git</description><content>&lt;h1 id="git-a-tool-to-ease-your-way-to-be-_git-gud_-at-version-control">Git, a tool to ease your way to be &lt;em>git gud&lt;/em> at version control.&lt;/h1>
-&lt;p>Git, it has been a popular thing among developers for some years, yet so many people still didnt know what is it exactly. You may have come upon it while scrolling through social media, or maybe forums like stackoverflow, where individuals quite oftenly mention it in their comments or posts like &lt;em>&amp;ldquo;Heyya check out this!, my latest Github project, you can use git to fetch and modify it yourself&amp;rdquo;&lt;/em> or something else like that which mention Git or Github.&lt;/p>
-&lt;p>Perhaps you&amp;rsquo;re thinking, &amp;ldquo;What makes Git so special?&amp;rdquo;, &amp;ldquo;Why are so many people raving about it?&amp;rdquo;, or &amp;ldquo;What&amp;rsquo;s in it for me if I start using it?&amp;rdquo; Don&amp;rsquo;t worry, you aren&amp;rsquo;t alone!, because i had the same question when i first encountered Git too :)&lt;/p>
-&lt;p>In this article, we&amp;rsquo;ll explain what Git is, why it&amp;rsquo;s become such an important tool in the coding industry, but how about Github?, it can be learned later, as for Git and Github is pretty related each other, so by the time youre learning Git you will be get used to Github too, and trust me, it can make your life as a programmer be much simpler.&lt;/p>
-&lt;p>&lt;img alt="Git Logo" src="https://imortio.github.io/posts/git/introduction-to-git/git.png">&lt;/p>
-&lt;p>So, Git is a distributed version control system, which allow you to monitor changes to your code over time, eventually making it simple to see what has been changed and by whom ( even if only changed by yourself it may be confusing tho if you have a bunch of revisions ). It&amp;rsquo;s ideal for collaborating with other developers since it allows everyone to work on the same project without disagreement. Git also makes you able to maintain many versions of your project, allowing you to try out new ideas without messing with the main project, return to prior versions, or work on numerous features at the same time without losing progress.&lt;/p>
-&lt;h2 id="why-i-must-use-it-im-fine-with-multiple-different-file-that-represent-different-versions">Why i must use it? im fine with multiple different file that represent different versions&lt;/h2>
-&lt;p>Yeah you may say that when you have like less than 15 different file revision, but how about if you want to make a quick rollback?, how about if you just mess up with your other files? or just simply cant remember which one is the right file when its come to rollback?, this is where Git do its job, Git simply said serve as your &amp;lsquo;checkpoint&amp;rsquo; tool (in git we call it commits), which allow you to make &amp;lsquo;quicksave&amp;rsquo; without duplicating the file or making you directory become mess, you also able to give label to your commits so you may simply take a quick glance at the commit history and know which one that you want to use.&lt;/p>
-&lt;p>Imagine like you are having a task to make movie script, but its keep getting revised everytime you show them, you may change some or many things in each revision, but there is a probability that you may use some scene from older scenario to adds up to your newer revision, so you save the files with different name, like &lt;strong>scene.txt&lt;/strong>, then get revised so you renamed to &lt;strong>scene_old.txt&lt;/strong>, its get revised again so you need to rename it to &lt;strong>scene_old_1.txt&lt;/strong>, then again and again, until you have like 20 different files, such a painful things aint it?&lt;/p>
-&lt;p>Your files will eventualy looks like this
-&lt;img alt="duplicated file" src="https://imortio.github.io/posts/git/introduction-to-git/example.png">&lt;/p>
-&lt;p>So much different files, although they do serve the same purpose, so why would you want this mess? when you can just make one file with many different versions using git, then your directory will look much neat and organized, like this:
-&lt;img alt="after using git" src="https://imortio.github.io/posts/git/introduction-to-git/example_2.png">&lt;/p>
-&lt;p>&amp;ldquo;But where is the different versions of the file? i dont see it anywhere else in my directory?&amp;rdquo; they are saved on Git, and you can check your revisions on Git, here is how to do it.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git log
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>And you will see the results like this:
-&lt;img alt="git log result" src="https://imortio.github.io/posts/git/introduction-to-git/gitlog.png">&lt;/p>
-&lt;p>As you can see there is 3 different versions but the main file is still one file, along with the commit messages that is helpful to keep your changes on track with some related keywords without the need to look into each file manually.&lt;/p>
-&lt;p>That is just a bit about Git, there is much more Git capabilities like comparing two versions and see what changes between them, also makes much different version of file at the same time while keeping the main file intact, and much more other powerful things, but no rush, we will learn about them later step by step, lets be sure to have well understanding about one topic first before move to other, it would make you easier to learn about anything else furthermore.&lt;/p>
-&lt;h3 id="conclusion">conclusion&lt;/h3>
-&lt;p>Now, have you see a bit of the usefulness of git?, exactly, so here is the conclusion:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>What is Git?&lt;/strong>:
-Git is a distributed version control system that helps you track changes in your project, manage different versions, and collaborate efficiently with others.&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>What is Version Control System?&lt;/strong>:
-Version Control System, also know as VCS, is essential for managing code changes efficiently. It tracks changes, allows easy rollback, and supports collaboration without file clutter.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Why use Git?&lt;/strong>:
-It organizes your project, saves you from having multiple duplicate files, and allows you to roll back changes easily without cluttering your directory.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>What exactly is Commit and Track Changes?&lt;/strong>:
-A commit is a checkpoint, or snapshot of your project&amp;rsquo;s state at a specific time, including a unique identifier and a description of changes. Tracking changes allows you to monitor modifications, identifying who changes them and when, it helps to maintaining a project history.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>So in short, Git is an essential tool for developers, and the sooner you familiarize yourself with it, the more neat and efficient your coding journey will become. Stay tuned for the next article where we dive into how to install and configure Git on your devices. see ya! :D&lt;/p>
-&lt;blockquote>
-&lt;p>&lt;strong>Note:&lt;/strong> This article is not yet perfect, could you provide suggestions for changes or feedback so I can improve it later. Feel free to contact me anytime if you&amp;rsquo;d like here: &lt;a href="mailto:nixvoid@proton.me">Email Me&lt;/a> or &lt;a href="https://wa.me/+6282284528116">Chat Me on Whatsapp&lt;/a>&lt;/p>
-&lt;/blockquote></content></item><item><title>Git-#1: Installation</title><link>https://imortio.github.io/posts/git/1-git-installation/</link><pubDate>Fri, 11 Oct 2024 09:08:37 +0000</pubDate><guid>https://imortio.github.io/posts/git/1-git-installation/</guid><description>This guide walks you through installing Git on Windows, macOS, and Linux. It provides clear steps to ensure a smooth setup, making it accessible for newcomers. Start using Git for version control and streamline your software development process.</description><content>&lt;p>Hello everyone, we&amp;rsquo;re back with me again. Last time we learned a little bit about what Git is, I&amp;rsquo;m sure you&amp;rsquo;re all already understands it, what it does and why is it important, so in this article we&amp;rsquo;ll continue our topic to:&lt;/p>
-&lt;h1 id="git-1-installing-git">Git-#1: Installing Git&lt;/h1>
-&lt;p>To get started with Git, first install it on your machine. This method will differ depending on the operating system you&amp;rsquo;re using, but don&amp;rsquo;t worry, I&amp;rsquo;ve got you covered whether you&amp;rsquo;re using Linux, macOS, or, &lt;em>cough&lt;/em> Windows.&lt;/p>
-&lt;h2 id="1-installing-git-on-linux">1. Installing Git on Linux&lt;/h2>
-&lt;p>If you’re a Linux user, installing Git is quite straightforward. You can use your package manager to install it. The commands below will get Git installed depending on your distribution:&lt;/p>
-&lt;ul>
-&lt;li>on Debian/Ubuntu based systems:
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>sudo apt update
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo apt install git
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
-&lt;/ul>
-&lt;p>If you receive any prompts indicating that additional packages or dependencies are required for the installation, just enter Y or Yes, it will automatically install all packages that essentially needed by the main package that you&amp;rsquo;re installing, so it may run smoothly without you have to setting up manually so much, this also apply for any others linux distros.&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>on Fedora based systems:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>sudo dnf install git
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
-&lt;li>
-&lt;p>on Arch based systems:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>sudo pacman -S git
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
-&lt;/ul>
-&lt;p>and so on, because linux have about hundred of distros which come from certain linux distribution like Ubuntu, Fedora, Arch and others so you can use your own so you can use your own package manager based on the distribution you’re running. Whether it&amp;rsquo;s apt on Ubuntu, dnf on Fedora, or pacman on Arch, the steps are pretty similar across the board. Just replace the command with the appropriate package manager for your system. If you&amp;rsquo;re not sure which package manager your distribution uses, a quick web search will point you in the right direction, i cant write all the possible package managers because it will be too long for this article.&lt;/p>
-&lt;p>And if you’re one of the &lt;em>real power&lt;/em> users, like Gentoo enthusiasts, you’re already compiling it from source anyway. No need for instructions here—you know what you’re doing.&lt;/p>
-&lt;p>after the installation complete you can run this command to see what version of git youre installing&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git --version
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>if it show the version numbers like this then you all set:
-&lt;img alt="git &amp;ndash;version result" src="https://imortio.github.io/posts/git/1-git-installation/gitversion.png">&lt;/p>
-&lt;h2 id="2-installing-git-on-macos">2. Installing Git on macOS&lt;/h2>
-&lt;p>macOS users have a few ways to install Git, but the easiest method is through Homebrew, the package manager for macOS:&lt;/p>
-&lt;p>1.First, install Homebrew if you haven&amp;rsquo;t already by running:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>/bin/bash -c &lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#66d9ef">$(&lt;/span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh&lt;span style="color:#66d9ef">)&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Homebrew simplifies package management on macOS, making it easy to install and update software.&lt;/p>
-&lt;ol start="2">
-&lt;li>Once Homebrew is installed, you can install Git with:&lt;/li>
-&lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>brew git install
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Alternatively, Git might already be installed on your system. Run the following command to check:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git --version
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>If Git is installed, it will show the version number. If not, it will prompt you to install the Xcode Command Line Tools, which includes Git.&lt;/p>
-&lt;blockquote>
-&lt;p>Sorry i cant provide the image of result from installing git on macOS since im not yet using macOS system, will update the image soon after i got a device with macOS&lt;/p>
-&lt;/blockquote>
-&lt;h2 id="3-installing-git-on-windows">3. Installing Git on Windows&lt;/h2>
-&lt;p>Git is available for Windows systems, and while it may not be as seamless as on other platforms, it certainly gets the job done. It&amp;rsquo;s awkward, but hey, it can be done. Here&amp;rsquo;s the step-by-step guide to drag yourself through it:&lt;/p>
-&lt;h3 id="1-download-git-for-windows">1. Download Git for Windows&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>Head to &lt;a href="https://gitforwindows.org">gitforwindows.org&lt;/a> and click the &lt;strong>Download&lt;/strong> button.&lt;/p>
-&lt;ul>
-&lt;li>The site will automatically detect your system and download the correct installer.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>If the automatic download fails, you&amp;rsquo;ll be redirected to GitHub. Scroll down to the &lt;strong>Assets&lt;/strong> section. Select either:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Git-2.47.0-32-bit.exe&lt;/strong> (for 32-bit Windows)&lt;/li>
-&lt;li>&lt;strong>Git-2.47.0-64-bit.exe&lt;/strong> (for 64-bit Windows)&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img alt="GitHub assets" src="https://imortio.github.io/posts/git/1-git-installation/gitwindowsselect.png">&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="2-run-the-installer">2. Run the Installer&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>After the download, double-click the installer (&lt;code>.exe&lt;/code> file). You’ll see a greeting screen. Just click &lt;strong>Next&lt;/strong> like a good Windows user.&lt;/p>
-&lt;p>&lt;img alt="Greeting screen" src="https://imortio.github.io/posts/git/1-git-installation/greet.png">&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="3-choose-installation-path">3. Choose Installation Path&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>The installer will ask where to install Git. The default path is fine, but if you feel adventurous, go ahead and change it. Otherwise, just click &lt;strong>Next&lt;/strong>.&lt;/p>
-&lt;p>&lt;img alt="Choose path" src="https://imortio.github.io/posts/git/1-git-installation/location.png">&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="4-select-components">4. Select Components&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>You’ll now see a bunch of checkboxes with options for additional components. The defaults are fine—no need to mess around unless you know what you’re doing. Click &lt;strong>Next&lt;/strong>.&lt;/p>
-&lt;p>&lt;img alt="Component selection" src="https://imortio.github.io/posts/git/1-git-installation/component.png">&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="5-start-menu-folder">5. Start Menu Folder&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>This screen asks where Git should create shortcuts in the Start Menu. Just leave it as is, because, let’s be real, does anyone actually use the Start Menu anymore? Click &lt;strong>Next&lt;/strong>.&lt;/p>
-&lt;p>&lt;img alt="Start menu folder" src="https://imortio.github.io/posts/git/1-git-installation/folder.png">&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="6-choose-your-text-editor">6. Choose Your Text Editor&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>Git will now ask which text editor you’d like to use by default. You can pick whatever you prefer. If you&amp;rsquo;re undecided:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>VS Code&lt;/strong> is a solid choice for beginners.&lt;/li>
-&lt;li>&lt;strong>Atom&lt;/strong>, &lt;strong>Sublime Text&lt;/strong>, or &lt;strong>Notepad++&lt;/strong> also work if you&amp;rsquo;re into simplicity.&lt;/li>
-&lt;/ul>
-&lt;p>Pick your editor and click &lt;strong>Next&lt;/strong>.&lt;/p>
-&lt;p>&lt;img alt="Editor selection" src="https://imortio.github.io/posts/git/1-git-installation/editorselect.png">&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="7-adjust-initial-branch-name">7. Adjust Initial Branch Name&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>The installer will prompt you to set the default branch name for new repositories. By default, it’s &lt;strong>master&lt;/strong>, but the world’s moving to &lt;strong>main&lt;/strong> for inclusivity. Select &lt;strong>Override the default and set &amp;lsquo;main&amp;rsquo;&lt;/strong>. Click &lt;strong>Next&lt;/strong>.&lt;/p>
-&lt;p>&lt;img alt="Branch name" src="https://imortio.github.io/posts/git/1-git-installation/branchname.png">&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="8-choose-path-environment">8. Choose Path Environment&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>Now, you’ll see options for Git’s PATH environment. Just select &lt;strong>Git from the command line and also from 3rd-party software&lt;/strong> (unless you have a specific reason not to). Click &lt;strong>Next&lt;/strong>.&lt;/p>
-&lt;p>&lt;img alt="Path environment" src="https://imortio.github.io/posts/git/1-git-installation/commandline.png">&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="9-choose-ssh-executable">9. Choose SSH Executable&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>You’ll be asked which SSH executable to use. Leave it on the default, &lt;strong>Use bundled OpenSSH&lt;/strong>, unless you have a custom SSH setup. Click &lt;strong>Next&lt;/strong>.&lt;/p>
-&lt;p>&lt;img alt="SSH selection" src="https://imortio.github.io/posts/git/1-git-installation/ssh.png">&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="10-select-https-backend">10. Select HTTPS Backend&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>Git will now ask which backend to use for HTTPS. Stick with &lt;strong>Use the OpenSSL library&lt;/strong> for maximum compatibility and security. Click &lt;strong>Next&lt;/strong>.&lt;/p>
-&lt;p>&lt;img alt="HTTPS backend" src="https://imortio.github.io/posts/git/1-git-installation/ssl.png">&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="11-configure-line-endings">11. Configure Line Endings&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>This screen is about how Git handles line endings between Windows (&lt;code>CRLF&lt;/code>) and Unix-based systems (&lt;code>LF&lt;/code>). Keep the default &lt;strong>Checkout Windows-style, commit Unix-style line endings&lt;/strong>. Click &lt;strong>Next&lt;/strong>.&lt;/p>
-&lt;p>&lt;img alt="Line endings" src="https://imortio.github.io/posts/git/1-git-installation/lineending.png">&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="12-choose-terminal-emulator">12. Choose Terminal Emulator&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>Git offers two options for terminal emulators: &lt;strong>MinTTY&lt;/strong> or the &lt;strong>Windows default console&lt;/strong>. Select &lt;strong>Windows default console&lt;/strong> to avoid confusion (Windows users have it rough enough). Click &lt;strong>Next&lt;/strong>.&lt;/p>
-&lt;p>&lt;img alt="Terminal emulator" src="https://imortio.github.io/posts/git/1-git-installation/terminal.png">&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="13-default-git-pull-behavior">13. Default &lt;code>git pull&lt;/code> Behavior&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>Decide how Git should handle &lt;code>git pull&lt;/code>. Leave it on the default: &lt;strong>Default (fast-forward or merge)&lt;/strong>. Click &lt;strong>Next&lt;/strong>.&lt;/p>
-&lt;p>&lt;img alt="Git pull behavior" src="https://imortio.github.io/posts/git/1-git-installation/gitpull.png">&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="14-git-credential-manager">14. Git Credential Manager&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>You’ll be prompted to choose how Git should manage credentials. Stick with &lt;strong>Git Credential Manager&lt;/strong> (recommended). Click &lt;strong>Next&lt;/strong>.&lt;/p>
-&lt;p>&lt;img alt="Git credentials" src="https://imortio.github.io/posts/git/1-git-installation/credential.png">&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="15-configure-extra-options">15. Configure Extra Options&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>Here, you&amp;rsquo;ll see some optional settings like enabling experimental features. Skip these unless you’re feeling adventurous. Click &lt;strong>Next&lt;/strong>.&lt;/p>
-&lt;p>&lt;img alt="Extra options" src="https://imortio.github.io/posts/git/1-git-installation/extraoptions.png">&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="16-install-git">16. Install Git&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>Finally, click &lt;strong>Install&lt;/strong> to start the process. A progress bar will appear as Git gets installed on your system.
-&lt;img alt="Installing progress" src="https://imortio.github.io/posts/git/1-git-installation/installing.png">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Once the installation completes, you’ll be asked whether you want to launch &lt;strong>Git Bash&lt;/strong> and view release notes. Uncheck &lt;strong>View Release Notes&lt;/strong> unless you want to dive into the minutiae. Click &lt;strong>Finish&lt;/strong>.
-&lt;img alt="Install complete" src="https://imortio.github.io/posts/git/1-git-installation/installcomplete.png">&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>Congratulations, you&amp;rsquo;ve survived installing Git on Windows. Now you can finally work with Git on a system that&amp;rsquo;s like the IKEA version of development environments—barely functional but somehow gets the job done.&lt;/p>
-&lt;p>Now let&amp;rsquo;s check the version and verify that git has been successfully installed by pressing Windows key&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> + R, and type cmd in the search bar, then click enter, write this command in cmd:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git --version
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img alt="Git Version on Windows" src="https://imortio.github.io/posts/git/1-git-installation/gitversionwin.png">&lt;/p>
-&lt;p>If you’re feeling masochistic, you can even use Git Bash&amp;hellip;&lt;/p>
-&lt;hr>
-&lt;h2 id="configuring-git">Configuring Git&lt;/h2>
-&lt;p>Now that you&amp;rsquo;ve successfully installed Git (and survived Windows&amp;rsquo; mediocre interface), it’s time to configure it. This will let Git know who you are and how to handle certain behaviors when you start working with repositories.&lt;/p>
-&lt;h3 id="1-set-your-username-and-email">1. Set Your Username and Email&lt;/h3>
-&lt;p>Git tracks changes by associating them with a name and email. So, you’ll need to let Git know who you are. Open cmd and run these commands:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git config --global user.name &lt;span style="color:#e6db74">&amp;#34;Your Username&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git config --global user.email &lt;span style="color:#e6db74">&amp;#34;your.email@example.com&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Replace &lt;code>&amp;quot;Your Username&amp;quot;&lt;/code> and &lt;code>&amp;quot;your.email@example.com&amp;quot;&lt;/code> with your actual details, if possible and you have Github account, be sure to make the username and email be the same as in your Github, unless you want your commits to look like they were made by a bot. This is importantly useful when you went to collaborate with others or simply when doing &lt;code>git push&lt;/code> to your Github remote repositories ( we will cover about this later ).&lt;/p>
-&lt;h3 id="2-set-a-default-editor">2. Set a Default Editor&lt;/h3>
-&lt;p>You’ll want to set a default text editor for Git to use when writing commit messages or merging changes. If you skipped this step during the installation (or just want to change it), here’s how you can set it up in Git:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git config --global core.editor &lt;span style="color:#e6db74">&amp;#34;nano&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Replace &lt;code>&amp;quot;nano&amp;quot;&lt;/code> with the text editor of your choice. For instance, you can use:&lt;/p>
-&lt;ul>
-&lt;li>&lt;code>code --wait&lt;/code> for Visual Studio Code, this is the best for beginners&lt;/li>
-&lt;li>&lt;code>subl --wait&lt;/code> for Sublime Text, this one is beginner friendly too and considerably more lighter, but provide less features than Visual Studio Code&lt;/li>
-&lt;li>&lt;code>notepad++&lt;/code> if you&amp;rsquo;re stuck in 2007 and still using Notepad++, or when you want more simpler option&lt;/li>
-&lt;/ul>
-&lt;h3 id="3-enable-colored-output-so-you-dont-go-blind">3. Enable Colored Output (So You Don’t Go Blind)&lt;/h3>
-&lt;p>Git&amp;rsquo;s output can be overwhelming, especially if you’re working in a terminal where everything is the same shade of &amp;ldquo;bleh&amp;rdquo;. To make things easier on your eyes, enable colored output:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git config --global color.ui true
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Now, instead of a wall of text, you’ll get colorful syntax highlighting to differentiate between added, deleted, or modified lines.&lt;/p>
-&lt;h3 id="4-set-up-default-branch-name-to-main">4. Set Up Default Branch Name to &lt;code>main&lt;/code>&lt;/h3>
-&lt;p>Since Git now recommends using &lt;code>main&lt;/code> instead of &lt;code>master&lt;/code> as the default branch name, it’s a good idea to set this globally so all your future repositories start with &lt;code>main&lt;/code> right off the bat:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git config --global init.defaultBranch main
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This saves you from the hassle of renaming the branch every time you create a new repository.&lt;/p>
-&lt;h3 id="5-enable-credential-caching">5. Enable Credential Caching&lt;/h3>
-&lt;p>If you’re tired of typing your username and password every time you push to a remote, you can enable credential caching. This will store your credentials for a while so you don&amp;rsquo;t have to keep entering them:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git config --global credential.helper cache
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>By default, Git will cache your credentials for 15 minutes. You can set a longer cache timeout if you&amp;rsquo;re especially lazy (or efficient, depending on your perspective):&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git config --global credential.helper &lt;span style="color:#e6db74">&amp;#39;cache --timeout=3600&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This will keep your credentials cached for an hour.&lt;/p>
-&lt;h3 id="6-set-default-merge-and-rebase-preferences">6. Set Default Merge and Rebase Preferences&lt;/h3>
-&lt;p>You can also set how Git should handle &lt;code>git pull&lt;/code>—whether it should try to merge, rebase, or fast-forward. Most people stick with merge (because change is scary), but if you want to set a different behavior:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git config --global pull.rebase false
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>To default to rebase instead of merging:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git config --global pull.rebase true
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>If you’re not sure, stick with &lt;code>merge&lt;/code>—it’s the least complicated option.&lt;/p>
-&lt;h3 id="7-check-your-settings">7. Check Your Settings&lt;/h3>
-&lt;p>To see the Git configuration you&amp;rsquo;ve set up, run:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git config --list
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This is the result of mine:
-&lt;img alt="Git config &amp;ndash;list result" src="https://imortio.github.io/posts/git/1-git-installation/gitconfig.png">&lt;/p>
-&lt;p>Mine is not too much because I only set the most important ones. Anyway, it will display your global configuration, including your username, email, and other settings like color preferences. If anything goes wrong, re-run the command with the correct values.&lt;/p>
-&lt;hr>
-&lt;h3 id="wrapping-up-configuration">Wrapping Up Configuration&lt;/h3>
-&lt;p>By now, you should have Git fully installed and configured on your machine, whether you&amp;rsquo;re on Linux, macOS, or yes, even Windows. You&amp;rsquo;ve also set up your username and email, which are crucial for tracking changes across your repositories. With Git up and running, you&amp;rsquo;re ready to start managing your projects with powerful version control.&lt;/p>
-&lt;p>Next, we&amp;rsquo;ll dive into creating your first repository, linking it to GitHub, and going over the basic commands that will take your Git knowledge to the next level. Stay tuned and see you in the next topic :D&lt;/p>
-&lt;blockquote>
-&lt;p>&lt;strong>Note:&lt;/strong> This article is not yet perfect, could you provide suggestions for changes or feedback so I can improve it later. Feel free to contact me anytime if you&amp;rsquo;d like here: &lt;a href="mailto:nixvoid@proton.me">Email Me&lt;/a> or &lt;a href="https://wa.me/+6282284528116">Chat Me on Whatsapp&lt;/a>&lt;/p>
-&lt;/blockquote>
-&lt;div class="footnotes" role="doc-endnotes">
-&lt;hr>
-&lt;ol>
-&lt;li id="fn:1">
-&lt;p>The Windows key on the keyboard usually has the Windows logo, located at the bottom left of the keyboard between the Ctrl and Alt keys.&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;/div></content></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on imortio</title>
+    <link>//localhost:1313/posts/</link>
+    <description>Recent content in Posts on imortio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 04 Nov 2024 14:20:42 +0000</lastBuildDate><atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Gud with Git</title>
+      <link>//localhost:1313/posts/git/introduction-to-git/</link>
+      <pubDate>Sun, 06 Oct 2024 13:09:21 +0000</pubDate>
+      
+      <guid>//localhost:1313/posts/git/introduction-to-git/</guid>
+      <description>A newbie introduction to Git</description>
+      <content>&lt;h1 id=&#34;git-a-tool-to-ease-your-way-to-be-_git-gud_-at-version-control&#34;&gt;Git, a tool to ease your way to be &lt;em&gt;git gud&lt;/em&gt; at version control.&lt;/h1&gt;
+&lt;p&gt;Git, it has been a popular thing among developers for some years, yet so many people still didnt know what is it exactly. You may have come upon it while scrolling through social media, or maybe forums like stackoverflow, where individuals quite oftenly mention it in their comments or posts like &lt;em&gt;&amp;ldquo;Heyya check out this!, my latest Github project, you can use git to fetch and modify it yourself&amp;rdquo;&lt;/em&gt; or something else like that which mention Git or Github.&lt;/p&gt;
+&lt;p&gt;Perhaps you&amp;rsquo;re thinking, &amp;ldquo;What makes Git so special?&amp;rdquo;, &amp;ldquo;Why are so many people raving about it?&amp;rdquo;, or &amp;ldquo;What&amp;rsquo;s in it for me if I start using it?&amp;rdquo; Don&amp;rsquo;t worry, you aren&amp;rsquo;t alone!, because i had the same question when i first encountered Git too :)&lt;/p&gt;
+&lt;p&gt;In this article, we&amp;rsquo;ll explain what Git is, why it&amp;rsquo;s become such an important tool in the coding industry, but how about Github?, it can be learned later, as for Git and Github is pretty related each other, so by the time youre learning Git you will be get used to Github too, and trust me, it can make your life as a programmer be much simpler.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Git Logo&#34; src=&#34;//localhost:1313/posts/git/introduction-to-git/git.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;So, Git is a distributed version control system, which allow you to monitor changes to your code over time, eventually making it simple to see what has been changed and by whom ( even if only changed by yourself it may be confusing tho if you have a bunch of revisions ). It&amp;rsquo;s ideal for collaborating with other developers since it allows everyone to work on the same project without disagreement. Git also makes you able to maintain many versions of your project, allowing you to try out new ideas without messing with the main project, return to prior versions, or work on numerous features at the same time without losing progress.&lt;/p&gt;
+&lt;h2 id=&#34;why-i-must-use-it-im-fine-with-multiple-different-file-that-represent-different-versions&#34;&gt;Why i must use it? im fine with multiple different file that represent different versions&lt;/h2&gt;
+&lt;p&gt;Yeah you may say that when you have like less than 15 different file revision, but how about if you want to make a quick rollback?, how about if you just mess up with your other files? or just simply cant remember which one is the right file when its come to rollback?, this is where Git do its job, Git simply said serve as your &amp;lsquo;checkpoint&amp;rsquo; tool (in git we call it commits), which allow you to make &amp;lsquo;quicksave&amp;rsquo; without duplicating the file or making you directory become mess, you also able to give label to your commits so you may simply take a quick glance at the commit history and know which one that you want to use.&lt;/p&gt;
+&lt;p&gt;Imagine like you are having a task to make movie script, but its keep getting revised everytime you show them, you may change some or many things in each revision, but there is a probability that you may use some scene from older scenario to adds up to your newer revision, so you save the files with different name, like &lt;strong&gt;scene.txt&lt;/strong&gt;, then get revised so you renamed to &lt;strong&gt;scene_old.txt&lt;/strong&gt;, its get revised again so you need to rename it to &lt;strong&gt;scene_old_1.txt&lt;/strong&gt;, then again and again, until you have like 20 different files, such a painful things aint it?&lt;/p&gt;
+&lt;p&gt;Your files will eventualy looks like this
+&lt;img alt=&#34;duplicated file&#34; src=&#34;//localhost:1313/posts/git/introduction-to-git/example.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;So much different files, although they do serve the same purpose, so why would you want this mess? when you can just make one file with many different versions using git, then your directory will look much neat and organized, like this:
+&lt;img alt=&#34;after using git&#34; src=&#34;//localhost:1313/posts/git/introduction-to-git/example_2.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;But where is the different versions of the file? i dont see it anywhere else in my directory?&amp;rdquo; they are saved on Git, and you can check your revisions on Git, here is how to do it.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git log
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And you will see the results like this:
+&lt;img alt=&#34;git log result&#34; src=&#34;//localhost:1313/posts/git/introduction-to-git/gitlog.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;As you can see there is 3 different versions but the main file is still one file, along with the commit messages that is helpful to keep your changes on track with some related keywords without the need to look into each file manually.&lt;/p&gt;
+&lt;p&gt;That is just a bit about Git, there is much more Git capabilities like comparing two versions and see what changes between them, also makes much different version of file at the same time while keeping the main file intact, and much more other powerful things, but no rush, we will learn about them later step by step, lets be sure to have well understanding about one topic first before move to other, it would make you easier to learn about anything else furthermore.&lt;/p&gt;
+&lt;h3 id=&#34;conclusion&#34;&gt;conclusion&lt;/h3&gt;
+&lt;p&gt;Now, have you see a bit of the usefulness of git?, exactly, so here is the conclusion:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;What is Git?&lt;/strong&gt;:
+Git is a distributed version control system that helps you track changes in your project, manage different versions, and collaborate efficiently with others.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;What is Version Control System?&lt;/strong&gt;:
+Version Control System, also know as VCS, is essential for managing code changes efficiently. It tracks changes, allows easy rollback, and supports collaboration without file clutter.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Why use Git?&lt;/strong&gt;:
+It organizes your project, saves you from having multiple duplicate files, and allows you to roll back changes easily without cluttering your directory.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;What exactly is Commit and Track Changes?&lt;/strong&gt;:
+A commit is a checkpoint, or snapshot of your project&amp;rsquo;s state at a specific time, including a unique identifier and a description of changes. Tracking changes allows you to monitor modifications, identifying who changes them and when, it helps to maintaining a project history.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So in short, Git is an essential tool for developers, and the sooner you familiarize yourself with it, the more neat and efficient your coding journey will become. Stay tuned for the next article where we dive into how to install and configure Git on your devices. see ya! :D&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This article is not yet perfect, could you provide suggestions for changes or feedback so I can improve it later. Feel free to contact me anytime if you&amp;rsquo;d like here: &lt;a href=&#34;mailto:nixvoid@proton.me&#34;&gt;Email Me&lt;/a&gt; or &lt;a href=&#34;https://wa.me/+6282284528116&#34;&gt;Chat Me on Whatsapp&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Git-#1: Installation</title>
+      <link>//localhost:1313/posts/git/1-git-installation/</link>
+      <pubDate>Fri, 11 Oct 2024 09:08:37 +0000</pubDate>
+      
+      <guid>//localhost:1313/posts/git/1-git-installation/</guid>
+      <description>This guide walks you through installing Git on Windows, macOS, and Linux. It provides clear steps to ensure a smooth setup, making it accessible for newcomers. Start using Git for version control and streamline your software development process.</description>
+      <content>&lt;p&gt;Hello everyone, we&amp;rsquo;re back with me again. Last time we learned a little bit about what Git is, I&amp;rsquo;m sure you&amp;rsquo;re all already understands it, what it does and why is it important, so in this article we&amp;rsquo;ll continue our topic to:&lt;/p&gt;
+&lt;h1 id=&#34;git-1-installing-git&#34;&gt;Git-#1: Installing Git&lt;/h1&gt;
+&lt;p&gt;To get started with Git, first install it on your machine. This method will differ depending on the operating system you&amp;rsquo;re using, but don&amp;rsquo;t worry, I&amp;rsquo;ve got you covered whether you&amp;rsquo;re using Linux, macOS, or, &lt;em&gt;cough&lt;/em&gt; Windows.&lt;/p&gt;
+&lt;h2 id=&#34;1-installing-git-on-linux&#34;&gt;1. Installing Git on Linux&lt;/h2&gt;
+&lt;p&gt;If you’re a Linux user, installing Git is quite straightforward. You can use your package manager to install it. The commands below will get Git installed depending on your distribution:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;on Debian/Ubuntu based systems:
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt update
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you receive any prompts indicating that additional packages or dependencies are required for the installation, just enter Y or Yes, it will automatically install all packages that essentially needed by the main package that you&amp;rsquo;re installing, so it may run smoothly without you have to setting up manually so much, this also apply for any others linux distros.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;on Fedora based systems:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo dnf install git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;on Arch based systems:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo pacman -S git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;and so on, because linux have about hundred of distros which come from certain linux distribution like Ubuntu, Fedora, Arch and others so you can use your own so you can use your own package manager based on the distribution you’re running. Whether it&amp;rsquo;s apt on Ubuntu, dnf on Fedora, or pacman on Arch, the steps are pretty similar across the board. Just replace the command with the appropriate package manager for your system. If you&amp;rsquo;re not sure which package manager your distribution uses, a quick web search will point you in the right direction, i cant write all the possible package managers because it will be too long for this article.&lt;/p&gt;
+&lt;p&gt;And if you’re one of the &lt;em&gt;real power&lt;/em&gt; users, like Gentoo enthusiasts, you’re already compiling it from source anyway. No need for instructions here—you know what you’re doing.&lt;/p&gt;
+&lt;p&gt;after the installation complete you can run this command to see what version of git youre installing&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git --version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;if it show the version numbers like this then you all set:
+&lt;img alt=&#34;git &amp;ndash;version result&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/gitversion.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2-installing-git-on-macos&#34;&gt;2. Installing Git on macOS&lt;/h2&gt;
+&lt;p&gt;macOS users have a few ways to install Git, but the easiest method is through Homebrew, the package manager for macOS:&lt;/p&gt;
+&lt;p&gt;1.First, install Homebrew if you haven&amp;rsquo;t already by running:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/bin/bash -c &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Homebrew simplifies package management on macOS, making it easy to install and update software.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Once Homebrew is installed, you can install Git with:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew git install
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Alternatively, Git might already be installed on your system. Run the following command to check:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git --version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If Git is installed, it will show the version number. If not, it will prompt you to install the Xcode Command Line Tools, which includes Git.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Sorry i cant provide the image of result from installing git on macOS since im not yet using macOS system, will update the image soon after i got a device with macOS&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;3-installing-git-on-windows&#34;&gt;3. Installing Git on Windows&lt;/h2&gt;
+&lt;p&gt;Git is available for Windows systems, and while it may not be as seamless as on other platforms, it certainly gets the job done. It&amp;rsquo;s awkward, but hey, it can be done. Here&amp;rsquo;s the step-by-step guide to drag yourself through it:&lt;/p&gt;
+&lt;h3 id=&#34;1-download-git-for-windows&#34;&gt;1. Download Git for Windows&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Head to &lt;a href=&#34;https://gitforwindows.org&#34;&gt;gitforwindows.org&lt;/a&gt; and click the &lt;strong&gt;Download&lt;/strong&gt; button.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The site will automatically detect your system and download the correct installer.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If the automatic download fails, you&amp;rsquo;ll be redirected to GitHub. Scroll down to the &lt;strong&gt;Assets&lt;/strong&gt; section. Select either:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Git-2.47.0-32-bit.exe&lt;/strong&gt; (for 32-bit Windows)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Git-2.47.0-64-bit.exe&lt;/strong&gt; (for 64-bit Windows)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;GitHub assets&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/gitwindowsselect.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;2-run-the-installer&#34;&gt;2. Run the Installer&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;After the download, double-click the installer (&lt;code&gt;.exe&lt;/code&gt; file). You’ll see a greeting screen. Just click &lt;strong&gt;Next&lt;/strong&gt; like a good Windows user.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Greeting screen&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/greet.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;3-choose-installation-path&#34;&gt;3. Choose Installation Path&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The installer will ask where to install Git. The default path is fine, but if you feel adventurous, go ahead and change it. Otherwise, just click &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Choose path&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/location.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;4-select-components&#34;&gt;4. Select Components&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;You’ll now see a bunch of checkboxes with options for additional components. The defaults are fine—no need to mess around unless you know what you’re doing. Click &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Component selection&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/component.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;5-start-menu-folder&#34;&gt;5. Start Menu Folder&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;This screen asks where Git should create shortcuts in the Start Menu. Just leave it as is, because, let’s be real, does anyone actually use the Start Menu anymore? Click &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Start menu folder&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/folder.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;6-choose-your-text-editor&#34;&gt;6. Choose Your Text Editor&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Git will now ask which text editor you’d like to use by default. You can pick whatever you prefer. If you&amp;rsquo;re undecided:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VS Code&lt;/strong&gt; is a solid choice for beginners.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Atom&lt;/strong&gt;, &lt;strong&gt;Sublime Text&lt;/strong&gt;, or &lt;strong&gt;Notepad++&lt;/strong&gt; also work if you&amp;rsquo;re into simplicity.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pick your editor and click &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Editor selection&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/editorselect.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;7-adjust-initial-branch-name&#34;&gt;7. Adjust Initial Branch Name&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The installer will prompt you to set the default branch name for new repositories. By default, it’s &lt;strong&gt;master&lt;/strong&gt;, but the world’s moving to &lt;strong&gt;main&lt;/strong&gt; for inclusivity. Select &lt;strong&gt;Override the default and set &amp;lsquo;main&amp;rsquo;&lt;/strong&gt;. Click &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Branch name&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/branchname.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;8-choose-path-environment&#34;&gt;8. Choose Path Environment&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Now, you’ll see options for Git’s PATH environment. Just select &lt;strong&gt;Git from the command line and also from 3rd-party software&lt;/strong&gt; (unless you have a specific reason not to). Click &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Path environment&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/commandline.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;9-choose-ssh-executable&#34;&gt;9. Choose SSH Executable&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;You’ll be asked which SSH executable to use. Leave it on the default, &lt;strong&gt;Use bundled OpenSSH&lt;/strong&gt;, unless you have a custom SSH setup. Click &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;SSH selection&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/ssh.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;10-select-https-backend&#34;&gt;10. Select HTTPS Backend&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Git will now ask which backend to use for HTTPS. Stick with &lt;strong&gt;Use the OpenSSL library&lt;/strong&gt; for maximum compatibility and security. Click &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;HTTPS backend&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/ssl.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;11-configure-line-endings&#34;&gt;11. Configure Line Endings&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;This screen is about how Git handles line endings between Windows (&lt;code&gt;CRLF&lt;/code&gt;) and Unix-based systems (&lt;code&gt;LF&lt;/code&gt;). Keep the default &lt;strong&gt;Checkout Windows-style, commit Unix-style line endings&lt;/strong&gt;. Click &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Line endings&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/lineending.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;12-choose-terminal-emulator&#34;&gt;12. Choose Terminal Emulator&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Git offers two options for terminal emulators: &lt;strong&gt;MinTTY&lt;/strong&gt; or the &lt;strong&gt;Windows default console&lt;/strong&gt;. Select &lt;strong&gt;Windows default console&lt;/strong&gt; to avoid confusion (Windows users have it rough enough). Click &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Terminal emulator&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/terminal.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;13-default-git-pull-behavior&#34;&gt;13. Default &lt;code&gt;git pull&lt;/code&gt; Behavior&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Decide how Git should handle &lt;code&gt;git pull&lt;/code&gt;. Leave it on the default: &lt;strong&gt;Default (fast-forward or merge)&lt;/strong&gt;. Click &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Git pull behavior&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/gitpull.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;14-git-credential-manager&#34;&gt;14. Git Credential Manager&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;You’ll be prompted to choose how Git should manage credentials. Stick with &lt;strong&gt;Git Credential Manager&lt;/strong&gt; (recommended). Click &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Git credentials&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/credential.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;15-configure-extra-options&#34;&gt;15. Configure Extra Options&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Here, you&amp;rsquo;ll see some optional settings like enabling experimental features. Skip these unless you’re feeling adventurous. Click &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Extra options&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/extraoptions.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;16-install-git&#34;&gt;16. Install Git&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Finally, click &lt;strong&gt;Install&lt;/strong&gt; to start the process. A progress bar will appear as Git gets installed on your system.
+&lt;img alt=&#34;Installing progress&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/installing.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Once the installation completes, you’ll be asked whether you want to launch &lt;strong&gt;Git Bash&lt;/strong&gt; and view release notes. Uncheck &lt;strong&gt;View Release Notes&lt;/strong&gt; unless you want to dive into the minutiae. Click &lt;strong&gt;Finish&lt;/strong&gt;.
+&lt;img alt=&#34;Install complete&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/installcomplete.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Congratulations, you&amp;rsquo;ve survived installing Git on Windows. Now you can finally work with Git on a system that&amp;rsquo;s like the IKEA version of development environments—barely functional but somehow gets the job done.&lt;/p&gt;
+&lt;p&gt;Now let&amp;rsquo;s check the version and verify that git has been successfully installed by pressing Windows key&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; + R, and type cmd in the search bar, then click enter, write this command in cmd:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git --version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img alt=&#34;Git Version on Windows&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/gitversionwin.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If you’re feeling masochistic, you can even use Git Bash&amp;hellip;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;configuring-git&#34;&gt;Configuring Git&lt;/h2&gt;
+&lt;p&gt;Now that you&amp;rsquo;ve successfully installed Git (and survived Windows&amp;rsquo; mediocre interface), it’s time to configure it. This will let Git know who you are and how to handle certain behaviors when you start working with repositories.&lt;/p&gt;
+&lt;h3 id=&#34;1-set-your-username-and-email&#34;&gt;1. Set Your Username and Email&lt;/h3&gt;
+&lt;p&gt;Git tracks changes by associating them with a name and email. So, you’ll need to let Git know who you are. Open cmd and run these commands:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git config --global user.name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Your Username&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git config --global user.email &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;your.email@example.com&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Replace &lt;code&gt;&amp;quot;Your Username&amp;quot;&lt;/code&gt; and &lt;code&gt;&amp;quot;your.email@example.com&amp;quot;&lt;/code&gt; with your actual details, if possible and you have Github account, be sure to make the username and email be the same as in your Github, unless you want your commits to look like they were made by a bot. This is importantly useful when you went to collaborate with others or simply when doing &lt;code&gt;git push&lt;/code&gt; to your Github remote repositories ( we will cover about this later ).&lt;/p&gt;
+&lt;h3 id=&#34;2-set-a-default-editor&#34;&gt;2. Set a Default Editor&lt;/h3&gt;
+&lt;p&gt;You’ll want to set a default text editor for Git to use when writing commit messages or merging changes. If you skipped this step during the installation (or just want to change it), here’s how you can set it up in Git:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git config --global core.editor &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;nano&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Replace &lt;code&gt;&amp;quot;nano&amp;quot;&lt;/code&gt; with the text editor of your choice. For instance, you can use:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;code --wait&lt;/code&gt; for Visual Studio Code, this is the best for beginners&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;subl --wait&lt;/code&gt; for Sublime Text, this one is beginner friendly too and considerably more lighter, but provide less features than Visual Studio Code&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;notepad++&lt;/code&gt; if you&amp;rsquo;re stuck in 2007 and still using Notepad++, or when you want more simpler option&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-enable-colored-output-so-you-dont-go-blind&#34;&gt;3. Enable Colored Output (So You Don’t Go Blind)&lt;/h3&gt;
+&lt;p&gt;Git&amp;rsquo;s output can be overwhelming, especially if you’re working in a terminal where everything is the same shade of &amp;ldquo;bleh&amp;rdquo;. To make things easier on your eyes, enable colored output:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git config --global color.ui true
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now, instead of a wall of text, you’ll get colorful syntax highlighting to differentiate between added, deleted, or modified lines.&lt;/p&gt;
+&lt;h3 id=&#34;4-set-up-default-branch-name-to-main&#34;&gt;4. Set Up Default Branch Name to &lt;code&gt;main&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Since Git now recommends using &lt;code&gt;main&lt;/code&gt; instead of &lt;code&gt;master&lt;/code&gt; as the default branch name, it’s a good idea to set this globally so all your future repositories start with &lt;code&gt;main&lt;/code&gt; right off the bat:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git config --global init.defaultBranch main
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This saves you from the hassle of renaming the branch every time you create a new repository.&lt;/p&gt;
+&lt;h3 id=&#34;5-enable-credential-caching&#34;&gt;5. Enable Credential Caching&lt;/h3&gt;
+&lt;p&gt;If you’re tired of typing your username and password every time you push to a remote, you can enable credential caching. This will store your credentials for a while so you don&amp;rsquo;t have to keep entering them:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git config --global credential.helper cache
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;By default, Git will cache your credentials for 15 minutes. You can set a longer cache timeout if you&amp;rsquo;re especially lazy (or efficient, depending on your perspective):&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git config --global credential.helper &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;cache --timeout=3600&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will keep your credentials cached for an hour.&lt;/p&gt;
+&lt;h3 id=&#34;6-set-default-merge-and-rebase-preferences&#34;&gt;6. Set Default Merge and Rebase Preferences&lt;/h3&gt;
+&lt;p&gt;You can also set how Git should handle &lt;code&gt;git pull&lt;/code&gt;—whether it should try to merge, rebase, or fast-forward. Most people stick with merge (because change is scary), but if you want to set a different behavior:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git config --global pull.rebase false
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To default to rebase instead of merging:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git config --global pull.rebase true
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you’re not sure, stick with &lt;code&gt;merge&lt;/code&gt;—it’s the least complicated option.&lt;/p&gt;
+&lt;h3 id=&#34;7-check-your-settings&#34;&gt;7. Check Your Settings&lt;/h3&gt;
+&lt;p&gt;To see the Git configuration you&amp;rsquo;ve set up, run:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git config --list
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This is the result of mine:
+&lt;img alt=&#34;Git config &amp;ndash;list result&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/gitconfig.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Mine is not too much because I only set the most important ones. Anyway, it will display your global configuration, including your username, email, and other settings like color preferences. If anything goes wrong, re-run the command with the correct values.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;wrapping-up-configuration&#34;&gt;Wrapping Up Configuration&lt;/h3&gt;
+&lt;p&gt;By now, you should have Git fully installed and configured on your machine, whether you&amp;rsquo;re on Linux, macOS, or yes, even Windows. You&amp;rsquo;ve also set up your username and email, which are crucial for tracking changes across your repositories. With Git up and running, you&amp;rsquo;re ready to start managing your projects with powerful version control.&lt;/p&gt;
+&lt;p&gt;Next, we&amp;rsquo;ll dive into creating your first repository, and then creating a new github account. Stay tuned and see you in the next topic :D&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This article is not yet perfect, could you provide suggestions for changes or feedback so I can improve it later. Feel free to contact me anytime if you&amp;rsquo;d like here: &lt;a href=&#34;mailto:nixvoid@proton.me&#34;&gt;Email Me&lt;/a&gt; or &lt;a href=&#34;https://wa.me/+6282284528116&#34;&gt;Chat Me on Whatsapp&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;The Windows key on the keyboard usually has the Windows logo, located at the bottom left of the keyboard between the Ctrl and Alt keys.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Git-#2: Account &amp; Repo</title>
+      <link>//localhost:1313/posts/git/2-account-and-repo/</link>
+      <pubDate>Mon, 04 Nov 2024 14:20:42 +0000</pubDate>
+      
+      <guid>//localhost:1313/posts/git/2-account-and-repo/</guid>
+      <description>In this chapter, you’ll initialize a Git repository, create a new Github account and setup it a bit. By the end, you&amp;rsquo;ll be set up to handle local and remote version control effortlessly.</description>
+      <content>&lt;p&gt;Hello, back with me again to continue our subject, sorry for my slow update, i was busy for a few weeks before because i attend many event both from my college and my friends, but anyway lets skip that and we move to&lt;/p&gt;
+&lt;h1 id=&#34;git-2-account--repo&#34;&gt;Git-#2: Account &amp;amp; Repo&lt;/h1&gt;
+&lt;p&gt;In this chapter, we’ll focus on the foundational steps of using Git effectively. We’ll cover how to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a new Git repository: We’ll walk through the process of initializing a repository on your local machine.&lt;/li&gt;
+&lt;li&gt;Creating Github account: We will learn how to make a new Github account and even learn how to make a remote repositoy inside it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So then, let’s dish it out&lt;/p&gt;
+&lt;h2 id=&#34;1-creating-new-repository&#34;&gt;1. Creating New Repository&lt;/h2&gt;
+&lt;p&gt;To create your first git repository, you may follow this guide below:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open your terminal
+Launch your own terminal (or command prompt if youre using Windows)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Navigate to your desired project folder
+Use &lt;code&gt;cd&lt;/code&gt; command to quickly change to the folder where you want to create your repository. For an example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd path/to/your/repo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;On Windows instead it will be using &lt;code&gt;\&lt;/code&gt;, so the command would looks like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd path&lt;span style=&#34;color:#ae81ff&#34;&gt;\t&lt;/span&gt;o&lt;span style=&#34;color:#ae81ff&#34;&gt;\y&lt;/span&gt;our&lt;span style=&#34;color:#ae81ff&#34;&gt;\r&lt;/span&gt;epo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Initialize the repository
+Once you have been in your desired folder, run this command to make current folder as a new Git repository:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git init
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This command will sets up a new .git subdirectory inside current folder, which contain all the metadata (it works like identity in real life) for the repository.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Verify the Repo
+You can confirm that the repository has been succesfully created by checking the status using:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git status
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If the repo is succesfully created, you will see a message indicating that youre in default branch. Usually it will be named &lt;code&gt;master&lt;/code&gt; or &lt;code&gt;main&lt;/code&gt;, but since in the previous article you has been set the default branch name to &lt;code&gt;main&lt;/code&gt; then it will automatically set to &lt;code&gt;main&lt;/code&gt; from the default itself&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thats it, now you has been successfully create your first Git repo, now its time to add some file in it, then after that you can check again using
+&lt;code&gt;bash git status &lt;/code&gt;
+And you will see some output like this
+&lt;img alt=&#34;git status after add new file&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/gitstatusaftd.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You can set the file to &lt;code&gt;staged&lt;/code&gt; by using this command:
+&lt;code&gt;bash git add filename &lt;/code&gt;
+Or if you want to set all file to &lt;code&gt;staged&lt;/code&gt; you may use this instead
+&lt;code&gt;bash git add . &lt;/code&gt;
+After that run status check again and you will see some result like this:
+&lt;img alt=&#34;git after staged&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/gitaftstaged.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Then to &lt;code&gt;commit&lt;/code&gt; the staged files to git memory, you need to run this command:
+&lt;code&gt;bash git commit -m &amp;quot;first commit&amp;quot; &lt;/code&gt;
+The &lt;code&gt;-m&lt;/code&gt; flag is used to tell git that you want to add description message to your commit, so i will be less confusing if you have many commits. You can change the &amp;ldquo;first commit&amp;rdquo; to anything you want, but in case of collaborations, you must keep it lean and clear.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Congrats! you have been create you first ever Git repo and even put your own first commit!.Now we can move to just a lil bit more advanced topic on&lt;/p&gt;
+&lt;h2 id=&#34;2-creating-github-account&#34;&gt;2. Creating Github Account&lt;/h2&gt;
+&lt;p&gt;After you learn how to create you own first Git repo, you might to create one Github account so later you can save your projects on cloud. Creating a Github account is quite simple, here is few steps on how to do it:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open &lt;a href=&#34;https://github.com/&#34;&gt;github.com&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Open your browser and type &lt;a href=&#34;https://github.com/&#34;&gt;github.com&lt;/a&gt; in the search bar and hit enter, you will be lead to a webpage like this:
+&lt;img alt=&#34;Github Homepage&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/1-homepage.webp&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Click on Sign Up
+&lt;ul&gt;
+&lt;li&gt;Move you cursor to the right top of the page and click on Sign Up&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Fill your own Github credentials
+&lt;ul&gt;
+&lt;li&gt;After you click Sign Up, you will be taken to another page to register you as a new Github User, fill your own credentials like Username, Email, and Password. Also you might want to adjust your username and email with the one that in your local git config to avoid conflict or further confusion, which refer to &lt;a href=&#34;//localhost:1313/posts/git/1-git-installation/#configuring-git&#34;&gt;this guide&lt;/a&gt; if you have forgotten:
+&lt;img alt=&#34;Sign Up field filled&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/2-credentials.webp&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Solve the captcha
+&lt;ul&gt;
+&lt;li&gt;Usually you will be given some captcha, this is for security purpose so just solve it as youre a human
+&lt;img alt=&#34;Captcha&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/3-captcha.webp&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Verify your email
+&lt;ul&gt;
+&lt;li&gt;Usually, for security matter, Github will need you to confirm the email that you&amp;rsquo;ve been used for registering at Github, so go check your email inbox for any mail from Github, then confirm your email by clicking Verify
+&lt;img alt=&#34;Email Verify Confirmated&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/4-verify.webp&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Describe yourself
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Describe what are you and what is your purpose on making your github account, like this:
+&lt;img alt=&#34;Describe yourself via &#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/5-describe.webp&#34;&gt;
+&lt;img alt=&#34;Choose your purposes&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/6-purpose.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You may customize the selection as you wish with available options, but in most case the options that i&amp;rsquo;ve selected is the most common among new Github users.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Choose Github plan
+Github gives you some options of plans, its like premium Github or something else similars, for advanced or big developers it could be useful but for basic usage or personal its enough just by using Free plan, after all, the free version too has been cover almost all the basic and essential function of git, you really dont need all the fancy thing in premium features if just for basic personal uses
+&lt;img alt=&#34;Choose Free Plan&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/7-freeplan.webp&#34;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thats it, done, now you all set, but you must be want to know how to create your Github repo, so here is how you can do it:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open your Github dashboard
+&lt;ul&gt;
+&lt;li&gt;Open your Github dashboard and navigate to repository tab
+&lt;img alt=&#34;Github Dashboard&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/8-dashboard.webp&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Click &lt;code&gt;Create Repository&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;You have no repository at first, so to create one just click on &lt;code&gt;Create Repository&lt;/code&gt; and you will be prompted to a form like this:
+&lt;img alt=&#34;Git Repository Creation Form&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/8.5-repocreation.webp&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Fill repository info
+&lt;ul&gt;
+&lt;li&gt;Now just fill the form with your desired, like the repository name, repository type (Private/Public), and License for your repository&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Finish your repo creation
+&lt;ul&gt;
+&lt;li&gt;After you fill your repo info, then click Create, and you very own repo will be quickly created, you can find it on Repository Tab, but usually also shown on profile dashboard.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Congrats! now you has been again successfully create a new repository for your Github repo, after that you will be shown some way on how you want to connect or access you github repo from any of your devices.
+&lt;img alt=&#34;Github repo connection&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/9-connecting.webp&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;wrapping-up&#34;&gt;Wrapping Up&lt;/h2&gt;
+&lt;p&gt;now you might want link it to your local git repo ( on you computer / device ), there is some ways on how to do it like the instructions above, its pretty clear and straightforward, but maybe some of you still didnt understand because you have no familiarity with command line yet, its okay, i will cover about how to link and connect your remote github repos to your local machine (i.e your devices), stay tuned for the next topic, and see ya :D&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This article is not yet perfect, could you provide suggestions for changes or feedback so I can improve it later. Feel free to contact me anytime if you&amp;rsquo;d like here: &lt;a href=&#34;mailto:nixvoid@proton.me&#34;&gt;Email Me&lt;/a&gt; or &lt;a href=&#34;https://wa.me/+6282284528116&#34;&gt;Chat Me on Whatsapp&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Choosing a license is importantly critical for your repositories, its clarify what is your repo status and availability to public, without license they can&amp;rsquo;t have right to access, copy, modify, or do anything to your repository, its crucial especialy when you deal with collaboration projects, if you confused with which license you want to use, you may use &lt;a href=&#34;https://choosealicense.com&#34;&gt;this preference&lt;/a&gt; of licenses to determine which one is suitable for you current project repo.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

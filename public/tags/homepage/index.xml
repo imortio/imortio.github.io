@@ -1,3 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Homepage on imortio</title><link>https://imortio.github.io/tags/homepage/</link><description>Recent content in Homepage on imortio</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 06 Oct 2024 12:21:01 +0000</lastBuildDate><atom:link href="https://imortio.github.io/tags/homepage/index.xml" rel="self" type="application/rss+xml"/><item><title>Welcome!</title><link>https://imortio.github.io/</link><pubDate>Sun, 06 Oct 2024 12:21:01 +0000</pubDate><guid>https://imortio.github.io/</guid><description>&lt;h2 id="welcome-to-my-personal-page">Welcome to my personal page&lt;/h2>
-&lt;p>i hope you are enjoying the seamless reading experience on my web site, and hopefully may my content provide you with the needed help&lt;/p></description><content>&lt;h2 id="welcome-to-my-personal-page">Welcome to my personal page&lt;/h2>
-&lt;p>i hope you are enjoying the seamless reading experience on my web site, and hopefully may my content provide you with the needed help&lt;/p></content></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homepage on imortio</title>
+    <link>//localhost:1313/tags/homepage/</link>
+    <description>Recent content in Homepage on imortio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 06 Oct 2024 12:21:01 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/homepage/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome!</title>
+      <link>//localhost:1313/</link>
+      <pubDate>Sun, 06 Oct 2024 12:21:01 +0000</pubDate>
+      
+      <guid>//localhost:1313/</guid>
+      <description>&lt;h2 id=&#34;welcome-to-my-personal-page&#34;&gt;Welcome to my personal page&lt;/h2&gt;
+&lt;p&gt;i hope you are enjoying the seamless reading experience on my web site, and hopefully may my content provide you with the needed help&lt;/p&gt;</description>
+      <content>&lt;h2 id=&#34;welcome-to-my-personal-page&#34;&gt;Welcome to my personal page&lt;/h2&gt;
+&lt;p&gt;i hope you are enjoying the seamless reading experience on my web site, and hopefully may my content provide you with the needed help&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

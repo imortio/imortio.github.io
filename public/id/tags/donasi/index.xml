@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Donasi on imortio</title>
+    <link>//localhost:1313/id/tags/donasi/</link>
+    <description>Recent content in Donasi on imortio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id</language>
+    <lastBuildDate>Sun, 20 Oct 2024 05:00:33 +0000</lastBuildDate><atom:link href="//localhost:1313/id/tags/donasi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Donasi</title>
+      <link>//localhost:1313/id/donation/</link>
+      <pubDate>Sun, 20 Oct 2024 05:00:33 +0000</pubDate>
+      
+      <guid>//localhost:1313/id/donation/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+  </channel>
+</rss>

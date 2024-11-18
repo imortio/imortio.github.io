@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Repo on imortio</title>
+    <link>//localhost:1313/id/tags/repo/</link>
+    <description>Recent content in Repo on imortio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id</language>
+    <lastBuildDate>Mon, 04 Nov 2024 14:20:47 +0000</lastBuildDate><atom:link href="//localhost:1313/id/tags/repo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git-#2: Akun &amp; Repo</title>
+      <link>//localhost:1313/id/posts/git/2-akun-dan-repo/</link>
+      <pubDate>Mon, 04 Nov 2024 14:20:47 +0000</pubDate>
+      
+      <guid>//localhost:1313/id/posts/git/2-akun-dan-repo/</guid>
+      <description>Pada bab ini, kamu akan menginisialisasi sebuah repositori Git, membuat akun Github baru dan mengaturnya sedikit. Pada akhirnya, kamu akan dapat menghandle kontrol versi projekmu baik secara lokal maupun remote</description>
+      <content>&lt;p&gt;Halo, kembali bersamaku lagi untuk melanjutkan topik kita sebelumnya, maaf untuk update materi yang lama karena aku sedikit sibuk beberapa minggu belakangan menghadiri acara dari kampus dan juga dari temanku, tapi bagaimanapun juga, mari kita lewati bagian itu dan kita lanjut ke&lt;/p&gt;
+&lt;h1 id=&#34;git-2-akun--repo&#34;&gt;Git-#2: Akun &amp;amp; Repo&lt;/h1&gt;
+&lt;p&gt;Pada bab ini kita akan fokus ke beberapa langkah fundamental dalam menggunakan Git secara efektif. Kita akan membahas tentang bagaimana untuk:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Membuat sebuah repositori Git baru: Kita akan melewati proses meninisialisasi sebuah repositori pada perangkatmu&lt;/li&gt;
+&lt;li&gt;Membuat akun Github: Kita akan belajar bagaimana membuat akun Github baru dan bahkan belajar bagaimana membuat sebuah remote repositori didalamnya.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Jadi, ayo kita mulai&lt;/p&gt;
+&lt;h2 id=&#34;1-membuat-repositori-baru&#34;&gt;1. Membuat repositori baru&lt;/h2&gt;
+&lt;p&gt;Untuk membuat repositori git pertamamu, kalian bisa mengikuti panduan dibawah ini:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Buka Terminal
+Jalankan terminal pilihanmu (atau command prompt jika kalian menggunakan Windows)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Arahkan ke folder projek yang kalian inginkan
+Gunakan perintah &lt;code&gt;cd&lt;/code&gt; untuk berganti folder secara cepat ke folder yang ingin kamu jadikan sebagai repositori, sebagai contoh:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd jalur/ke/repositori/milikmu
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Pada Windows kita menggunakan &lt;code&gt;\&lt;/code&gt; daripada &lt;code&gt;/&lt;/code&gt;, jadi perintahnya akan terlihat seperti ini:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd jalur&lt;span style=&#34;color:#ae81ff&#34;&gt;\k&lt;/span&gt;e&lt;span style=&#34;color:#ae81ff&#34;&gt;\r&lt;/span&gt;epositori&lt;span style=&#34;color:#ae81ff&#34;&gt;\m&lt;/span&gt;ilikmu
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Inisialisasi repositorinya
+Setelah kalian berada di folder yang kalian inginkan, jalankan perintah ini untuk membuta folder saat ini kmau berada menjadi sebuah repositori Git yang baru:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git init
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Perintah ini akan membangun sebuah subdirektori baru bernama .git didalam folder yang kalian tempati sekarang, yang memuat semua metadata (ini bekerja seperti hal nya identitas pada dunia nyata) untuk repositori ini.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Verifikasi repositori tersebut
+Kalian bisa mengkonfirmasi bahwa repositori tersebut sudah berhasil dibuat dengan mengecek statusnya menggunakan:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git status
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Jika reponya sudah berhasil dibuat, kalian akan melihat sebuah pesan menandakan bahwa kalian berada di cabang default. Biasanya cabang ini akan bernama &lt;code&gt;master&lt;/code&gt; atau &lt;code&gt;main&lt;/code&gt;, tapi sejak pada artikel sebelumnya kalian sudah mengatur cabang defaultnya menjadi &lt;code&gt;main&lt;/code&gt; maka secara otomatis semua cabang default kalian akan bernama &lt;code&gt;main&lt;/code&gt; termasuk yang ini juga.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Begitulah caranya membuat sebuah repoitori Git, dan kalian sudah berhasil membuat satu, sekarang waktunya menambahkan berapa file kedalamnya, dan setelah itu kalian bisa cek lagi meggunakan
+&lt;code&gt;bash git status &lt;/code&gt;
+Dan kalian akan melihat beberapa output seperti ini
+&lt;img alt=&#34;git status setelah ditambahkan file baru&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/gitstatusaftd.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Kalian bisa mengatur status filenya mnejadi &lt;code&gt;staged&lt;/code&gt; dengan menggunakan perintah:
+&lt;code&gt;bash git add namefile &lt;/code&gt;
+Atau jika kalian ingin mengatur semua file menjadi &lt;code&gt;staged&lt;/code&gt; kalian bisa menggunakan ini:
+&lt;code&gt;bash git add . &lt;/code&gt;
+Setelah itu jalankan perintah untuk mengecek status lagi dan kalian akan melihat hasil seperti ini:
+&lt;img alt=&#34;git setelah staged&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/gitaftstaged.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Kemudian untuk melakukan &lt;code&gt;commit&lt;/code&gt; terhadap file yang sudah distaging ke penyimpanan git, kalian perlu menjalankan perintah ini:
+&lt;code&gt;bash git commit -m &amp;quot;commit pertama&amp;quot; &lt;/code&gt;
+flag &lt;code&gt;-m&lt;/code&gt; digunakan untuk memberitahu git bahwa kalian ingin menambakan pesan deskripsi ke commit yang kalian lakukan, jadi nantinya kalian tidak akan bingung jika sudah memiliki banyak commit. Kalian bisa mengganti &amp;ldquo;commit pertama&amp;rdquo; ke kalimat apapun yang kalian inginkan, tapi jika kalian berkolaborasi dengan developer lain kalian harus membuatnya tetap bersih dan jelas.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Selamat! kalian sudah membuat repositori Git pertama dan bahkan menambahkan commit kedalamnya!. Sekarang kita akan ke topik berikutnya yang sedikit lebih lanjut yaitu&lt;/p&gt;
+&lt;h2 id=&#34;2-membuat-akun-github&#34;&gt;2. Membuat Akun Github&lt;/h2&gt;
+&lt;p&gt;Setelah kalian belajar bagaimana membuat repositori Git pertama kalinya, kalian mungkin ingin membuat sebuah akun Github agar nantinya bisa menyimpan projek kalian di penyimpanan cloud nantinya. Membuat akun Github itu cukup simpel, berikut beberapa langkah untuk membuatnya:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Buka &lt;a href=&#34;https://github.com/&#34;&gt;github.com&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Buka browser kalian dan ketikkan &lt;a href=&#34;https://github.com&#34;&gt;github.com&lt;/a&gt; pada bar pencarian dan tekan enter, kalian akan dibawa ke halaman web seperti ini:
+&lt;img alt=&#34;Beranda Github&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/1-homepage.webp&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Klik pada Sign Up
+&lt;ul&gt;
+&lt;li&gt;Pindahkan kursor ke kanan atas halaman dan tekan Sign Up&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Isi kredensial Githubmu
+&lt;ul&gt;
+&lt;li&gt;Setelah kalian mengklik Sign Up, kalian akan dibawa ke halaman lain untuk mendaftarkan diri sebagai pengguna Github yang baru, isi kredensialmu seperti Username, Email, dan Password. Kalian juga mungkin ingin menyamakan username dan email dengan yang kalian gunakan pada pada perangkat kalian sebelumnya untuk menghindari konflik dan kebingungan nantinya, yang mengacu pada &lt;a href=&#34;//localhost:1313/id/posts/git/1-pemasangan-git/#mengkonfigurasi-git&#34;&gt;panduan ini&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title>Git-#2: Akun &amp; Repo :: imortio</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Pelajari bagaimana membuat dan mengatur repositori git pertamamu, membuat akun Github baru, dan membuat repositori remote didalamnya. Bab ini memperkenalkan Github, memandumu dalam mengatur sehingga nyaman dalam memanajemen kode versi baik secara lokal maupun remote." />
+<meta name="keywords" content="Git, Repo Git, Git untuk pemula, Menginstal Git, Alat pengembangan perangkat lunak" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/id/posts/git/2-akun-dan-repo/" />
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MYYQG4Y6DM"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MYYQG4Y6DM');
+        }
+      </script>
+
+
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/buttons.min.2bc533403a27dfe0e93105a92502b42ce4587e2e4a87d9f7d349e51e16e09478.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/code.min.00125962708925857e7b66dbc58391d55be1191a3d0ce2034de8c9cd2c481c36.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/fonts.min.90c955c31dd7c0e05aae3d4f583d4d8a2af799d69c961337eaf2a825063a55dd.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/footer.min.2e3eb191baee58dd05a9f0104ac1fab0827bca7c64dafe0b2579f934c33a1d69.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/header.min.b6fb4423cf82a9f9d7abc9cd010223fa3d70a6526a3f28f8e17d814c06e18f9e.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/main.min.1d8be2dd1b5de9fdaed058c8c59fcf4485f36619574abfb47ed0cfda4812c16d.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/menu.min.83637a90d903026bc280d3f82f96ceb06c5fc72b7c1a8d686afb5bbf818a29f7.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/pagination.min.82f6400eae7c7c6dc3c866733c2ec0579e4089608fea69400ff85b3880aa0d3c.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/post.min.fc74ca360273c1d828da3c02b8174eba435607b369d98418ccc6f2243cd4e75d.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/prism.min.9023bbc24533d09e97a51a0a42a5a7bfe4c591ae167c5551fb1d2191d11977c0.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/syntax.min.cc789ed9377260d7949ea4c18781fc58959a89287210fe4edbff44ebfc1511b6.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/terminal.min.736caf886baa67df630c4cde30fbdc5115122eb74c6246f15a31401344bfa2f0.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+<link rel="stylesheet" href="//localhost:1313/terminal.css">
+
+
+
+
+<link rel="shortcut icon" href="//localhost:1313/favicon.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="id" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Git-#2: Akun &amp; Repo">
+<meta property="og:description" content="Pelajari bagaimana membuat dan mengatur repositori git pertamamu, membuat akun Github baru, dan membuat repositori remote didalamnya. Bab ini memperkenalkan Github, memandumu dalam mengatur sehingga nyaman dalam memanajemen kode versi baik secara lokal maupun remote." />
+<meta property="og:url" content="//localhost:1313/id/posts/git/2-akun-dan-repo/" />
+<meta property="og:site_name" content="imortio" />
+
+  
+  
+    
+  
+  <meta property="og:image" content="//localhost:1313/posts/git/2-account-and-repo/images/cover.webp">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2024-11-04 14:20:47 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+<meta http-equiv='cache-control' content='no-cache'> 
+<meta http-equiv='expires' content='0'> 
+<meta http-equiv='pragma' content='no-cache'>
+
+
+</head>
+<body>
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    imortio
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/id/posts">Postingan</a></li>
+        
+      
+      
+        <hr />
+        
+          <li>
+            <a href="//localhost:1313/">English</a>
+          </li>
+        
+          <li>
+            <a href="//localhost:1313/id/">Bahasa Indonesia</a>
+          </li>
+        
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+      <ul class="menu menu--desktop menu--language-selector">
+  <li class="menu__trigger">Bahasa Indonesia&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        <li><a href="//localhost:1313/">English</a></li>
+      
+        <li><a href="//localhost:1313/id/">Bahasa Indonesia</a></li>
+      
+    </ul>
+  </li>
+</ul>
+
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/id/posts" >Postingan</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/id/posts/git/2-akun-dan-repo/">Git-#2: Akun &amp; Repo</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2024-11-04</time><span class="post-author">imortio</span><span class="post-reading-time">6 menit baca (1095 kata)</span></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="//localhost:1313/id/tags/tutorial/">tutorial</a>&nbsp;
+      
+      #<a href="//localhost:1313/id/tags/git/">git</a>&nbsp;
+      
+      #<a href="//localhost:1313/id/tags/init/">init</a>&nbsp;
+      
+      #<a href="//localhost:1313/id/tags/repo/">repo</a>&nbsp;
+      
+      #<a href="//localhost:1313/id/tags/kontrolsistemversi/">kontrolsistemversi</a>&nbsp;
+      
+    </span>
+  
+  
+  <img src="/posts/git/2-account-and-repo/images/cover.webp"
+    class="post-cover"
+    alt="Git-#2: Akun & Repo"
+    title="Cover Image" />
+
+
+  
+
+  <div class="post-content"><div>
+        <p>Halo, kembali bersamaku lagi untuk melanjutkan topik kita sebelumnya, maaf untuk update materi yang lama karena aku sedikit sibuk beberapa minggu belakangan menghadiri acara dari kampus dan juga dari temanku, tapi bagaimanapun juga, mari kita lewati bagian itu dan kita lanjut ke</p>
+<h1 id="git-2-akun--repo">Git-#2: Akun &amp; Repo<a href="#git-2-akun--repo" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Pada bab ini kita akan fokus ke beberapa langkah fundamental dalam menggunakan Git secara efektif. Kita akan membahas tentang bagaimana untuk:</p>
+<ul>
+<li>Membuat sebuah repositori Git baru: Kita akan melewati proses meninisialisasi sebuah repositori pada perangkatmu</li>
+<li>Membuat akun Github: Kita akan belajar bagaimana membuat akun Github baru dan bahkan belajar bagaimana membuat sebuah remote repositori didalamnya.</li>
+</ul>
+<p>Jadi, ayo kita mulai</p>
+<h2 id="1-membuat-repositori-baru">1. Membuat repositori baru<a href="#1-membuat-repositori-baru" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Untuk membuat repositori git pertamamu, kalian bisa mengikuti panduan dibawah ini:</p>
+<ol>
+<li>
+<p>Buka Terminal
+Jalankan terminal pilihanmu (atau command prompt jika kalian menggunakan Windows)</p>
+</li>
+<li>
+<p>Arahkan ke folder projek yang kalian inginkan
+Gunakan perintah <code>cd</code> untuk berganti folder secara cepat ke folder yang ingin kamu jadikan sebagai repositori, sebagai contoh:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd jalur/ke/repositori/milikmu
+</span></span></code></pre></div><p>Pada Windows kita menggunakan <code>\</code> daripada <code>/</code>, jadi perintahnya akan terlihat seperti ini:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd jalur<span style="color:#ae81ff">\k</span>e<span style="color:#ae81ff">\r</span>epositori<span style="color:#ae81ff">\m</span>ilikmu
+</span></span></code></pre></div></li>
+<li>
+<p>Inisialisasi repositorinya
+Setelah kalian berada di folder yang kalian inginkan, jalankan perintah ini untuk membuta folder saat ini kmau berada menjadi sebuah repositori Git yang baru:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git init
+</span></span></code></pre></div><p>Perintah ini akan membangun sebuah subdirektori baru bernama .git didalam folder yang kalian tempati sekarang, yang memuat semua metadata (ini bekerja seperti hal nya identitas pada dunia nyata) untuk repositori ini.</p>
+</li>
+<li>
+<p>Verifikasi repositori tersebut
+Kalian bisa mengkonfirmasi bahwa repositori tersebut sudah berhasil dibuat dengan mengecek statusnya menggunakan:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git status
+</span></span></code></pre></div><p>Jika reponya sudah berhasil dibuat, kalian akan melihat sebuah pesan menandakan bahwa kalian berada di cabang default. Biasanya cabang ini akan bernama <code>master</code> atau <code>main</code>, tapi sejak pada artikel sebelumnya kalian sudah mengatur cabang defaultnya menjadi <code>main</code> maka secara otomatis semua cabang default kalian akan bernama <code>main</code> termasuk yang ini juga.</p>
+</li>
+</ol>
+<p>Begitulah caranya membuat sebuah repoitori Git, dan kalian sudah berhasil membuat satu, sekarang waktunya menambahkan berapa file kedalamnya, dan setelah itu kalian bisa cek lagi meggunakan
+<code>bash git status </code>
+Dan kalian akan melihat beberapa output seperti ini
+<img alt="git status setelah ditambahkan file baru" src="/posts/git/2-account-and-repo/images/gitstatusaftd.webp"></p>
+<p>Kalian bisa mengatur status filenya mnejadi <code>staged</code> dengan menggunakan perintah:
+<code>bash git add namefile </code>
+Atau jika kalian ingin mengatur semua file menjadi <code>staged</code> kalian bisa menggunakan ini:
+<code>bash git add . </code>
+Setelah itu jalankan perintah untuk mengecek status lagi dan kalian akan melihat hasil seperti ini:
+<img alt="git setelah staged" src="/posts/git/2-account-and-repo/images/gitaftstaged.webp"></p>
+<p>Kemudian untuk melakukan <code>commit</code> terhadap file yang sudah distaging ke penyimpanan git, kalian perlu menjalankan perintah ini:
+<code>bash git commit -m &quot;commit pertama&quot; </code>
+flag <code>-m</code> digunakan untuk memberitahu git bahwa kalian ingin menambakan pesan deskripsi ke commit yang kalian lakukan, jadi nantinya kalian tidak akan bingung jika sudah memiliki banyak commit. Kalian bisa mengganti &ldquo;commit pertama&rdquo; ke kalimat apapun yang kalian inginkan, tapi jika kalian berkolaborasi dengan developer lain kalian harus membuatnya tetap bersih dan jelas.</p>
+<hr>
+<p>Selamat! kalian sudah membuat repositori Git pertama dan bahkan menambahkan commit kedalamnya!. Sekarang kita akan ke topik berikutnya yang sedikit lebih lanjut yaitu</p>
+<h2 id="2-membuat-akun-github">2. Membuat Akun Github<a href="#2-membuat-akun-github" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Setelah kalian belajar bagaimana membuat repositori Git pertama kalinya, kalian mungkin ingin membuat sebuah akun Github agar nantinya bisa menyimpan projek kalian di penyimpanan cloud nantinya. Membuat akun Github itu cukup simpel, berikut beberapa langkah untuk membuatnya:</p>
+<ol>
+<li>Buka <a href="https://github.com/">github.com</a>
+<ul>
+<li>Buka browser kalian dan ketikkan <a href="https://github.com">github.com</a> pada bar pencarian dan tekan enter, kalian akan dibawa ke halaman web seperti ini:
+<img alt="Beranda Github" src="/posts/git/2-account-and-repo/images/1-homepage.webp"></li>
+</ul>
+</li>
+<li>Klik pada Sign Up
+<ul>
+<li>Pindahkan kursor ke kanan atas halaman dan tekan Sign Up</li>
+</ul>
+</li>
+<li>Isi kredensial Githubmu
+<ul>
+<li>Setelah kalian mengklik Sign Up, kalian akan dibawa ke halaman lain untuk mendaftarkan diri sebagai pengguna Github yang baru, isi kredensialmu seperti Username, Email, dan Password. Kalian juga mungkin ingin menyamakan username dan email dengan yang kalian gunakan pada pada perangkat kalian sebelumnya untuk menghindari konflik dan kebingungan nantinya, yang mengacu pada <a href="/id/posts/git/1-pemasangan-git/#mengkonfigurasi-git">panduan ini</a> jika sekiranya kalian sudah lupa:
+<img alt="Form pendaftaran sudah diisi" src="/posts/git/2-account-and-repo/images/2-credentials.webp"></li>
+</ul>
+</li>
+<li>Selesaikan captcha
+<ul>
+<li>Biasanya kalian akan diberikan beberapa captcha, ini bertujuan sebagai alasan keamanan, jadi cukup selesaikan saja
+<img alt="Captcha" src="images/3-capthca.webp"></li>
+</ul>
+</li>
+<li>Verifikasi emailmu
+<ul>
+<li>Biasanya, untuk alasan keamanan, Github akan meminta kalian untuk mengkonfirmasi email yang kalian gunakan saat mendaftar ke Github, jadi cek inbox emailmu dan cari email yang berasal dari pihak Github, lalu konfirmasi dengan mengklik tombol Verify
+<img alt="Verifikasi email terkonfirmasi" src="/posts/git/2-account-and-repo/images/4-verify.webp"></li>
+</ul>
+</li>
+<li>Deskripsikan dirimu
+<ul>
+<li>
+<p>Deskripsikan siapa kamu dan apa tujuanmu membuat akun Github, seperti ini:
+<img alt="Deskripsikan dirimu" src="/posts/git/2-account-and-repo/images/5-describe.webp">
+<img alt="Pilih tujuanmu" src="/posts/git/2-account-and-repo/images/6-purpose.webp"></p>
+<p>Kalian bisa mengkostumisasi pilihannya semau kalian berdasarkan pilihan yang ada, tapi pada kebanyakan kasus, pilihan yang kupilih di atas adalah yang paling umum diantara pengguna Github yang baru.</p>
+</li>
+</ul>
+</li>
+<li>Pilih plan Github
+Github memberikan kalian beberapa pilihan plan, ini seperti Github premium atau semacamnya, untuk orang yang sudah ahli atau developer besar ini bisa jadi menguntungkan, tapi untuk penggunan dasar atau personal sudah cukup dengan menggunakan plan gratis, versi gratisnya saja sudah mencakup hampir semua fungsi dasar dan penting dari Git (Github), kalian benar benar tidak perlu semua hal mewah itu jika hanya untuk penggunan personal yang mendasar
+<img alt="Pilih plan gratis" src="/posts/git/2-account-and-repo/images/7-freeplan.webp"></li>
+</ol>
+<p>Sudah, selesai, sekarang kalian sudah siap, tapi mungkin kalian ingin membuat sebuah repositori github yang baru, begini caramu melakukannya:</p>
+<ol>
+<li>Buka dashboard Githubmu
+<ul>
+<li>Buka dashboard Github dan arahkan ke tab repositori
+<img alt="Dashboard Github" src="images/8-dashboard"></li>
+</ul>
+</li>
+<li>Klik <code>Create Repository</code>
+<ul>
+<li>Kalian tidak akan punya repositori pada awalnya, jadi untuk membuatnya cukup klik pada <code>Create Repository</code> dan kalian akan diberikan sebuah form seperti ini:
+<img alt="Form pembuatan repo Github" src="/posts/git/2-account-and-repo/images/8.5-repocreation.webp"></li>
+</ul>
+</li>
+<li>Isi informasi repositori
+<ul>
+<li>Sekarang isi formnya sesuai keinginanmu, seperti nama repo, tipe repo (Privat/Publik), dan Lisensi untuk repositorimu<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></li>
+</ul>
+</li>
+<li>Selesaikan pembuatan repo</li>
+</ol>
+<ul>
+<li>Setelah kalian mengisi informasi repo, lalu klik pada Create, dan repo milikmu akan denga cepat dibuat, kalian bisa menemukannya di tab Repository, tapi biasanya juga ditampilkan pada dashboard profil.</li>
+</ul>
+<p>Selamat! sekarang kamu sudah berhasil membuat repositori baru untuk Githubmu, setelah itu kalian akan diberikan beberapa cara untuk mengkoneksikan atau mengakses repositori github kalian dari berbagai perangkat.
+<img alt="koneksi repo Github" src="/posts/git/2-account-and-repo/images/9-connecting.webp"></p>
+<hr>
+<h2 id="penutup">Penutup<a href="#penutup" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>sekarang mungkin kalian ingin menghubungkan repositori lokalmu (yang ada pada komputer/perangkatmu), disitu ada beberapa cara seperti yang ditampilkan diatas, itu cukup jelas dan lugas, tapi mungkin beberapa dari kalian ada yang belum paham karena kurang familiar dengan perintah pada terminal, tidak apa apa, di artikel selanjutnya aku akan membahas tentang cara menghubungkan repositori github dengan mesin lokalmu (contohnya komputer/laptop milikmu), tetap pantau untuk topik selanjutnya dan sampai jumpa :D</p>
+<blockquote>
+<p><strong>Note:</strong> Artikel ini belum sempurna, kalian sangat diharapkan memberikan saran untuk perubahan atau umpan balik agar saya dapat memperbaikinya nanti. Jangan ragu untuk menghubungiku kapan saja jika kalian mau, di sini: <a href="mailto:nixvoid@proton.me">Email</a> atau <a href="https://wa.me/+6282284528116">Chat di Whatsapp</a></p>
+</blockquote>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Memilih sebuah lisensi itu sangat penting untuk repositorimu, ia menjelaskan apa status dan ketersediaan dari repomu ke publik, tanpa lisensi mereka tidak punya hak untuk mengakses, menyalin, mengubah, atau melakukan apapun ke repositori milikmu, itu penting terutama ketika kalian berhadapan dengan project kolaborasi, jika kalian bingung dengan lisensi mana yang harus kalian gunakan, kalian bisa menggunakan <a href="https://choosealicense.com">referensi ini</a> untuk menentukan lisensi mana yang sesuai untuk project repomu sekarang.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">Baca postingan lain</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+      <a href="//localhost:1313/id/posts/git/1-pemasangan-git/" class="button inline prev">
+        Git-#1: Instalasi
+      </a>
+    
+    
+    
+  </div>
+</div>
+
+
+  
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2024 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

@@ -297,6 +297,6 @@ Punyaku tidak terlalu banyak karena aku hanya mengatur yang paling penting saja.
 
 Sekarang, kamu seharusnya sudah menginstal dan mengonfigurasi Git sepenuhnya di komputer mu, baik di Linux, macOS, atau bahkan Windows. Kamu juga telah menyiapkan nama pengguna dan email mu, yang sangat penting untuk melacak perubahan di seluruh repositori mu. Dengan Git aktif dan berjalan, kamu siap untuk mulai mengelola proyek mu dengan kontrol versi yang kuat.
 
-Selanjutnya, kita akan membahas cara membuat repositori pertama mu, menautkannya ke GitHub, dan membahas perintah-perintah dasar yang akan membawa pengetahuan Git mu ke tingkat berikutnya. Tetap pantau dan sampai jumpa di topik berikutnya :D
+Selanjutnya, kita akan membahas cara membuat repositori pertama mu, dan juga membuat akun github baru. Tetap pantau dan sampai jumpa di topik berikutnya :D
 
 > **Note:** Artikel ini belum sempurna, kalian sangat diharapkan memberikan saran untuk perubahan atau umpan balik agar saya dapat memperbaikinya nanti. Jangan ragu untuk menghubungiku kapan saja jika kalian mau, di sini: [Email](mailto:nixvoid@proton.me) atau [Chat di Whatsapp](https://wa.me/+6282284528116)

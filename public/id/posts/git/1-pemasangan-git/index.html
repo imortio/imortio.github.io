@@ -1,34 +1,525 @@
-<!doctype html><html lang=id><head><title>Git-#1: Instalasi :: imortio</title>
-<meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Instal Git di sistem mu dengan panduan ini, mencakup Windows, macOS, dan Linux. Panduan langkah demi langkah ini memastikan pengaturan yang lancar untuk siapa saja yang siap mulai menggunakan Git untuk kontrol versi."><meta name=keywords content="Git,Mengatur Git,Git untuk pemula,Menginstal Git,Alat pengembangan perangkat lunak"><meta name=robots content="noodp"><link rel=canonical href=https://imortio.github.io/id/posts/git/1-pemasangan-git/><script async src="https://www.googletagmanager.com/gtag/js?id=G-MYYQG4Y6DM"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-MYYQG4Y6DM")}</script><link rel=stylesheet href=https://imortio.github.io/css/buttons.min.2bc533403a27dfe0e93105a92502b42ce4587e2e4a87d9f7d349e51e16e09478.css><link rel=stylesheet href=https://imortio.github.io/css/code.min.00125962708925857e7b66dbc58391d55be1191a3d0ce2034de8c9cd2c481c36.css><link rel=stylesheet href=https://imortio.github.io/css/fonts.min.90c955c31dd7c0e05aae3d4f583d4d8a2af799d69c961337eaf2a825063a55dd.css><link rel=stylesheet href=https://imortio.github.io/css/footer.min.2e3eb191baee58dd05a9f0104ac1fab0827bca7c64dafe0b2579f934c33a1d69.css><link rel=stylesheet href=https://imortio.github.io/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css><link rel=stylesheet href=https://imortio.github.io/css/header.min.b6fb4423cf82a9f9d7abc9cd010223fa3d70a6526a3f28f8e17d814c06e18f9e.css><link rel=stylesheet href=https://imortio.github.io/css/main.min.1d8be2dd1b5de9fdaed058c8c59fcf4485f36619574abfb47ed0cfda4812c16d.css><link rel=stylesheet href=https://imortio.github.io/css/menu.min.83637a90d903026bc280d3f82f96ceb06c5fc72b7c1a8d686afb5bbf818a29f7.css><link rel=stylesheet href=https://imortio.github.io/css/pagination.min.82f6400eae7c7c6dc3c866733c2ec0579e4089608fea69400ff85b3880aa0d3c.css><link rel=stylesheet href=https://imortio.github.io/css/post.min.fc74ca360273c1d828da3c02b8174eba435607b369d98418ccc6f2243cd4e75d.css><link rel=stylesheet href=https://imortio.github.io/css/prism.min.9023bbc24533d09e97a51a0a42a5a7bfe4c591ae167c5551fb1d2191d11977c0.css><link rel=stylesheet href=https://imortio.github.io/css/syntax.min.cc789ed9377260d7949ea4c18781fc58959a89287210fe4edbff44ebfc1511b6.css><link rel=stylesheet href=https://imortio.github.io/css/terminal.min.736caf886baa67df630c4cde30fbdc5115122eb74c6246f15a31401344bfa2f0.css><link rel=stylesheet href=https://imortio.github.io/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css><link rel=stylesheet href=https://imortio.github.io/terminal.css><link rel="shortcut icon" href=https://imortio.github.io/favicon.png><link rel=apple-touch-icon href=https://imortio.github.io/apple-touch-icon.png><meta name=twitter:card content="summary"><meta property="og:locale" content="id"><meta property="og:type" content="article"><meta property="og:title" content="Git-#1: Instalasi"><meta property="og:description" content="Instal Git di sistem mu dengan panduan ini, mencakup Windows, macOS, dan Linux. Panduan langkah demi langkah ini memastikan pengaturan yang lancar untuk siapa saja yang siap mulai menggunakan Git untuk kontrol versi."><meta property="og:url" content="https://imortio.github.io/id/posts/git/1-pemasangan-git/"><meta property="og:site_name" content="imortio"><meta property="og:image" content="https://imortio.github.io/posts/git/1-git-installation/cover.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="627"><meta property="article:published_time" content="2024-10-11 09:08:37 +0000 UTC"><meta http-equiv=cache-control content='no-cache'><meta http-equiv=expires content='0'><meta http-equiv=pragma content='no-cache'></head><body><div class="container center"><header class=header><div class=header__inner><div class=header__logo><a href=/><div class=logo>imortio</div></a></div><ul class="menu menu--mobile"><li class=menu__trigger>Menu&nbsp;▾</li><li><ul class=menu__dropdown><li><a href=/id/posts>Postingan</a></li><hr><li><a href=https://imortio.github.io/>English</a></li><li><a href=https://imortio.github.io/id/>Bahasa Indonesia</a></li></ul></li></ul><ul class="menu menu--desktop menu--language-selector"><li class=menu__trigger>Bahasa Indonesia&nbsp;▾</li><li><ul class=menu__dropdown><li><a href=https://imortio.github.io/>English</a></li><li><a href=https://imortio.github.io/id/>Bahasa Indonesia</a></li></ul></li></ul></div><nav class=navigation-menu><ul class="navigation-menu__inner menu--desktop"><li><a href=/id/posts>Postingan</a></li></ul></nav></header><div class=content><article class=post><h1 class=post-title><a href=https://imortio.github.io/id/posts/git/1-pemasangan-git/>Git-#1: Instalasi</a></h1><div class=post-meta><time class=post-date>2024-10-11</time><span class=post-author>imortio</span><span class=post-reading-time>9 menit baca (1859 kata)</span></div><span class=post-tags>#<a href=https://imortio.github.io/id/tags/tutorial/>tutorial</a>&nbsp;
-#<a href=https://imortio.github.io/id/tags/instal/>instal</a>&nbsp;
-#<a href=https://imortio.github.io/id/tags/git/>git</a>&nbsp;
-#<a href=https://imortio.github.io/id/tags/sistemversi/>sistemversi</a>&nbsp;
-</span><img src=/posts/git/1-git-installation/cover.png class=post-cover alt="Git-#1: Instalasi" title="Cover Image"><div class=post-content><div><p>Halo semuanya, kita kembali bersama ku lagi. Terakhir kali kita belajar sedikit tentang apa itu Git, aku yakin kalian semua sudah memahaminya, apa yang dilakukannya dan mengapa ia penting, jadi dalam artikel ini kita akan melanjutkan topik kita ke:</p><h1 id=git-1-menginstall-git>Git-#1: Menginstall Git<a href=#git-1-menginstall-git class=hanchor arialabel=Anchor>#</a></h1><p>Untuk memulai dengan Git, pertama-tama instal Git di komputer mu. Metode ini akan berbeda tergantung pada sistem operasi yang kamu gunakan, tetapi jangan khawatir, aku akan membantu mu, baik kamu menggunakan Linux, macOS, atau, <em>batuk</em> Windows.</p><h2 id=1-menginstal-git-di-linux>1. Menginstal Git di Linux<a href=#1-menginstal-git-di-linux class=hanchor arialabel=Anchor>#</a></h2><p>Jika kamu adalah pengguna Linux, menginstal Git cukup mudah. Kamu bisa menggunakan manajer paket untuk menginstalnya. Perintah-perintah di bawah ini akan membuat Git terinstal, tergantung pada distribusi linux mu:</p><ul><li>Pada sistem berbasis Debian/Ubuntu:<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo apt update
-</span></span><span style=display:flex><span>sudo apt install git
-</span></span></code></pre></div></li></ul><p>Jika kamu menerima petunjuk yang mengindikasikan bahwa paket atau dependensi tambahan diperlukan untuk instalasi, cukup masukkan Y atau Yes, maka secara otomatis akan menginstal semua paket yang pada dasarnya diperlukan oleh paket utama yang kamu instal, sehingga instalasi dapat berjalan dengan lancar tanpa kamu harus melakukan pengaturan secara manual terlalu banyak, hal ini juga berlaku untuk distro linux yang lain.</p><ul><li><p>Pada sistem berbasis Fedora:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo dnf install git
-</span></span></code></pre></div></li><li><p>pada sistem berbasis Arch:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>sudo pacman -S git
-</span></span></code></pre></div></li></ul><p>dan seterusnya, karena linux memiliki sekitar ratusan distro yang berasal dari distribusi linux tertentu seperti Ubuntu, Fedora, Arch, dan lainnya sehingga Anda dapat menggunakan manajer paket mu sendiri berdasarkan distribusi yang kamu jalankan. Entah itu apt di Ubuntu, dnf di Fedora, atau pacman di Arch, langkah-langkahnya hampir sama. Ganti saja perintahnya dengan manajer paket yang sesuai untuk sistem mu. Jika kamu tidak yakin manajer paket mana yang digunakan distribusi mu, pencarian cepat di web akan membantumu akan hal itu, aku tidak dapat menulis semua manajer paket yang mungkin karena akan terlalu panjang untuk artikel ini.</p><p>Dan jika kamu adalah salah satu pengguna yang benar-benar ahli, seperti pengguna Gentoo, kamu sudah mengkompilasinya dari sumbernya. Tidak perlu instruksi di sini-kamu tahu apa yang kamu lakukan.</p><p>setelah instalasi selesai, kamu bisa menjalankan perintah ini untuk melihat versi git yang kamu instal</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git --version
+<!DOCTYPE html>
+<html lang="id">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title>Git-#1: Instalasi :: imortio</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Instal Git di sistem mu dengan panduan ini, mencakup Windows, macOS, dan Linux. Panduan langkah demi langkah ini memastikan pengaturan yang lancar untuk siapa saja yang siap mulai menggunakan Git untuk kontrol versi." />
+<meta name="keywords" content="Git, Mengatur Git, Git untuk pemula, Menginstal Git, Alat pengembangan perangkat lunak" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/id/posts/git/1-pemasangan-git/" />
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MYYQG4Y6DM"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MYYQG4Y6DM');
+        }
+      </script>
+
+
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/buttons.min.2bc533403a27dfe0e93105a92502b42ce4587e2e4a87d9f7d349e51e16e09478.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/code.min.00125962708925857e7b66dbc58391d55be1191a3d0ce2034de8c9cd2c481c36.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/fonts.min.90c955c31dd7c0e05aae3d4f583d4d8a2af799d69c961337eaf2a825063a55dd.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/footer.min.2e3eb191baee58dd05a9f0104ac1fab0827bca7c64dafe0b2579f934c33a1d69.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/header.min.b6fb4423cf82a9f9d7abc9cd010223fa3d70a6526a3f28f8e17d814c06e18f9e.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/main.min.1d8be2dd1b5de9fdaed058c8c59fcf4485f36619574abfb47ed0cfda4812c16d.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/menu.min.83637a90d903026bc280d3f82f96ceb06c5fc72b7c1a8d686afb5bbf818a29f7.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/pagination.min.82f6400eae7c7c6dc3c866733c2ec0579e4089608fea69400ff85b3880aa0d3c.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/post.min.fc74ca360273c1d828da3c02b8174eba435607b369d98418ccc6f2243cd4e75d.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/prism.min.9023bbc24533d09e97a51a0a42a5a7bfe4c591ae167c5551fb1d2191d11977c0.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/syntax.min.cc789ed9377260d7949ea4c18781fc58959a89287210fe4edbff44ebfc1511b6.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/terminal.min.736caf886baa67df630c4cde30fbdc5115122eb74c6246f15a31401344bfa2f0.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+<link rel="stylesheet" href="//localhost:1313/terminal.css">
+
+
+
+
+<link rel="shortcut icon" href="//localhost:1313/favicon.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="id" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Git-#1: Instalasi">
+<meta property="og:description" content="Instal Git di sistem mu dengan panduan ini, mencakup Windows, macOS, dan Linux. Panduan langkah demi langkah ini memastikan pengaturan yang lancar untuk siapa saja yang siap mulai menggunakan Git untuk kontrol versi." />
+<meta property="og:url" content="//localhost:1313/id/posts/git/1-pemasangan-git/" />
+<meta property="og:site_name" content="imortio" />
+
+  
+  
+    
+  
+  <meta property="og:image" content="//localhost:1313/posts/git/1-git-installation/cover.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2024-10-11 09:08:37 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+<meta http-equiv='cache-control' content='no-cache'> 
+<meta http-equiv='expires' content='0'> 
+<meta http-equiv='pragma' content='no-cache'>
+
+
+</head>
+<body>
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    imortio
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/id/posts">Postingan</a></li>
+        
+      
+      
+        <hr />
+        
+          <li>
+            <a href="//localhost:1313/">English</a>
+          </li>
+        
+          <li>
+            <a href="//localhost:1313/id/">Bahasa Indonesia</a>
+          </li>
+        
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+      <ul class="menu menu--desktop menu--language-selector">
+  <li class="menu__trigger">Bahasa Indonesia&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        <li><a href="//localhost:1313/">English</a></li>
+      
+        <li><a href="//localhost:1313/id/">Bahasa Indonesia</a></li>
+      
+    </ul>
+  </li>
+</ul>
+
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/id/posts" >Postingan</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/id/posts/git/1-pemasangan-git/">Git-#1: Instalasi</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2024-10-11</time><span class="post-author">imortio</span><span class="post-reading-time">9 menit baca (1849 kata)</span></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="//localhost:1313/id/tags/tutorial/">tutorial</a>&nbsp;
+      
+      #<a href="//localhost:1313/id/tags/instal/">instal</a>&nbsp;
+      
+      #<a href="//localhost:1313/id/tags/git/">git</a>&nbsp;
+      
+      #<a href="//localhost:1313/id/tags/sistemversi/">sistemversi</a>&nbsp;
+      
+    </span>
+  
+  
+  <img src="/posts/git/1-git-installation/cover.png"
+    class="post-cover"
+    alt="Git-#1: Instalasi"
+    title="Cover Image" />
+
+
+  
+
+  <div class="post-content"><div>
+        <p>Halo semuanya, kita kembali bersama ku lagi. Terakhir kali kita belajar sedikit tentang apa itu Git, aku yakin kalian semua sudah memahaminya, apa yang dilakukannya dan mengapa ia penting, jadi dalam artikel ini kita akan melanjutkan topik kita ke:</p>
+<h1 id="git-1-menginstall-git">Git-#1: Menginstall Git<a href="#git-1-menginstall-git" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Untuk memulai dengan Git, pertama-tama instal Git di komputer mu. Metode ini akan berbeda tergantung pada sistem operasi yang kamu gunakan, tetapi jangan khawatir, aku akan membantu mu, baik kamu menggunakan Linux, macOS, atau, <em>batuk</em> Windows.</p>
+<h2 id="1-menginstal-git-di-linux">1. Menginstal Git di Linux<a href="#1-menginstal-git-di-linux" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Jika kamu adalah pengguna Linux, menginstal Git cukup mudah. Kamu bisa menggunakan manajer paket untuk menginstalnya. Perintah-perintah di bawah ini akan membuat Git terinstal, tergantung pada distribusi linux mu:</p>
+<ul>
+<li>Pada sistem berbasis Debian/Ubuntu:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update
+</span></span><span style="display:flex;"><span>sudo apt install git
+</span></span></code></pre></div></li>
+</ul>
+<p>Jika kamu menerima petunjuk yang mengindikasikan bahwa paket atau dependensi tambahan diperlukan untuk instalasi, cukup masukkan Y atau Yes, maka secara otomatis akan menginstal semua paket yang pada dasarnya diperlukan oleh paket utama yang kamu instal, sehingga instalasi dapat berjalan dengan lancar tanpa kamu harus melakukan pengaturan secara manual terlalu banyak, hal ini juga berlaku untuk distro linux yang lain.</p>
+<ul>
+<li>
+<p>Pada sistem berbasis Fedora:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo dnf install git
+</span></span></code></pre></div></li>
+<li>
+<p>pada sistem berbasis Arch:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo pacman -S git
+</span></span></code></pre></div></li>
+</ul>
+<p>dan seterusnya, karena linux memiliki sekitar ratusan distro yang berasal dari distribusi linux tertentu seperti Ubuntu, Fedora, Arch, dan lainnya sehingga Anda dapat menggunakan manajer paket mu sendiri berdasarkan distribusi yang kamu jalankan. Entah itu apt di Ubuntu, dnf di Fedora, atau pacman di Arch, langkah-langkahnya hampir sama. Ganti saja perintahnya dengan manajer paket yang sesuai untuk sistem mu. Jika kamu tidak yakin manajer paket mana yang digunakan distribusi mu, pencarian cepat di web akan membantumu akan hal itu, aku tidak dapat menulis semua manajer paket yang mungkin karena akan terlalu panjang untuk artikel ini.</p>
+<p>Dan jika kamu adalah salah satu pengguna yang benar-benar ahli, seperti pengguna Gentoo, kamu sudah mengkompilasinya dari sumbernya. Tidak perlu instruksi di sini-kamu tahu apa yang kamu lakukan.</p>
+<p>setelah instalasi selesai, kamu bisa menjalankan perintah ini untuk melihat versi git yang kamu instal</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git --version
 </span></span></code></pre></div><p>jika ada ditampilkan nomor versi seperti ini maka kamu sudah siap:
-<img alt="git &ndash;version result" src=/posts/git/1-git-installation/gitversion.png></p><h2 id=2-menginstal-git-di-macos>2. Menginstal Git di macOS<a href=#2-menginstal-git-di-macos class=hanchor arialabel=Anchor>#</a></h2><p>Pengguna macOS memiliki beberapa cara untuk menginstal Git, tetapi metode termudah adalah melalui Homebrew, manajer paket untuk macOS:</p><ol><li>Pertama, instal Homebrew jika kamu belum melakukannya dengan menjalankan:</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>/bin/bash -c <span style=color:#e6db74>&#34;</span><span style=color:#66d9ef>$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span style=color:#66d9ef>)</span><span style=color:#e6db74>&#34;</span>
-</span></span></code></pre></div><p>Homebrew menyederhanakan manajemen paket di macOS, membuatnya mudah untuk menginstal dan memperbarui perangkat lunak.</p><ol start=2><li>Setelah Homebrew terinstal, kamu bisa menginstal Git:</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>brew git install
-</span></span></code></pre></div><p>Sebagai alternatif, Git mungkin sudah terinstal pada sistem mu. Jalankan perintah berikut ini untuk memeriksanya:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git --version
-</span></span></code></pre></div><p>Jika Git telah terinstal, maka akan muncul nomor versi. Jika tidak, kamu akan diminta untuk menginstal Xcode Command Line Tools, yang mencakup Git.</p><blockquote><p>Maaf aku tidak dapat memberikan gambar hasil dari menginstal git di macOS karena aku belum menggunakan sistem macOS, aku akan segera memperbarui gambarnya setelah memiliki perangkat dengan macOS</p></blockquote><h2 id=3-menginstal-git-di-windows>3. Menginstal Git di Windows<a href=#3-menginstal-git-di-windows class=hanchor arialabel=Anchor>#</a></h2><p>Git tersedia untuk sistem Windows, dan meskipun mungkin tidak semulus pada platform lain, tapi setidaknya Git dapat menyelesaikan pekerjaan. Memang canggung, tetapi hei, itu bisa dilakukan. Berikut ini panduan langkah demi langkah untuk membantu mu melakukannya:</p><h3 id=1-unduh-git-untuk-windows>1. Unduh Git untuk Windows<a href=#1-unduh-git-untuk-windows class=hanchor arialabel=Anchor>#</a></h3><ol><li><p>Pergi ke <a href=https://gitforwindows.org>gitforwindows.org</a> dan klik tombol <strong>Download</strong>.</p><ul><li>Situs ini akan secara otomatis mendeteksi sistem mu dan mengunduh penginstal yang benar.</li></ul></li><li><p>Jika pengunduhan otomatis gagal, kamu akan diarahkan ke GitHub. Gulir ke bawah ke bagian <strong>Assets</strong>. Pilih salah satu:</p><ul><li><strong>Git-2.47.0-32-bit.exe</strong> (untuk Windows 32-bit)</li><li><strong>Git-2.47.0-64-bit.exe</strong> (untuk Windows 64-bit)</li></ul><p><img alt="GitHub assets" src=/posts/git/1-git-installation/gitwindowsselect.png></p></li></ol><h3 id=2-jalankan-installer>2. Jalankan Installer<a href=#2-jalankan-installer class=hanchor arialabel=Anchor>#</a></h3><ol><li><p>Setelah mengunduh, klik dua kali pada installer (file <code>.exe</code>). kamu akan melihat layar sambutan. Cukup klik <strong>Next</strong> seperti pengguna Windows yang baik.</p><p><img alt="Greeting screen" src=/posts/git/1-git-installation/greet.png></p></li></ol><h3 id=3-pilih-jalur-instalasi>3. Pilih Jalur Instalasi<a href=#3-pilih-jalur-instalasi class=hanchor arialabel=Anchor>#</a></h3><ol><li><p>Installer akan menanyakan di mana menginstal Git. Jalur default tidak masalah, tetapi jika kamu ingin eksplorasi, silakan ubah. Jika tidak, cukup klik <strong>Next</strong>.</p><p><img alt="Choose path" src=/posts/git/1-git-installation/location.png></p></li></ol><h3 id=4-pilih-komponen>4. Pilih Komponen<a href=#4-pilih-komponen class=hanchor arialabel=Anchor>#</a></h3><ol><li><p>Sekarang kamu melihat banyak kotak centang dengan opsi untuk komponen tambahan. Standarnya baik-baik saja, tidak perlu diubah kecuali kamu tahu apa yang kamu lakukan. Klik <strong>Next</strong>.</p><p><img alt="Component selection" src=/posts/git/1-git-installation/component.png></p></li></ol><h3 id=5-folder-start-menu>5. Folder Start Menu<a href=#5-folder-start-menu class=hanchor arialabel=Anchor>#</a></h3><ol><li><p>Bagian ini menanyakan di mana Git harus membuat pintasan di Start Menu. Biarkan saja apa adanya, karena, jujur saja, adakah orang yang benar-benar menggunakan Start Menu lagi? Klik <strong>Next</strong>.</p><p><img alt="Start menu folder" src=/posts/git/1-git-installation/folder.png></p></li></ol><h3 id=6-pilih-editor-teks-mu>6. Pilih Editor Teks Mu<a href=#6-pilih-editor-teks-mu class=hanchor arialabel=Anchor>#</a></h3><ol><li><p>Git sekarang akan menanyakan editor teks mana yang ingin kamu gunakan secara default. kamu dapat memilih apa pun yang Anda sukai. Jika kamu ragu-ragu:</p><ul><li><strong>VS Code</strong> adalah pilihan yang tepat untuk pemula.</li><li><strong>Atom</strong>, <strong>Sublime Text</strong>, or <strong>Notepad++</strong> juga bisa digunakan jika kamu menyukai kesederhanaan.</li></ul><p>Pilih editor mu dan klik <strong>Next</strong>.</p><p><img alt="Editor selection" src=/posts/git/1-git-installation/editorselect.png></p></li></ol><h3 id=7-sesuaikan-nama-cabang-awal>7. Sesuaikan Nama Cabang Awal<a href=#7-sesuaikan-nama-cabang-awal class=hanchor arialabel=Anchor>#</a></h3><ol><li><p>Installer akan meminta kamu untuk mengatur nama cabang default untuk repositori baru. Secara default, nama defaultnya adalah <strong>master</strong>, tetapi untuk inklusivitas, kita bisa mengubahnya menjadi <strong>main</strong>. Pilih <strong>Override the default</strong> dan tetapkan <strong>&lsquo;main&rsquo;</strong>. Klik <strong>Next</strong>.</p><p><img alt="Branch name" src=/posts/git/1-git-installation/branchname.png></p></li></ol><h3 id=8-pilih-path-environment>8. Pilih Path Environment<a href=#8-pilih-path-environment class=hanchor arialabel=Anchor>#</a></h3><ol><li>Sekarang, kamu akan melihat opsi untuk Path Environment Git. Pilih saja <strong>Git from the command line and also from 3rd-party software</strong> (kecuali jika kamu punya alasan khusus untuk tidak memilihnya). Klik <strong>Next</strong>.
-<img alt="Path environment" src=/posts/git/1-git-installation/commandline.png></li></ol><h3 id=9-pilih-ssh-executable>9. Pilih SSH Executable<a href=#9-pilih-ssh-executable class=hanchor arialabel=Anchor>#</a></h3><ol><li>Kamu akan ditanya SSH Executable untuk digunakan. Biarkan pada default, <strong>Use bundled OpenSSH</strong>, kecuali jika kamu memiliki pengaturan SSH khusus. Klik <strong>Next</strong>.
-<img alt="SSH selection" src=/posts/git/1-git-installation/ssh.png></li></ol><h3 id=10-pilih-backend-https>10. Pilih Backend HTTPS<a href=#10-pilih-backend-https class=hanchor arialabel=Anchor>#</a></h3><ol><li>Git sekarang akan menanyakan backend mana yang akan digunakan untuk HTTPS. Pilihlah <strong>Use the OpenSSL Library</strong> untuk kompatibilitas dan keamanan maksimum. Klik <strong>Next</strong>.
-<img alt="HTTPS backend" src=/posts/git/1-git-installation/ssl.png></li></ol><h3 id=11-mengkonfigurasi-line-ending>11. Mengkonfigurasi Line Ending<a href=#11-mengkonfigurasi-line-ending class=hanchor arialabel=Anchor>#</a></h3><ol><li><p>Bagian ini berisi tentang bagaimana Git menangani Line Ending antara Windows (<code>CRLF</code>) dan sistem berbasis Unix (<code>LF</code>). Pertahankan default <strong>Checkout Windows-style, commit Unix-style line endings</strong>. Klik <strong>Next</strong>.</p><p><img alt="Line endings" src=/posts/git/1-git-installation/lineending.png></p></li></ol><h3 id=12-pilih-terminal-emulator>12. Pilih Terminal Emulator<a href=#12-pilih-terminal-emulator class=hanchor arialabel=Anchor>#</a></h3><ol><li><p>Git menawarkan dua opsi untuk emulator terminal: <strong>MinTTY</strong> atau <strong>Konsol default Windows</strong>. Pilih <strong>Windows&rsquo; default console</strong> untuk menghindari kebingungan (pengguna Windows sudah cukup terbiasa). Klik <strong>Next</strong>.</p><p><img alt="Terminal emulator" src=/posts/git/1-git-installation/terminal.png></p></li></ol><h3 id=13-perilaku-git-pull-default>13. Perilaku <code>git pull</code> default<a href=#13-perilaku-git-pull-default class=hanchor arialabel=Anchor>#</a></h3><ol><li><p>Tentukan bagaimana Git harus menangani <code>git pull</code>. Biarkan pada default: <strong>Default (fast-forward or merge)</strong>. Klik <strong>Next</strong>.</p><p><img alt="Git pull behavior" src=/posts/git/1-git-installation/gitpull.png></p></li></ol><h3 id=14-pengelola-kredensial-git>14. Pengelola Kredensial Git<a href=#14-pengelola-kredensial-git class=hanchor arialabel=Anchor>#</a></h3><ol><li><p>Kamu akan diminta untuk memilih bagaimana Git mengelola kredensial. Pilihlah <strong>Git Credential Manager</strong> (disarankan). Klik <strong>Next</strong>.</p><p><img alt="Git credentials" src=/posts/git/1-git-installation/credential.png></p></li></ol><h3 id=15-mengonfigurasi-opsi-tambahan>15. Mengonfigurasi Opsi Tambahan<a href=#15-mengonfigurasi-opsi-tambahan class=hanchor arialabel=Anchor>#</a></h3><ol><li>Di sini, kamu akan melihat beberapa pengaturan opsional, seperti mengaktifkan fitur eksperimental. Lewati saja kecuali kamu ingin sedikit eksplorasi. Klik <strong>Next</strong>.
-<img alt="Extra options" src=/posts/git/1-git-installation/extraoptions.png></li></ol><h3 id=16-instal-git>16. Instal Git<a href=#16-instal-git class=hanchor arialabel=Anchor>#</a></h3><ol><li><p>Terakhir, klik <strong>Install</strong> untuk memulai proses. Bar progress akan muncul saat Git sedang diinstal di sistem mu.
-<img alt="Installing progress" src=/posts/git/1-git-installation/installing.png></p></li><li><p>Setelah instalasi selesai, kamu akan ditanya apakah kamu ingin meluncurkan <strong>Git Bash</strong> dan melihat catatan rilis. Hapus centang pada <strong>View Release Note</strong> kecuali jika kamu ingin menyelami hal-hal kecil. Klik <strong>Finish</strong>.
-<img alt="Install complete" src=/posts/git/1-git-installation/installcomplete.png></p></li></ol><p>Selamat, kamu telah berhasil menginstal Git di Windows. Sekarang kamu akhirnya bisa bekerja dengan Git pada sistem yang seperti lingkungan development versi IKEA-hampir tidak berfungsi tetapi entah bagaimana bisa menyelesaikan pekerjaan.</p><p>Sekarang mari kita periksa versinya dan verifikasi bahwa git telah berhasil diinstal dengan menekan tombol Windows<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup> + R, dan ketik cmd pada bar pencarian, lalu klik enter, tuliskan perintah ini pada cmd:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git --version
-</span></span></code></pre></div><p><img alt="Git Version on Windows" src=/posts/git/1-git-installation/gitversionwin.png></p><p>Jika kamu merasa masokis, kamu bahkan dapat menggunakan Git Bash&mldr;</p><hr><h2 id=mengkonfigurasi-git>Mengkonfigurasi Git<a href=#mengkonfigurasi-git class=hanchor arialabel=Anchor>#</a></h2><p>Sekarang setelah kamu berhasil menginstal Git (dan selamat dari antarmuka Windows yang biasa-biasa saja), saatnya untuk mengonfigurasinya. Ini akan memberi tahu Git siapa kamu dan bagaimana menangani perilaku tertentu saat kamu mulai bekerja dengan repositori.</p><h3 id=1-atur-nama-pengguna-dan-email-mu>1. Atur Nama Pengguna dan Email Mu<a href=#1-atur-nama-pengguna-dan-email-mu class=hanchor arialabel=Anchor>#</a></h3><p>Git melacak perubahan dengan mengaitkannya dengan nama dan email. Jadi, Anda harus memberi tahu Git siapa Anda. Buka cmd dan jalankan perintah-perintah ini:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git config --global user.name <span style=color:#e6db74>&#34;Username Kamu&#34;</span>
-</span></span><span style=display:flex><span>git config --global user.email <span style=color:#e6db74>&#34;email.kamu@contoh.com&#34;</span>
-</span></span></code></pre></div><p>Ganti <code>“Username Kamu”</code> dan <code>“email.kamu@contoh.com”</code> dengan detail kamu yang sebenarnya, jika memungkinkan dan kamu memiliki akun Github, pastikan username dan email sama dengan yang ada di Github, kecuali jika kamu ingin commit mu terlihat seperti dibuat oleh bot. Hal ini sangat berguna ketika kamu berkolaborasi dengan orang lain atau ketika melakukan <code>git push</code> ke repositori jarak jauh Github mu (kita akan membahasnya nanti).</p><h3 id=2-menetapkan-editor-default>2. Menetapkan Editor Default<a href=#2-menetapkan-editor-default class=hanchor arialabel=Anchor>#</a></h3><p>Kamu perlu mengatur editor teks default untuk digunakan Git saat menulis pesan commit atau menggabungkan perubahan. Jika kamu melewatkan langkah ini selama instalasi (atau hanya ingin mengubahnya), berikut ini adalah cara untuk mengaturnya di Git:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git config --global core.editor <span style=color:#e6db74>&#34;nano&#34;</span>
-</span></span></code></pre></div><p>Ganti <code>“nano”</code> dengan editor teks pilihan mu. Misalnya, kamu dapat menggunakan:</p><ul><li><code>code --wait</code> untuk Visual Studio Code, ini adalah yang terbaik untuk pemula</li><li><code>subl --wait</code> untuk Sublime Text, yang satu ini juga ramah untuk pemula dan jauh lebih ringan, tetapi menyediakan lebih sedikit fitur daripada Visual Studio Code</li><li><code>notepad++</code> jika kamu terjebak di tahun 2007 dan masih menggunakan Notepad++, atau ketika kamu menginginkan opsi yang lebih sederhana</li></ul><h3 id=3-aktifkan-output-berwarna-agar-kamu-tidak-buta>3. Aktifkan Output Berwarna (Agar Kamu Tidak Buta)<a href=#3-aktifkan-output-berwarna-agar-kamu-tidak-buta class=hanchor arialabel=Anchor>#</a></h3><p>Output Git bisa sangat banyak, terutama jika kamu bekerja di terminal yang semuanya berwarna putih. Untuk memudahkan mata mu, aktifkan output berwarna:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git config --global color.ui true
-</span></span></code></pre></div><p>Sekarang, daripada melihat dinding teks putih, kamu akan mendapatkan penyorotan sintaks yang berwarna-warni untuk membedakan antara baris yang ditambahkan, dihapus, atau dimodifikasi.</p><h3 id=4-mengatur-nama-cabang-default-ke-main>4. Mengatur Nama Cabang Default ke <code>main</code><a href=#4-mengatur-nama-cabang-default-ke-main class=hanchor arialabel=Anchor>#</a></h3><p>Karena Git sekarang merekomendasikan penggunaan <code>main</code> dan bukannya <code>master</code> sebagai nama cabang default, ada baiknya kamu mengaturnya secara global agar semua repositori mu di masa depan dimulai dengan <code>main</code> sejak awal:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git config --global init.defaultBranch main
-</span></span></code></pre></div><p>Hal ini menghindarkan mu dari kerepotan mengganti nama cabang setiap kali kamu membuat repositori baru.</p><h3 id=5-mengaktifkan-penyimpanan-kredensial>5. Mengaktifkan Penyimpanan Kredensial<a href=#5-mengaktifkan-penyimpanan-kredensial class=hanchor arialabel=Anchor>#</a></h3><p>Jika kamu lelah mengetik nama pengguna dan kata sandi setiap kali kamu melakukan remote, kamu bisa mengaktifkan penyimpanan kredensial. Ini akan menyimpan kredensial mu untuk sementara waktu sehingga kamu tidak perlu terus memasukkannya:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git config --global credential.helper cache
-</span></span></code></pre></div><p>Secara default, Git akan menyimpan kredensial mu dalam cache selama 15 menit. kamu bisa mengatur batas waktu cache yang lebih lama jika kamu sangat malas (atau efisien, tergantung sudut pandang mu):</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git config --global credential.helper <span style=color:#e6db74>&#39;cache --timeout=3600&#39;</span>
-</span></span></code></pre></div><p>Ini akan membuat kredensial mu tersimpan dalam cache selama satu jam.</p><h3 id=6-mengatur-preferensi-merge-dan-rebase-default>6. Mengatur Preferensi Merge dan Rebase Default<a href=#6-mengatur-preferensi-merge-dan-rebase-default class=hanchor arialabel=Anchor>#</a></h3><p>Kamu juga dapat mengatur bagaimana Git harus menangani <code>git pull</code> - apakah ia harus mencoba menggabungkan, merge, merebase, atau mempercepat. Kebanyakan orang tetap menggunakan penggabungan (karena perubahan itu menakutkan), tetapi jika kamu ingin mengatur perilaku yang berbeda:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git config --global pull.rebase false
-</span></span></code></pre></div><p>Untuk menetapkan secara default untuk rebase alih-alih merge:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git config --global pull.rebase true
-</span></span></code></pre></div><p>Jika kamu tidak yakin, tetaplah <code>merge</code>-ini adalah opsi yang paling mudah.</p><h3 id=7-periksa-pengaturan-mu>7. Periksa Pengaturan Mu<a href=#7-periksa-pengaturan-mu class=hanchor arialabel=Anchor>#</a></h3><p>Untuk melihat konfigurasi Git yang telah kamu siapkan, jalankan:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git config --list
+<img alt="git &ndash;version result" src="/posts/git/1-git-installation/gitversion.png"></p>
+<h2 id="2-menginstal-git-di-macos">2. Menginstal Git di macOS<a href="#2-menginstal-git-di-macos" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Pengguna macOS memiliki beberapa cara untuk menginstal Git, tetapi metode termudah adalah melalui Homebrew, manajer paket untuk macOS:</p>
+<ol>
+<li>Pertama, instal Homebrew jika kamu belum melakukannya dengan menjalankan:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/bin/bash -c <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><p>Homebrew menyederhanakan manajemen paket di macOS, membuatnya mudah untuk menginstal dan memperbarui perangkat lunak.</p>
+<ol start="2">
+<li>Setelah Homebrew terinstal, kamu bisa menginstal Git:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew git install
+</span></span></code></pre></div><p>Sebagai alternatif, Git mungkin sudah terinstal pada sistem mu. Jalankan perintah berikut ini untuk memeriksanya:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git --version
+</span></span></code></pre></div><p>Jika Git telah terinstal, maka akan muncul nomor versi. Jika tidak, kamu akan diminta untuk menginstal Xcode Command Line Tools, yang mencakup Git.</p>
+<blockquote>
+<p>Maaf aku tidak dapat memberikan gambar hasil dari menginstal git di macOS karena aku belum menggunakan sistem macOS, aku akan segera memperbarui gambarnya setelah memiliki perangkat dengan macOS</p>
+</blockquote>
+<h2 id="3-menginstal-git-di-windows">3. Menginstal Git di Windows<a href="#3-menginstal-git-di-windows" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Git tersedia untuk sistem Windows, dan meskipun mungkin tidak semulus pada platform lain, tapi setidaknya Git dapat menyelesaikan pekerjaan. Memang canggung, tetapi hei, itu bisa dilakukan. Berikut ini panduan langkah demi langkah untuk membantu mu melakukannya:</p>
+<h3 id="1-unduh-git-untuk-windows">1. Unduh Git untuk Windows<a href="#1-unduh-git-untuk-windows" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ol>
+<li>
+<p>Pergi ke <a href="https://gitforwindows.org">gitforwindows.org</a> dan klik tombol <strong>Download</strong>.</p>
+<ul>
+<li>Situs ini akan secara otomatis mendeteksi sistem mu dan mengunduh penginstal yang benar.</li>
+</ul>
+</li>
+<li>
+<p>Jika pengunduhan otomatis gagal, kamu akan diarahkan ke GitHub. Gulir ke bawah ke bagian <strong>Assets</strong>. Pilih salah satu:</p>
+<ul>
+<li><strong>Git-2.47.0-32-bit.exe</strong> (untuk Windows 32-bit)</li>
+<li><strong>Git-2.47.0-64-bit.exe</strong> (untuk Windows 64-bit)</li>
+</ul>
+<p><img alt="GitHub assets" src="/posts/git/1-git-installation/gitwindowsselect.png"></p>
+</li>
+</ol>
+<h3 id="2-jalankan-installer">2. Jalankan Installer<a href="#2-jalankan-installer" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ol>
+<li>
+<p>Setelah mengunduh, klik dua kali pada installer (file <code>.exe</code>). kamu akan melihat layar sambutan. Cukup klik <strong>Next</strong> seperti pengguna Windows yang baik.</p>
+<p><img alt="Greeting screen" src="/posts/git/1-git-installation/greet.png"></p>
+</li>
+</ol>
+<h3 id="3-pilih-jalur-instalasi">3. Pilih Jalur Instalasi<a href="#3-pilih-jalur-instalasi" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ol>
+<li>
+<p>Installer akan menanyakan di mana menginstal Git. Jalur default tidak masalah, tetapi jika kamu ingin eksplorasi, silakan ubah. Jika tidak, cukup klik <strong>Next</strong>.</p>
+<p><img alt="Choose path" src="/posts/git/1-git-installation/location.png"></p>
+</li>
+</ol>
+<h3 id="4-pilih-komponen">4. Pilih Komponen<a href="#4-pilih-komponen" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ol>
+<li>
+<p>Sekarang kamu melihat banyak kotak centang dengan opsi untuk komponen tambahan. Standarnya baik-baik saja, tidak perlu diubah kecuali kamu tahu apa yang kamu lakukan. Klik <strong>Next</strong>.</p>
+<p><img alt="Component selection" src="/posts/git/1-git-installation/component.png"></p>
+</li>
+</ol>
+<h3 id="5-folder-start-menu">5. Folder Start Menu<a href="#5-folder-start-menu" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ol>
+<li>
+<p>Bagian ini menanyakan di mana Git harus membuat pintasan di Start Menu. Biarkan saja apa adanya, karena, jujur saja, adakah orang yang benar-benar menggunakan Start Menu lagi? Klik <strong>Next</strong>.</p>
+<p><img alt="Start menu folder" src="/posts/git/1-git-installation/folder.png"></p>
+</li>
+</ol>
+<h3 id="6-pilih-editor-teks-mu">6. Pilih Editor Teks Mu<a href="#6-pilih-editor-teks-mu" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ol>
+<li>
+<p>Git sekarang akan menanyakan editor teks mana yang ingin kamu gunakan secara default. kamu dapat memilih apa pun yang Anda sukai. Jika kamu ragu-ragu:</p>
+<ul>
+<li><strong>VS Code</strong> adalah pilihan yang tepat untuk pemula.</li>
+<li><strong>Atom</strong>, <strong>Sublime Text</strong>, or <strong>Notepad++</strong> juga bisa digunakan jika kamu menyukai kesederhanaan.</li>
+</ul>
+<p>Pilih editor mu dan klik <strong>Next</strong>.</p>
+<p><img alt="Editor selection" src="/posts/git/1-git-installation/editorselect.png"></p>
+</li>
+</ol>
+<h3 id="7-sesuaikan-nama-cabang-awal">7. Sesuaikan Nama Cabang Awal<a href="#7-sesuaikan-nama-cabang-awal" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ol>
+<li>
+<p>Installer akan meminta kamu untuk mengatur nama cabang default untuk repositori baru. Secara default, nama defaultnya adalah <strong>master</strong>, tetapi untuk inklusivitas, kita bisa mengubahnya menjadi <strong>main</strong>. Pilih <strong>Override the default</strong> dan tetapkan <strong>&lsquo;main&rsquo;</strong>. Klik <strong>Next</strong>.</p>
+<p><img alt="Branch name" src="/posts/git/1-git-installation/branchname.png"></p>
+</li>
+</ol>
+<h3 id="8-pilih-path-environment">8. Pilih Path Environment<a href="#8-pilih-path-environment" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ol>
+<li>Sekarang, kamu akan melihat opsi untuk Path Environment Git. Pilih saja <strong>Git from the command line and also from 3rd-party software</strong> (kecuali jika kamu punya alasan khusus untuk tidak memilihnya). Klik <strong>Next</strong>.
+<img alt="Path environment" src="/posts/git/1-git-installation/commandline.png"></li>
+</ol>
+<h3 id="9-pilih-ssh-executable">9. Pilih SSH Executable<a href="#9-pilih-ssh-executable" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ol>
+<li>Kamu akan ditanya SSH Executable untuk digunakan. Biarkan pada default, <strong>Use bundled OpenSSH</strong>, kecuali jika kamu memiliki pengaturan SSH khusus. Klik <strong>Next</strong>.
+<img alt="SSH selection" src="/posts/git/1-git-installation/ssh.png"></li>
+</ol>
+<h3 id="10-pilih-backend-https">10. Pilih Backend HTTPS<a href="#10-pilih-backend-https" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ol>
+<li>Git sekarang akan menanyakan backend mana yang akan digunakan untuk HTTPS. Pilihlah <strong>Use the OpenSSL Library</strong> untuk kompatibilitas dan keamanan maksimum. Klik <strong>Next</strong>.
+<img alt="HTTPS backend" src="/posts/git/1-git-installation/ssl.png"></li>
+</ol>
+<h3 id="11-mengkonfigurasi-line-ending">11. Mengkonfigurasi Line Ending<a href="#11-mengkonfigurasi-line-ending" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ol>
+<li>
+<p>Bagian ini berisi tentang bagaimana Git menangani Line Ending antara Windows (<code>CRLF</code>) dan sistem berbasis Unix (<code>LF</code>). Pertahankan default <strong>Checkout Windows-style, commit Unix-style line endings</strong>. Klik <strong>Next</strong>.</p>
+<p><img alt="Line endings" src="/posts/git/1-git-installation/lineending.png"></p>
+</li>
+</ol>
+<h3 id="12-pilih-terminal-emulator">12. Pilih Terminal Emulator<a href="#12-pilih-terminal-emulator" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ol>
+<li>
+<p>Git menawarkan dua opsi untuk emulator terminal: <strong>MinTTY</strong> atau <strong>Konsol default Windows</strong>. Pilih <strong>Windows&rsquo; default console</strong> untuk menghindari kebingungan (pengguna Windows sudah cukup terbiasa). Klik <strong>Next</strong>.</p>
+<p><img alt="Terminal emulator" src="/posts/git/1-git-installation/terminal.png"></p>
+</li>
+</ol>
+<h3 id="13-perilaku-git-pull-default">13. Perilaku <code>git pull</code> default<a href="#13-perilaku-git-pull-default" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ol>
+<li>
+<p>Tentukan bagaimana Git harus menangani <code>git pull</code>. Biarkan pada default: <strong>Default (fast-forward or merge)</strong>. Klik <strong>Next</strong>.</p>
+<p><img alt="Git pull behavior" src="/posts/git/1-git-installation/gitpull.png"></p>
+</li>
+</ol>
+<h3 id="14-pengelola-kredensial-git">14. Pengelola Kredensial Git<a href="#14-pengelola-kredensial-git" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ol>
+<li>
+<p>Kamu akan diminta untuk memilih bagaimana Git mengelola kredensial. Pilihlah <strong>Git Credential Manager</strong> (disarankan). Klik <strong>Next</strong>.</p>
+<p><img alt="Git credentials" src="/posts/git/1-git-installation/credential.png"></p>
+</li>
+</ol>
+<h3 id="15-mengonfigurasi-opsi-tambahan">15. Mengonfigurasi Opsi Tambahan<a href="#15-mengonfigurasi-opsi-tambahan" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ol>
+<li>Di sini, kamu akan melihat beberapa pengaturan opsional, seperti mengaktifkan fitur eksperimental. Lewati saja kecuali kamu ingin sedikit eksplorasi. Klik <strong>Next</strong>.
+<img alt="Extra options" src="/posts/git/1-git-installation/extraoptions.png"></li>
+</ol>
+<h3 id="16-instal-git">16. Instal Git<a href="#16-instal-git" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ol>
+<li>
+<p>Terakhir, klik <strong>Install</strong> untuk memulai proses. Bar progress akan muncul saat Git sedang diinstal di sistem mu.
+<img alt="Installing progress" src="/posts/git/1-git-installation/installing.png"></p>
+</li>
+<li>
+<p>Setelah instalasi selesai, kamu akan ditanya apakah kamu ingin meluncurkan <strong>Git Bash</strong> dan melihat catatan rilis. Hapus centang pada <strong>View Release Note</strong> kecuali jika kamu ingin menyelami hal-hal kecil. Klik <strong>Finish</strong>.
+<img alt="Install complete" src="/posts/git/1-git-installation/installcomplete.png"></p>
+</li>
+</ol>
+<p>Selamat, kamu telah berhasil menginstal Git di Windows. Sekarang kamu akhirnya bisa bekerja dengan Git pada sistem yang seperti lingkungan development versi IKEA-hampir tidak berfungsi tetapi entah bagaimana bisa menyelesaikan pekerjaan.</p>
+<p>Sekarang mari kita periksa versinya dan verifikasi bahwa git telah berhasil diinstal dengan menekan tombol Windows<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> + R, dan ketik cmd pada bar pencarian, lalu klik enter, tuliskan perintah ini pada cmd:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git --version
+</span></span></code></pre></div><p><img alt="Git Version on Windows" src="/posts/git/1-git-installation/gitversionwin.png"></p>
+<p>Jika kamu merasa masokis, kamu bahkan dapat menggunakan Git Bash&hellip;</p>
+<hr>
+<h2 id="mengkonfigurasi-git">Mengkonfigurasi Git<a href="#mengkonfigurasi-git" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Sekarang setelah kamu berhasil menginstal Git (dan selamat dari antarmuka Windows yang biasa-biasa saja), saatnya untuk mengonfigurasinya. Ini akan memberi tahu Git siapa kamu dan bagaimana menangani perilaku tertentu saat kamu mulai bekerja dengan repositori.</p>
+<h3 id="1-atur-nama-pengguna-dan-email-mu">1. Atur Nama Pengguna dan Email Mu<a href="#1-atur-nama-pengguna-dan-email-mu" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Git melacak perubahan dengan mengaitkannya dengan nama dan email. Jadi, Anda harus memberi tahu Git siapa Anda. Buka cmd dan jalankan perintah-perintah ini:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --global user.name <span style="color:#e6db74">&#34;Username Kamu&#34;</span>
+</span></span><span style="display:flex;"><span>git config --global user.email <span style="color:#e6db74">&#34;email.kamu@contoh.com&#34;</span>
+</span></span></code></pre></div><p>Ganti <code>“Username Kamu”</code> dan <code>“email.kamu@contoh.com”</code> dengan detail kamu yang sebenarnya, jika memungkinkan dan kamu memiliki akun Github, pastikan username dan email sama dengan yang ada di Github, kecuali jika kamu ingin commit mu terlihat seperti dibuat oleh bot. Hal ini sangat berguna ketika kamu berkolaborasi dengan orang lain atau ketika melakukan <code>git push</code> ke repositori jarak jauh Github mu (kita akan membahasnya nanti).</p>
+<h3 id="2-menetapkan-editor-default">2. Menetapkan Editor Default<a href="#2-menetapkan-editor-default" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Kamu perlu mengatur editor teks default untuk digunakan Git saat menulis pesan commit atau menggabungkan perubahan. Jika kamu melewatkan langkah ini selama instalasi (atau hanya ingin mengubahnya), berikut ini adalah cara untuk mengaturnya di Git:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --global core.editor <span style="color:#e6db74">&#34;nano&#34;</span>
+</span></span></code></pre></div><p>Ganti <code>“nano”</code> dengan editor teks pilihan mu. Misalnya, kamu dapat menggunakan:</p>
+<ul>
+<li><code>code --wait</code> untuk Visual Studio Code, ini adalah yang terbaik untuk pemula</li>
+<li><code>subl --wait</code> untuk Sublime Text, yang satu ini juga ramah untuk pemula dan jauh lebih ringan, tetapi menyediakan lebih sedikit fitur daripada Visual Studio Code</li>
+<li><code>notepad++</code> jika kamu terjebak di tahun 2007 dan masih menggunakan Notepad++, atau ketika kamu menginginkan opsi yang lebih sederhana</li>
+</ul>
+<h3 id="3-aktifkan-output-berwarna-agar-kamu-tidak-buta">3. Aktifkan Output Berwarna (Agar Kamu Tidak Buta)<a href="#3-aktifkan-output-berwarna-agar-kamu-tidak-buta" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Output Git bisa sangat banyak, terutama jika kamu bekerja di terminal yang semuanya berwarna putih. Untuk memudahkan mata mu, aktifkan output berwarna:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --global color.ui true
+</span></span></code></pre></div><p>Sekarang, daripada melihat dinding teks putih, kamu akan mendapatkan penyorotan sintaks yang berwarna-warni untuk membedakan antara baris yang ditambahkan, dihapus, atau dimodifikasi.</p>
+<h3 id="4-mengatur-nama-cabang-default-ke-main">4. Mengatur Nama Cabang Default ke <code>main</code><a href="#4-mengatur-nama-cabang-default-ke-main" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Karena Git sekarang merekomendasikan penggunaan <code>main</code> dan bukannya <code>master</code> sebagai nama cabang default, ada baiknya kamu mengaturnya secara global agar semua repositori mu di masa depan dimulai dengan <code>main</code> sejak awal:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --global init.defaultBranch main
+</span></span></code></pre></div><p>Hal ini menghindarkan mu dari kerepotan mengganti nama cabang setiap kali kamu membuat repositori baru.</p>
+<h3 id="5-mengaktifkan-penyimpanan-kredensial">5. Mengaktifkan Penyimpanan Kredensial<a href="#5-mengaktifkan-penyimpanan-kredensial" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Jika kamu lelah mengetik nama pengguna dan kata sandi setiap kali kamu melakukan remote, kamu bisa mengaktifkan penyimpanan kredensial. Ini akan menyimpan kredensial mu untuk sementara waktu sehingga kamu tidak perlu terus memasukkannya:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --global credential.helper cache
+</span></span></code></pre></div><p>Secara default, Git akan menyimpan kredensial mu dalam cache selama 15 menit. kamu bisa mengatur batas waktu cache yang lebih lama jika kamu sangat malas (atau efisien, tergantung sudut pandang mu):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --global credential.helper <span style="color:#e6db74">&#39;cache --timeout=3600&#39;</span>
+</span></span></code></pre></div><p>Ini akan membuat kredensial mu tersimpan dalam cache selama satu jam.</p>
+<h3 id="6-mengatur-preferensi-merge-dan-rebase-default">6. Mengatur Preferensi Merge dan Rebase Default<a href="#6-mengatur-preferensi-merge-dan-rebase-default" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Kamu juga dapat mengatur bagaimana Git harus menangani <code>git pull</code> - apakah ia harus mencoba menggabungkan, merge, merebase, atau mempercepat. Kebanyakan orang tetap menggunakan penggabungan (karena perubahan itu menakutkan), tetapi jika kamu ingin mengatur perilaku yang berbeda:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --global pull.rebase false
+</span></span></code></pre></div><p>Untuk menetapkan secara default untuk rebase alih-alih merge:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --global pull.rebase true
+</span></span></code></pre></div><p>Jika kamu tidak yakin, tetaplah <code>merge</code>-ini adalah opsi yang paling mudah.</p>
+<h3 id="7-periksa-pengaturan-mu">7. Periksa Pengaturan Mu<a href="#7-periksa-pengaturan-mu" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Untuk melihat konfigurasi Git yang telah kamu siapkan, jalankan:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --list
 </span></span></code></pre></div><p>Ini adalah hasil milik ku:
-<img alt="Git config &ndash;list result" src=/posts/git/1-git-installation/gitconfig.png></p><p>Punyaku tidak terlalu banyak karena aku hanya mengatur yang paling penting saja. Bagaimanapun, ini akan menampilkan konfigurasi global mu, termasuk nama pengguna, email, dan pengaturan lain seperti preferensi warna. Jika ada yang salah, jalankan kembali perintah dengan nilai yang benar.</p><hr><h3 id=mengakhiri-konfigurasi>Mengakhiri Konfigurasi<a href=#mengakhiri-konfigurasi class=hanchor arialabel=Anchor>#</a></h3><p>Sekarang, kamu seharusnya sudah menginstal dan mengonfigurasi Git sepenuhnya di komputer mu, baik di Linux, macOS, atau bahkan Windows. Kamu juga telah menyiapkan nama pengguna dan email mu, yang sangat penting untuk melacak perubahan di seluruh repositori mu. Dengan Git aktif dan berjalan, kamu siap untuk mulai mengelola proyek mu dengan kontrol versi yang kuat.</p><p>Selanjutnya, kita akan membahas cara membuat repositori pertama mu, menautkannya ke GitHub, dan membahas perintah-perintah dasar yang akan membawa pengetahuan Git mu ke tingkat berikutnya. Tetap pantau dan sampai jumpa di topik berikutnya :D</p><blockquote><p><strong>Note:</strong> Artikel ini belum sempurna, kalian sangat diharapkan memberikan saran untuk perubahan atau umpan balik agar saya dapat memperbaikinya nanti. Jangan ragu untuk menghubungiku kapan saja jika kalian mau, di sini: <a href=mailto:nixvoid@proton.me>Email</a> atau <a href=https://wa.me/+6282284528116>Chat di Whatsapp</a></p></blockquote><div class=footnotes role=doc-endnotes><hr><ol><li id=fn:1><p>Tombol Windows pada keyboard biasanya memiliki logo Windows, berada pada bagian kiri bawah keyboard diantara tombol Ctrl dan Alt.&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></div></div></div><div class=pagination><div class=pagination__title><span class=pagination__title-h>Baca postingan lain</span><hr></div><div class=pagination__buttons><a href=https://imortio.github.io/id/posts/git/pengenalan-git/ class="button inline prev">Git Gud dengan Git</a></div></div></article></div><footer class=footer><div class=footer__inner><div class=copyright><span>© 2024 Powered by <a href=https://gohugo.io>Hugo</a></span>
-<span>:: <a href=https://github.com/panr/hugo-theme-terminal target=_blank>Theme</a> made by <a href=https://github.com/panr target=_blank>panr</a></span></div></div></footer><script type=text/javascript src=/bundle.min.js></script></div></body></html>
+<img alt="Git config &ndash;list result" src="/posts/git/1-git-installation/gitconfig.png"></p>
+<p>Punyaku tidak terlalu banyak karena aku hanya mengatur yang paling penting saja. Bagaimanapun, ini akan menampilkan konfigurasi global mu, termasuk nama pengguna, email, dan pengaturan lain seperti preferensi warna. Jika ada yang salah, jalankan kembali perintah dengan nilai yang benar.</p>
+<hr>
+<h3 id="mengakhiri-konfigurasi">Mengakhiri Konfigurasi<a href="#mengakhiri-konfigurasi" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Sekarang, kamu seharusnya sudah menginstal dan mengonfigurasi Git sepenuhnya di komputer mu, baik di Linux, macOS, atau bahkan Windows. Kamu juga telah menyiapkan nama pengguna dan email mu, yang sangat penting untuk melacak perubahan di seluruh repositori mu. Dengan Git aktif dan berjalan, kamu siap untuk mulai mengelola proyek mu dengan kontrol versi yang kuat.</p>
+<p>Selanjutnya, kita akan membahas cara membuat repositori pertama mu, dan juga membuat akun github baru. Tetap pantau dan sampai jumpa di topik berikutnya :D</p>
+<blockquote>
+<p><strong>Note:</strong> Artikel ini belum sempurna, kalian sangat diharapkan memberikan saran untuk perubahan atau umpan balik agar saya dapat memperbaikinya nanti. Jangan ragu untuk menghubungiku kapan saja jika kalian mau, di sini: <a href="mailto:nixvoid@proton.me">Email</a> atau <a href="https://wa.me/+6282284528116">Chat di Whatsapp</a></p>
+</blockquote>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Tombol Windows pada keyboard biasanya memiliki logo Windows, berada pada bagian kiri bawah keyboard diantara tombol Ctrl dan Alt.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">Baca postingan lain</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+      <a href="//localhost:1313/id/posts/git/pengenalan-git/" class="button inline prev">
+        Git Gud dengan Git
+      </a>
+    
+    
+      ::
+    
+    
+      <a href="//localhost:1313/id/posts/git/2-akun-dan-repo/" class="button inline next">
+        Git-#2: Akun &amp; Repo
+      </a>
+    
+  </div>
+</div>
+
+
+  
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2024 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
