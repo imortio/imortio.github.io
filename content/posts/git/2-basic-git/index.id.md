@@ -32,25 +32,25 @@ Jadi, ayo kita mulai
 Untuk membuat repositori git pertamamu, kalian bisa mengikuti panduan dibawah ini:
 
  1. Buka Terminal
-    Jalankan terminal pilihanmu (atau command prompt jika kalian menggunakan Windows)
+   + Jalankan terminal pilihanmu (atau command prompt jika kalian menggunakan Windows)
  2. Arahkan ke folder projek yang kalian inginkan
-    Gunakan perintah `cd` untuk berganti folder secara cepat ke folder yang ingin kamu jadikan sebagai repositori, sebagai contoh:
-    ```bash
-    cd jalur/ke/repositori/milikmu
-    ```
-    Pada Windows kita menggunakan `\` daripada `/`, jadi perintahnya akan terlihat seperti ini:
-    ```bash
-    cd jalur\ke\repositori\milikmu
-    ```
+   + Gunakan perintah `cd` untuk berganti folder secara cepat ke folder yang ingin kamu jadikan sebagai repositori, sebagai contoh:
+   ```bash
+   cd jalur/ke/repositori/milikmu
+   ```
+   Pada Windows kita menggunakan `\` daripada `/`, jadi perintahnya akan terlihat seperti ini:
+   ```bash
+   cd jalur\ke\repositori\milikmu
+   ```
  3. Inisialisasi repositorinya
-    Setelah kalian berada di folder yang kalian inginkan, jalankan perintah ini untuk membuta folder saat ini kmau berada menjadi sebuah repositori Git yang baru:
+    + Setelah kalian berada di folder yang kalian inginkan, jalankan perintah ini untuk membuta folder saat ini kmau berada menjadi sebuah repositori Git yang baru:
     ```bash
     git init
     ```
     Perintah ini akan membangun sebuah subdirektori baru bernama .git didalam folder yang kalian tempati sekarang, yang memuat semua metadata (ini bekerja seperti hal nya identitas pada dunia nyata) untuk repositori ini.
 
  4. Verifikasi repositori tersebut
-    Kalian bisa mengkonfirmasi bahwa repositori tersebut sudah berhasil dibuat dengan mengecek statusnya menggunakan:
+    + Kalian bisa mengkonfirmasi bahwa repositori tersebut sudah berhasil dibuat dengan mengecek statusnya menggunakan:
     ```bash
     git status
     ```
@@ -109,7 +109,7 @@ Setelah kalian belajar bagaimana membuat repositori Git pertama kalinya, kalian 
 
       Kalian bisa mengkostumisasi pilihannya semau kalian berdasarkan pilihan yang ada, tapi pada kebanyakan kasus, pilihan yang kupilih di atas adalah yang paling umum diantara pengguna Github yang baru.
  7. Pilih plan Github
-    Github memberikan kalian beberapa pilihan plan, ini seperti Github premium atau semacamnya, untuk orang yang sudah ahli atau developer besar ini bisa jadi menguntungkan, tapi untuk penggunan dasar atau personal sudah cukup dengan menggunakan plan gratis, versi gratisnya saja sudah mencakup hampir semua fungsi dasar dan penting dari Git (Github), kalian benar benar tidak perlu semua hal mewah itu jika hanya untuk penggunan personal yang mendasar
+    + Github memberikan kalian beberapa pilihan plan, ini seperti Github premium atau semacamnya, untuk orang yang sudah ahli atau developer besar ini bisa jadi menguntungkan, tapi untuk penggunan dasar atau personal sudah cukup dengan menggunakan plan gratis, versi gratisnya saja sudah mencakup hampir semua fungsi dasar dan penting dari Git (Github), kalian benar benar tidak perlu semua hal mewah itu jika hanya untuk penggunan personal yang mendasar
     ![Pilih plan gratis](images/7-freeplan.webp)
 
 Sudah, selesai, sekarang kalian sudah siap, tapi mungkin kalian ingin membuat sebuah repositori github yang baru, begini caramu melakukannya:

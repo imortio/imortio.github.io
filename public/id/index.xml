@@ -321,26 +321,34 @@ Commit adalah sebuah checkpoint, atau potongan status proyek kalian pada waktu t
 &lt;h2 id=&#34;1-membuat-repositori-baru&#34;&gt;1. Membuat repositori baru&lt;/h2&gt;
 &lt;p&gt;Untuk membuat repositori git pertamamu, kalian bisa mengikuti panduan dibawah ini:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Buka Terminal
-Jalankan terminal pilihanmu (atau command prompt jika kalian menggunakan Windows)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Arahkan ke folder projek yang kalian inginkan
-Gunakan perintah &lt;code&gt;cd&lt;/code&gt; untuk berganti folder secara cepat ke folder yang ingin kamu jadikan sebagai repositori, sebagai contoh:&lt;/p&gt;
+&lt;li&gt;Buka Terminal&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Jalankan terminal pilihanmu (atau command prompt jika kalian menggunakan Windows)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Arahkan ke folder projek yang kalian inginkan&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Gunakan perintah &lt;code&gt;cd&lt;/code&gt; untuk berganti folder secara cepat ke folder yang ingin kamu jadikan sebagai repositori, sebagai contoh:&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd jalur/ke/repositori/milikmu
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Pada Windows kita menggunakan &lt;code&gt;\&lt;/code&gt; daripada &lt;code&gt;/&lt;/code&gt;, jadi perintahnya akan terlihat seperti ini:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd jalur&lt;span style=&#34;color:#ae81ff&#34;&gt;\k&lt;/span&gt;e&lt;span style=&#34;color:#ae81ff&#34;&gt;\r&lt;/span&gt;epositori&lt;span style=&#34;color:#ae81ff&#34;&gt;\m&lt;/span&gt;ilikmu
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;
-&lt;p&gt;Inisialisasi repositorinya
-Setelah kalian berada di folder yang kalian inginkan, jalankan perintah ini untuk membuta folder saat ini kmau berada menjadi sebuah repositori Git yang baru:&lt;/p&gt;
+&lt;p&gt;Inisialisasi repositorinya&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Setelah kalian berada di folder yang kalian inginkan, jalankan perintah ini untuk membuta folder saat ini kmau berada menjadi sebuah repositori Git yang baru:&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git init
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Perintah ini akan membangun sebuah subdirektori baru bernama .git didalam folder yang kalian tempati sekarang, yang memuat semua metadata (ini bekerja seperti hal nya identitas pada dunia nyata) untuk repositori ini.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Verifikasi repositori tersebut
-Kalian bisa mengkonfirmasi bahwa repositori tersebut sudah berhasil dibuat dengan mengecek statusnya menggunakan:&lt;/p&gt;
+&lt;p&gt;Verifikasi repositori tersebut&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Kalian bisa mengkonfirmasi bahwa repositori tersebut sudah berhasil dibuat dengan mengecek statusnya menggunakan:&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git status
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Jika reponya sudah berhasil dibuat, kalian akan melihat sebuah pesan menandakan bahwa kalian berada di cabang default. Biasanya cabang ini akan bernama &lt;code&gt;master&lt;/code&gt; atau &lt;code&gt;main&lt;/code&gt;, tapi sejak pada artikel sebelumnya kalian sudah mengatur cabang defaultnya menjadi &lt;code&gt;main&lt;/code&gt; maka secara otomatis semua cabang default kalian akan bernama &lt;code&gt;main&lt;/code&gt; termasuk yang ini juga.&lt;/p&gt;
 &lt;/li&gt;
@@ -403,8 +411,11 @@ Kalian bisa mengkonfirmasi bahwa repositori tersebut sudah berhasil dibuat denga
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Pilih plan Github
-Github memberikan kalian beberapa pilihan plan, ini seperti Github premium atau semacamnya, untuk orang yang sudah ahli atau developer besar ini bisa jadi menguntungkan, tapi untuk penggunan dasar atau personal sudah cukup dengan menggunakan plan gratis, versi gratisnya saja sudah mencakup hampir semua fungsi dasar dan penting dari Git (Github), kalian benar benar tidak perlu semua hal mewah itu jika hanya untuk penggunan personal yang mendasar
+&lt;ul&gt;
+&lt;li&gt;Github memberikan kalian beberapa pilihan plan, ini seperti Github premium atau semacamnya, untuk orang yang sudah ahli atau developer besar ini bisa jadi menguntungkan, tapi untuk penggunan dasar atau personal sudah cukup dengan menggunakan plan gratis, versi gratisnya saja sudah mencakup hampir semua fungsi dasar dan penting dari Git (Github), kalian benar benar tidak perlu semua hal mewah itu jika hanya untuk penggunan personal yang mendasar
 &lt;img alt=&#34;Pilih plan gratis&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/7-freeplan.webp&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Sudah, selesai, sekarang kalian sudah siap, tapi mungkin kalian ingin membuat sebuah repositori github yang baru, begini caramu melakukannya:&lt;/p&gt;
 &lt;ol&gt;

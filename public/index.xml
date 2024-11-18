@@ -328,25 +328,33 @@ A commit is a checkpoint, or snapshot of your project&amp;rsquo;s state at a spe
 &lt;p&gt;To create your first git repository, you may follow this guide below:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Open your terminal
-Launch your own terminal (or command prompt if youre using Windows)&lt;/p&gt;
+&lt;p&gt;Open your terminal&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Launch your own terminal (or command prompt if youre using Windows)&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Navigate to your desired project folder
-Use &lt;code&gt;cd&lt;/code&gt; command to quickly change to the folder where you want to create your repository. For an example:&lt;/p&gt;
+&lt;p&gt;Navigate to your desired project folder&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use &lt;code&gt;cd&lt;/code&gt; command to quickly change to the folder where you want to create your repository. For an example:&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd path/to/your/repo
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;On Windows instead it will be using &lt;code&gt;\&lt;/code&gt;, so the command would looks like this:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd path&lt;span style=&#34;color:#ae81ff&#34;&gt;\t&lt;/span&gt;o&lt;span style=&#34;color:#ae81ff&#34;&gt;\y&lt;/span&gt;our&lt;span style=&#34;color:#ae81ff&#34;&gt;\r&lt;/span&gt;epo
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Initialize the repository
-Once you have been in your desired folder, run this command to make current folder as a new Git repository:&lt;/p&gt;
+&lt;p&gt;Initialize the repository&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Once you have been in your desired folder, run this command to make current folder as a new Git repository:&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git init
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This command will sets up a new .git subdirectory inside current folder, which contain all the metadata (it works like identity in real life) for the repository.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Verify the Repo
-You can confirm that the repository has been succesfully created by checking the status using:&lt;/p&gt;
+&lt;p&gt;Verify the Repo&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You can confirm that the repository has been succesfully created by checking the status using:&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git status
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If the repo is succesfully created, you will see a message indicating that youre in default branch. Usually it will be named &lt;code&gt;master&lt;/code&gt; or &lt;code&gt;main&lt;/code&gt;, but since in the previous article you has been set the default branch name to &lt;code&gt;main&lt;/code&gt; then it will automatically set to &lt;code&gt;main&lt;/code&gt; from the default itself.&lt;/p&gt;
 &lt;/li&gt;
@@ -365,7 +373,7 @@ You can confirm that the repository has been succesfully created by checking the
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;first commit&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;code&gt;-m&lt;/code&gt; flag is used to tell git that you want to add description message to your commit, so i will be less confusing if you have many commits. You can change the &amp;ldquo;first commit&amp;rdquo; to anything you want, but in case of collaborations, you must keep it lean and clear.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;Congrats! you have been create you first ever Git repo and even put your own first commit!.Now we can move to just a lil bit more advanced topic on&lt;/p&gt;
+&lt;p&gt;Congrats! you have been create you first ever Git repo and even put your own first commit!. Now we can move to just a lil bit more advanced topic on&lt;/p&gt;
 &lt;h2 id=&#34;2-creating-github-account&#34;&gt;2. Creating Github Account&lt;/h2&gt;
 &lt;p&gt;After you learn how to create you own first Git repo, you might to create one Github account so later you can save your projects on cloud. Creating a Github account is quite simple, here is few steps on how to do it:&lt;/p&gt;
 &lt;ol&gt;
@@ -409,8 +417,11 @@ You can confirm that the repository has been succesfully created by checking the
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Choose Github plan
-Github gives you some options of plans, its like premium Github or something else similars, for advanced or big developers it could be useful but for basic usage or personal its enough just by using Free plan, after all, the free version too has been cover almost all the basic and essential function of git, you really dont need all the fancy thing in premium features if just for basic personal uses
+&lt;ul&gt;
+&lt;li&gt;Github gives you some options of plans, its like premium Github or something else similars, for advanced or big developers it could be useful but for basic usage or personal its enough just by using Free plan, after all, the free version too has been cover almost all the basic and essential function of git, you really dont need all the fancy thing in premium features if just for basic personal uses
 &lt;img alt=&#34;Choose Free Plan&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/7-freeplan.webp&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Thats it, done, now you all set, but you must be want to know how to create your Github repo, so here is how you can do it:&lt;/p&gt;
 &lt;ol&gt;

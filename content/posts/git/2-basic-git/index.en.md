@@ -32,9 +32,9 @@ So then, let’s dish it out
 To create your first git repository, you may follow this guide below:
 
  1. Open your terminal
-    Launch your own terminal (or command prompt if youre using Windows)
+    + Launch your own terminal (or command prompt if youre using Windows)
  2. Navigate to your desired project folder
-    Use `cd` command to quickly change to the folder where you want to create your repository. For an example:
+    + Use `cd` command to quickly change to the folder where you want to create your repository. For an example:
     ```bash
     cd path/to/your/repo
     ```
@@ -44,13 +44,13 @@ To create your first git repository, you may follow this guide below:
     ```
 
  3. Initialize the repository
-    Once you have been in your desired folder, run this command to make current folder as a new Git repository:
+    + Once you have been in your desired folder, run this command to make current folder as a new Git repository:
     ```bash
     git init
     ```
     This command will sets up a new .git subdirectory inside current folder, which contain all the metadata (it works like identity in real life) for the repository.
  4. Verify the Repo
-    You can confirm that the repository has been succesfully created by checking the status using:
+    + You can confirm that the repository has been succesfully created by checking the status using:
     ```bash
     git status
     ```
@@ -83,7 +83,7 @@ The `-m` flag is used to tell git that you want to add description message to yo
 
 ---
 
-Congrats! you have been create you first ever Git repo and even put your own first commit!.Now we can move to just a lil bit more advanced topic on
+Congrats! you have been create you first ever Git repo and even put your own first commit!. Now we can move to just a lil bit more advanced topic on
 
 ## 2. Creating Github Account
 
@@ -110,7 +110,7 @@ After you learn how to create you own first Git repo, you might to create one Gi
     
       You may customize the selection as you wish with available options, but in most case the options that i've selected is the most common among new Github users.
  7. Choose Github plan
-    Github gives you some options of plans, its like premium Github or something else similars, for advanced or big developers it could be useful but for basic usage or personal its enough just by using Free plan, after all, the free version too has been cover almost all the basic and essential function of git, you really dont need all the fancy thing in premium features if just for basic personal uses
+    + Github gives you some options of plans, its like premium Github or something else similars, for advanced or big developers it could be useful but for basic usage or personal its enough just by using Free plan, after all, the free version too has been cover almost all the basic and essential function of git, you really dont need all the fancy thing in premium features if just for basic personal uses
     ![Choose Free Plan](images/7-freeplan.webp)
 
 Thats it, done, now you all set, but you must be want to know how to create your Github repo, so here is how you can do it:
