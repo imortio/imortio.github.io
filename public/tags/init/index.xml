@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Init on imortio</title>
-    <link>//localhost:1313/tags/init/</link>
+    <link>https://imortio.github.io/tags/init/</link>
     <description>Recent content in Init on imortio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 04 Nov 2024 14:20:42 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/init/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Nov 2024 14:20:42 +0000</lastBuildDate><atom:link href="https://imortio.github.io/tags/init/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git-#2: Account &amp; Repo</title>
-      <link>//localhost:1313/posts/git/2-account-and-repo/</link>
+      <link>https://imortio.github.io/posts/git/2-account-and-repo/</link>
       <pubDate>Mon, 04 Nov 2024 14:20:42 +0000</pubDate>
       
-      <guid>//localhost:1313/posts/git/2-account-and-repo/</guid>
+      <guid>https://imortio.github.io/posts/git/2-account-and-repo/</guid>
       <description>In this chapter, you’ll initialize a Git repository, create a new Github account and setup it a bit. By the end, you&amp;rsquo;ll be set up to handle local and remote version control effortlessly.</description>
       <content>&lt;p&gt;Hello, back with me again to continue our subject, sorry for my slow update, i was busy for a few weeks before because i attend many event both from my college and my friends, but anyway lets skip that and we move to&lt;/p&gt;
 &lt;h1 id=&#34;git-2-account--repo&#34;&gt;Git-#2: Account &amp;amp; Repo&lt;/h1&gt;
@@ -26,51 +26,59 @@
 &lt;p&gt;To create your first git repository, you may follow this guide below:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Open your terminal
-Launch your own terminal (or command prompt if youre using Windows)&lt;/p&gt;
+&lt;p&gt;Open your terminal&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Launch your own terminal (or command prompt if youre using Windows)&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Navigate to your desired project folder
-Use &lt;code&gt;cd&lt;/code&gt; command to quickly change to the folder where you want to create your repository. For an example:&lt;/p&gt;
+&lt;p&gt;Navigate to your desired project folder&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use &lt;code&gt;cd&lt;/code&gt; command to quickly change to the folder where you want to create your repository. For an example:&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd path/to/your/repo
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;On Windows instead it will be using &lt;code&gt;\&lt;/code&gt;, so the command would looks like this:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd path&lt;span style=&#34;color:#ae81ff&#34;&gt;\t&lt;/span&gt;o&lt;span style=&#34;color:#ae81ff&#34;&gt;\y&lt;/span&gt;our&lt;span style=&#34;color:#ae81ff&#34;&gt;\r&lt;/span&gt;epo
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Initialize the repository
-Once you have been in your desired folder, run this command to make current folder as a new Git repository:&lt;/p&gt;
+&lt;p&gt;Initialize the repository&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Once you have been in your desired folder, run this command to make current folder as a new Git repository:&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git init
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This command will sets up a new .git subdirectory inside current folder, which contain all the metadata (it works like identity in real life) for the repository.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Verify the Repo
-You can confirm that the repository has been succesfully created by checking the status using:&lt;/p&gt;
+&lt;p&gt;Verify the Repo&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You can confirm that the repository has been succesfully created by checking the status using:&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git status
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If the repo is succesfully created, you will see a message indicating that youre in default branch. Usually it will be named &lt;code&gt;master&lt;/code&gt; or &lt;code&gt;main&lt;/code&gt;, but since in the previous article you has been set the default branch name to &lt;code&gt;main&lt;/code&gt; then it will automatically set to &lt;code&gt;main&lt;/code&gt; from the default itself&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If the repo is succesfully created, you will see a message indicating that youre in default branch. Usually it will be named &lt;code&gt;master&lt;/code&gt; or &lt;code&gt;main&lt;/code&gt;, but since in the previous article you has been set the default branch name to &lt;code&gt;main&lt;/code&gt; then it will automatically set to &lt;code&gt;main&lt;/code&gt; from the default itself.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Thats it, now you has been successfully create your first Git repo, now its time to add some file in it, then after that you can check again using
-&lt;code&gt;bash git status &lt;/code&gt;
-And you will see some output like this
-&lt;img alt=&#34;git status after add new file&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/gitstatusaftd.webp&#34;&gt;&lt;/p&gt;
-&lt;p&gt;You can set the file to &lt;code&gt;staged&lt;/code&gt; by using this command:
-&lt;code&gt;bash git add filename &lt;/code&gt;
-Or if you want to set all file to &lt;code&gt;staged&lt;/code&gt; you may use this instead
-&lt;code&gt;bash git add . &lt;/code&gt;
-After that run status check again and you will see some result like this:
-&lt;img alt=&#34;git after staged&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/gitaftstaged.webp&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Then to &lt;code&gt;commit&lt;/code&gt; the staged files to git memory, you need to run this command:
-&lt;code&gt;bash git commit -m &amp;quot;first commit&amp;quot; &lt;/code&gt;
-The &lt;code&gt;-m&lt;/code&gt; flag is used to tell git that you want to add description message to your commit, so i will be less confusing if you have many commits. You can change the &amp;ldquo;first commit&amp;rdquo; to anything you want, but in case of collaborations, you must keep it lean and clear.&lt;/p&gt;
+&lt;p&gt;Thats it, now you has been successfully create your first Git repo, now its time to add some file in it, then after that you can check again using:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git status
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And you will see some output like this
+&lt;img alt=&#34;git status after add new file&#34; src=&#34;https://imortio.github.io/posts/git/2-account-and-repo/images/gitstatusaftd.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You can set the file to &lt;code&gt;staged&lt;/code&gt; by using this command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; git add filename
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Or if you want to set all file to &lt;code&gt;staged&lt;/code&gt; you may use this instead&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After that run status check again and you will see some result like this:
+&lt;img alt=&#34;git after staged&#34; src=&#34;https://imortio.github.io/posts/git/2-account-and-repo/images/gitaftstaged.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Then to &lt;code&gt;commit&lt;/code&gt; the staged files to git memory, you need to run this command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;first commit&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;code&gt;-m&lt;/code&gt; flag is used to tell git that you want to add description message to your commit, so i will be less confusing if you have many commits. You can change the &amp;ldquo;first commit&amp;rdquo; to anything you want, but in case of collaborations, you must keep it lean and clear.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;Congrats! you have been create you first ever Git repo and even put your own first commit!.Now we can move to just a lil bit more advanced topic on&lt;/p&gt;
+&lt;p&gt;Congrats! you have been create you first ever Git repo and even put your own first commit!. Now we can move to just a lil bit more advanced topic on&lt;/p&gt;
 &lt;h2 id=&#34;2-creating-github-account&#34;&gt;2. Creating Github Account&lt;/h2&gt;
 &lt;p&gt;After you learn how to create you own first Git repo, you might to create one Github account so later you can save your projects on cloud. Creating a Github account is quite simple, here is few steps on how to do it:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Open &lt;a href=&#34;https://github.com/&#34;&gt;github.com&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;Open your browser and type &lt;a href=&#34;https://github.com/&#34;&gt;github.com&lt;/a&gt; in the search bar and hit enter, you will be lead to a webpage like this:
-&lt;img alt=&#34;Github Homepage&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/1-homepage.webp&#34;&gt;&lt;/li&gt;
+&lt;img alt=&#34;Github Homepage&#34; src=&#34;https://imortio.github.io/posts/git/2-account-and-repo/images/1-homepage.webp&#34;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Click on Sign Up
@@ -80,63 +88,66 @@ The &lt;code&gt;-m&lt;/code&gt; flag is used to tell git that you want to add de
 &lt;/li&gt;
 &lt;li&gt;Fill your own Github credentials
 &lt;ul&gt;
-&lt;li&gt;After you click Sign Up, you will be taken to another page to register you as a new Github User, fill your own credentials like Username, Email, and Password. Also you might want to adjust your username and email with the one that in your local git config to avoid conflict or further confusion, which refer to &lt;a href=&#34;//localhost:1313/posts/git/1-git-installation/#configuring-git&#34;&gt;this guide&lt;/a&gt; if you have forgotten:
-&lt;img alt=&#34;Sign Up field filled&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/2-credentials.webp&#34;&gt;&lt;/li&gt;
+&lt;li&gt;After you click Sign Up, you will be taken to another page to register you as a new Github User, fill your own credentials like Username, Email, and Password. Also you might want to adjust your username and email with the one that in your local git config to avoid conflict or further confusion, which refer to &lt;a href=&#34;https://imortio.github.io/posts/git/1-git-installation/#configuring-git&#34;&gt;this guide&lt;/a&gt; if you have forgotten:
+&lt;img alt=&#34;Sign Up field filled&#34; src=&#34;https://imortio.github.io/posts/git/2-account-and-repo/images/2-credentials.webp&#34;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Solve the captcha
 &lt;ul&gt;
-&lt;li&gt;Usually you will be given some captcha, this is for security purpose so juts solve it as youre a human
-&lt;img alt=&#34;Captcha&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/3-captcha.webp&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Usually you will be given some captcha, this is for security purpose so just solve it as youre a human
+&lt;img alt=&#34;Captcha&#34; src=&#34;https://imortio.github.io/posts/git/2-account-and-repo/images/3-captcha.webp&#34;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Verify your email
 &lt;ul&gt;
 &lt;li&gt;Usually, for security matter, Github will need you to confirm the email that you&amp;rsquo;ve been used for registering at Github, so go check your email inbox for any mail from Github, then confirm your email by clicking Verify
-&lt;img alt=&#34;Email Verify Confirmated&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/4-verify.webp&#34;&gt;&lt;/li&gt;
+&lt;img alt=&#34;Email Verify Confirmated&#34; src=&#34;https://imortio.github.io/posts/git/2-account-and-repo/images/4-verify.webp&#34;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Describe yourself
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Describe what are you and what is your purpose on making your github account, like this:
-&lt;img alt=&#34;Describe yourself via &#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/5-describe.webp&#34;&gt;
-&lt;img alt=&#34;Choose your purposes&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/6-purpose.webp&#34;&gt;&lt;/p&gt;
-&lt;p&gt;You may customize the selectin as you wish with available options, but in most case the options that i&amp;rsquo;ve selected is the most common among new Github users.&lt;/p&gt;
+&lt;img alt=&#34;Describe yourself via &#34; src=&#34;https://imortio.github.io/posts/git/2-account-and-repo/images/5-describe.webp&#34;&gt;
+&lt;img alt=&#34;Choose your purposes&#34; src=&#34;https://imortio.github.io/posts/git/2-account-and-repo/images/6-purpose.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You may customize the selection as you wish with available options, but in most case the options that i&amp;rsquo;ve selected is the most common among new Github users.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Choose Github plan
-Github gives you some options of plans, its like premium Github or something else similars, for advanced or big developers it could be useful but for basic usage or personal its enough just by using Free plan, after all, the free version too has been cover almost all the basic and essential function of git, you really dont need all the fancy thing in premium features if just for basic personal uses
-&lt;img alt=&#34;Choose Free Plan&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/7-freeplan.webp&#34;&gt;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;Github gives you some options of plans, its like premium Github or something else similars, for advanced or big developers it could be useful but for basic usage or personal its enough just by using Free plan, after all, the free version too has been cover almost all the basic and essential function of git, you really dont need all the fancy thing in premium features if just for basic personal uses
+&lt;img alt=&#34;Choose Free Plan&#34; src=&#34;https://imortio.github.io/posts/git/2-account-and-repo/images/7-freeplan.webp&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Thats it, done, now you all set, but you must be want to know how to create your Github repo, or even connect your local Git repo to your remote Github account, so here is how you can do it:&lt;/p&gt;
+&lt;p&gt;Thats it, done, now you all set, but you must be want to know how to create your Github repo, so here is how you can do it:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Open your Github dashboard
 &lt;ul&gt;
 &lt;li&gt;Open your Github dashboard and navigate to repository tab
-&lt;img alt=&#34;Github Dashboard&#34; src=&#34;githubdashboard.png&#34;&gt;&lt;/li&gt;
+&lt;img alt=&#34;Github Dashboard&#34; src=&#34;https://imortio.github.io/posts/git/2-account-and-repo/images/8-dashboard.webp&#34;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Click &lt;code&gt;Create Repository&lt;/code&gt;
 &lt;ul&gt;
-&lt;li&gt;You have no repository at first, so to create on juts click on &lt;code&gt;Create Repository&lt;/code&gt; and you will be prompted to a form like this:
-&lt;img alt=&#34;Git Repository Creation Form&#34; src=&#34;gitrepoform.png&#34;&gt;&lt;/li&gt;
+&lt;li&gt;You have no repository at first, so to create one just click on &lt;code&gt;Create Repository&lt;/code&gt; and you will be prompted to a form like this:
+&lt;img alt=&#34;Git Repository Creation Form&#34; src=&#34;https://imortio.github.io/posts/git/2-account-and-repo/images/8.5-repocreation.webp&#34;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Fill your Github repository info
+&lt;li&gt;Fill repository info
 &lt;ul&gt;
-&lt;li&gt;Now just fill the form with your desired, like the repository name, repository type (Private/Public), branch name, and License for your repository&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;Now just fill the form with your desired, like the repository name, repository type (Private/Public), and License for your repository&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Finish your repo creation
 &lt;ul&gt;
-&lt;li&gt;After you fill your repo info, then click create, and you very own repo will be quickly created, you can find it on Repository Tab, but usually also shown on profile dashboard.&lt;/li&gt;
+&lt;li&gt;After you fill your repo info, then click Create, and you very own repo will be quickly created, you can find it on Repository Tab, but usually also shown on profile dashboard.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Congrats! now you has been again successfully create a new repository for your Github repo, after that you will be shown some way on how you want to connect or access you github repo from any of your devices.
-&lt;img alt=&#34;Github repo connection&#34; src=&#34;9-connecting,webp&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;Github repo connection&#34; src=&#34;https://imortio.github.io/posts/git/2-account-and-repo/images/9-connecting.webp&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;wrapping-up&#34;&gt;Wrapping Up&lt;/h2&gt;
 &lt;p&gt;now you might want link it to your local git repo ( on you computer / device ), there is some ways on how to do it like the instructions above, its pretty clear and straightforward, but maybe some of you still didnt understand because you have no familiarity with command line yet, its okay, i will cover about how to link and connect your remote github repos to your local machine (i.e your devices), stay tuned for the next topic, and see ya :D&lt;/p&gt;
@@ -147,7 +158,7 @@ Github gives you some options of plans, its like premium Github or something els
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34;&gt;
-&lt;p&gt;Choosing a license is importantly critical for your repositories, its clarify what is your repo status and availability to public, without license the cant have right to access, copy, modify, or do anything to your repository, its crucial especialy when you deal with collaboration projects, if you confused with which license you want to use, you may use &lt;a href=&#34;https://choosealicense.com&#34;&gt;this preference&lt;/a&gt; of licenses to determine which one is suitable for you current project repo.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Choosing a license is importantly critical for your repositories, its clarify what is your repo status and availability to public, without license they can&amp;rsquo;t have right to access, copy, modify, or do anything to your repository, its crucial especialy when you deal with collaboration projects, if you confused with which license you want to use, you may use &lt;a href=&#34;https://choosealicense.com&#34;&gt;this preference&lt;/a&gt; of licenses to determine which one is suitable for you current project repo.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;

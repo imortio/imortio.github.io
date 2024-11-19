@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Instal on imortio</title>
-    <link>//localhost:1313/id/tags/instal/</link>
+    <link>https://imortio.github.io/id/tags/instal/</link>
     <description>Recent content in Instal on imortio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id</language>
-    <lastBuildDate>Fri, 11 Oct 2024 09:08:37 +0000</lastBuildDate><atom:link href="//localhost:1313/id/tags/instal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Oct 2024 09:08:37 +0000</lastBuildDate><atom:link href="https://imortio.github.io/id/tags/instal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git-#1: Instalasi</title>
-      <link>//localhost:1313/id/posts/git/1-pemasangan-git/</link>
+      <link>https://imortio.github.io/id/posts/git/1-pemasangan-git/</link>
       <pubDate>Fri, 11 Oct 2024 09:08:37 +0000</pubDate>
       
-      <guid>//localhost:1313/id/posts/git/1-pemasangan-git/</guid>
+      <guid>https://imortio.github.io/id/posts/git/1-pemasangan-git/</guid>
       <description>Panduan ini memandu kamu melalui proses instalasi Git di Windows, macOS, dan Linux. Memberikan langkah-langkah yang jelas untuk memastikan pengaturan yang lancar, sehingga mudah diakses oleh pemula. Mulailah menggunakan Git untuk kontrol versi dan permudah proses pengembangan perangkat lunak Anda.</description>
       <content>&lt;p&gt;Halo semuanya, kita kembali bersama ku lagi. Terakhir kali kita belajar sedikit tentang apa itu Git, aku yakin kalian semua sudah memahaminya, apa yang dilakukannya dan mengapa ia penting, jadi dalam artikel ini kita akan melanjutkan topik kita ke:&lt;/p&gt;
 &lt;h1 id=&#34;git-1-menginstall-git&#34;&gt;Git-#1: Menginstall Git&lt;/h1&gt;
@@ -41,7 +41,7 @@
 &lt;p&gt;setelah instalasi selesai, kamu bisa menjalankan perintah ini untuk melihat versi git yang kamu instal&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git --version
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;jika ada ditampilkan nomor versi seperti ini maka kamu sudah siap:
-&lt;img alt=&#34;git &amp;ndash;version result&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/gitversion.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;git &amp;ndash;version result&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/gitversion.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;2-menginstal-git-di-macos&#34;&gt;2. Menginstal Git di macOS&lt;/h2&gt;
 &lt;p&gt;Pengguna macOS memiliki beberapa cara untuk menginstal Git, tetapi metode termudah adalah melalui Homebrew, manajer paket untuk macOS:&lt;/p&gt;
 &lt;ol&gt;
@@ -75,35 +75,35 @@
 &lt;li&gt;&lt;strong&gt;Git-2.47.0-32-bit.exe&lt;/strong&gt; (untuk Windows 32-bit)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Git-2.47.0-64-bit.exe&lt;/strong&gt; (untuk Windows 64-bit)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt=&#34;GitHub assets&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/gitwindowsselect.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;GitHub assets&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/gitwindowsselect.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;2-jalankan-installer&#34;&gt;2. Jalankan Installer&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Setelah mengunduh, klik dua kali pada installer (file &lt;code&gt;.exe&lt;/code&gt;). kamu akan melihat layar sambutan. Cukup klik &lt;strong&gt;Next&lt;/strong&gt; seperti pengguna Windows yang baik.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Greeting screen&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/greet.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Greeting screen&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/greet.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;3-pilih-jalur-instalasi&#34;&gt;3. Pilih Jalur Instalasi&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Installer akan menanyakan di mana menginstal Git. Jalur default tidak masalah, tetapi jika kamu ingin eksplorasi, silakan ubah. Jika tidak, cukup klik &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Choose path&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/location.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Choose path&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/location.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;4-pilih-komponen&#34;&gt;4. Pilih Komponen&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Sekarang kamu melihat banyak kotak centang dengan opsi untuk komponen tambahan. Standarnya baik-baik saja, tidak perlu diubah kecuali kamu tahu apa yang kamu lakukan. Klik &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Component selection&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/component.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Component selection&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/component.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;5-folder-start-menu&#34;&gt;5. Folder Start Menu&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Bagian ini menanyakan di mana Git harus membuat pintasan di Start Menu. Biarkan saja apa adanya, karena, jujur saja, adakah orang yang benar-benar menggunakan Start Menu lagi? Klik &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Start menu folder&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/folder.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Start menu folder&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/folder.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;6-pilih-editor-teks-mu&#34;&gt;6. Pilih Editor Teks Mu&lt;/h3&gt;
@@ -115,79 +115,79 @@
 &lt;li&gt;&lt;strong&gt;Atom&lt;/strong&gt;, &lt;strong&gt;Sublime Text&lt;/strong&gt;, or &lt;strong&gt;Notepad++&lt;/strong&gt; juga bisa digunakan jika kamu menyukai kesederhanaan.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Pilih editor mu dan klik &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Editor selection&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/editorselect.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Editor selection&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/editorselect.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;7-sesuaikan-nama-cabang-awal&#34;&gt;7. Sesuaikan Nama Cabang Awal&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Installer akan meminta kamu untuk mengatur nama cabang default untuk repositori baru. Secara default, nama defaultnya adalah &lt;strong&gt;master&lt;/strong&gt;, tetapi untuk inklusivitas, kita bisa mengubahnya menjadi &lt;strong&gt;main&lt;/strong&gt;. Pilih &lt;strong&gt;Override the default&lt;/strong&gt; dan tetapkan &lt;strong&gt;&amp;lsquo;main&amp;rsquo;&lt;/strong&gt;. Klik &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Branch name&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/branchname.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Branch name&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/branchname.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;8-pilih-path-environment&#34;&gt;8. Pilih Path Environment&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Sekarang, kamu akan melihat opsi untuk Path Environment Git. Pilih saja &lt;strong&gt;Git from the command line and also from 3rd-party software&lt;/strong&gt; (kecuali jika kamu punya alasan khusus untuk tidak memilihnya). Klik &lt;strong&gt;Next&lt;/strong&gt;.
-&lt;img alt=&#34;Path environment&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/commandline.png&#34;&gt;&lt;/li&gt;
+&lt;img alt=&#34;Path environment&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/commandline.png&#34;&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;9-pilih-ssh-executable&#34;&gt;9. Pilih SSH Executable&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Kamu akan ditanya SSH Executable untuk digunakan. Biarkan pada default, &lt;strong&gt;Use bundled OpenSSH&lt;/strong&gt;, kecuali jika kamu memiliki pengaturan SSH khusus. Klik &lt;strong&gt;Next&lt;/strong&gt;.
-&lt;img alt=&#34;SSH selection&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/ssh.png&#34;&gt;&lt;/li&gt;
+&lt;img alt=&#34;SSH selection&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/ssh.png&#34;&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;10-pilih-backend-https&#34;&gt;10. Pilih Backend HTTPS&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Git sekarang akan menanyakan backend mana yang akan digunakan untuk HTTPS. Pilihlah &lt;strong&gt;Use the OpenSSL Library&lt;/strong&gt; untuk kompatibilitas dan keamanan maksimum. Klik &lt;strong&gt;Next&lt;/strong&gt;.
-&lt;img alt=&#34;HTTPS backend&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/ssl.png&#34;&gt;&lt;/li&gt;
+&lt;img alt=&#34;HTTPS backend&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/ssl.png&#34;&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;11-mengkonfigurasi-line-ending&#34;&gt;11. Mengkonfigurasi Line Ending&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Bagian ini berisi tentang bagaimana Git menangani Line Ending antara Windows (&lt;code&gt;CRLF&lt;/code&gt;) dan sistem berbasis Unix (&lt;code&gt;LF&lt;/code&gt;). Pertahankan default &lt;strong&gt;Checkout Windows-style, commit Unix-style line endings&lt;/strong&gt;. Klik &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Line endings&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/lineending.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Line endings&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/lineending.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;12-pilih-terminal-emulator&#34;&gt;12. Pilih Terminal Emulator&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Git menawarkan dua opsi untuk emulator terminal: &lt;strong&gt;MinTTY&lt;/strong&gt; atau &lt;strong&gt;Konsol default Windows&lt;/strong&gt;. Pilih &lt;strong&gt;Windows&amp;rsquo; default console&lt;/strong&gt; untuk menghindari kebingungan (pengguna Windows sudah cukup terbiasa). Klik &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Terminal emulator&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/terminal.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Terminal emulator&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/terminal.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;13-perilaku-git-pull-default&#34;&gt;13. Perilaku &lt;code&gt;git pull&lt;/code&gt; default&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Tentukan bagaimana Git harus menangani &lt;code&gt;git pull&lt;/code&gt;. Biarkan pada default: &lt;strong&gt;Default (fast-forward or merge)&lt;/strong&gt;. Klik &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Git pull behavior&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/gitpull.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Git pull behavior&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/gitpull.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;14-pengelola-kredensial-git&#34;&gt;14. Pengelola Kredensial Git&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Kamu akan diminta untuk memilih bagaimana Git mengelola kredensial. Pilihlah &lt;strong&gt;Git Credential Manager&lt;/strong&gt; (disarankan). Klik &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Git credentials&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/credential.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Git credentials&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/credential.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;15-mengonfigurasi-opsi-tambahan&#34;&gt;15. Mengonfigurasi Opsi Tambahan&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Di sini, kamu akan melihat beberapa pengaturan opsional, seperti mengaktifkan fitur eksperimental. Lewati saja kecuali kamu ingin sedikit eksplorasi. Klik &lt;strong&gt;Next&lt;/strong&gt;.
-&lt;img alt=&#34;Extra options&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/extraoptions.png&#34;&gt;&lt;/li&gt;
+&lt;img alt=&#34;Extra options&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/extraoptions.png&#34;&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;16-instal-git&#34;&gt;16. Instal Git&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Terakhir, klik &lt;strong&gt;Install&lt;/strong&gt; untuk memulai proses. Bar progress akan muncul saat Git sedang diinstal di sistem mu.
-&lt;img alt=&#34;Installing progress&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/installing.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;Installing progress&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/installing.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Setelah instalasi selesai, kamu akan ditanya apakah kamu ingin meluncurkan &lt;strong&gt;Git Bash&lt;/strong&gt; dan melihat catatan rilis. Hapus centang pada &lt;strong&gt;View Release Note&lt;/strong&gt; kecuali jika kamu ingin menyelami hal-hal kecil. Klik &lt;strong&gt;Finish&lt;/strong&gt;.
-&lt;img alt=&#34;Install complete&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/installcomplete.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;Install complete&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/installcomplete.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Selamat, kamu telah berhasil menginstal Git di Windows. Sekarang kamu akhirnya bisa bekerja dengan Git pada sistem yang seperti lingkungan development versi IKEA-hampir tidak berfungsi tetapi entah bagaimana bisa menyelesaikan pekerjaan.&lt;/p&gt;
 &lt;p&gt;Sekarang mari kita periksa versinya dan verifikasi bahwa git telah berhasil diinstal dengan menekan tombol Windows&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; + R, dan ketik cmd pada bar pencarian, lalu klik enter, tuliskan perintah ini pada cmd:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git --version
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img alt=&#34;Git Version on Windows&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/gitversionwin.png&#34;&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img alt=&#34;Git Version on Windows&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/gitversionwin.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Jika kamu merasa masokis, kamu bahkan dapat menggunakan Git Bash&amp;hellip;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;mengkonfigurasi-git&#34;&gt;Mengkonfigurasi Git&lt;/h2&gt;
@@ -230,7 +230,7 @@
 &lt;p&gt;Untuk melihat konfigurasi Git yang telah kamu siapkan, jalankan:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git config --list
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ini adalah hasil milik ku:
-&lt;img alt=&#34;Git config &amp;ndash;list result&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/gitconfig.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;Git config &amp;ndash;list result&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/gitconfig.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Punyaku tidak terlalu banyak karena aku hanya mengatur yang paling penting saja. Bagaimanapun, ini akan menampilkan konfigurasi global mu, termasuk nama pengguna, email, dan pengaturan lain seperti preferensi warna. Jika ada yang salah, jalankan kembali perintah dengan nilai yang benar.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;mengakhiri-konfigurasi&#34;&gt;Mengakhiri Konfigurasi&lt;/h3&gt;

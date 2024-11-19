@@ -2,107 +2,107 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on imortio</title>
-    <link>//localhost:1313/tags/</link>
+    <link>https://imortio.github.io/tags/</link>
     <description>Recent content in Tags on imortio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 04 Nov 2024 14:20:42 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Nov 2024 14:20:42 +0000</lastBuildDate><atom:link href="https://imortio.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git</title>
-      <link>//localhost:1313/tags/git/</link>
+      <link>https://imortio.github.io/tags/git/</link>
       <pubDate>Mon, 04 Nov 2024 14:20:42 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/git/</guid>
+      <guid>https://imortio.github.io/tags/git/</guid>
       <description></description>
       <content></content>
     </item>
     
     <item>
       <title>Init</title>
-      <link>//localhost:1313/tags/init/</link>
+      <link>https://imortio.github.io/tags/init/</link>
       <pubDate>Mon, 04 Nov 2024 14:20:42 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/init/</guid>
+      <guid>https://imortio.github.io/tags/init/</guid>
       <description></description>
       <content></content>
     </item>
     
     <item>
       <title>Repo</title>
-      <link>//localhost:1313/tags/repo/</link>
+      <link>https://imortio.github.io/tags/repo/</link>
       <pubDate>Mon, 04 Nov 2024 14:20:42 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/repo/</guid>
+      <guid>https://imortio.github.io/tags/repo/</guid>
       <description></description>
       <content></content>
     </item>
     
     <item>
       <title>Tutorial</title>
-      <link>//localhost:1313/tags/tutorial/</link>
+      <link>https://imortio.github.io/tags/tutorial/</link>
       <pubDate>Mon, 04 Nov 2024 14:20:42 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/tutorial/</guid>
+      <guid>https://imortio.github.io/tags/tutorial/</guid>
       <description></description>
       <content></content>
     </item>
     
     <item>
       <title>Versioncontrolsystem</title>
-      <link>//localhost:1313/tags/versioncontrolsystem/</link>
+      <link>https://imortio.github.io/tags/versioncontrolsystem/</link>
       <pubDate>Mon, 04 Nov 2024 14:20:42 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/versioncontrolsystem/</guid>
+      <guid>https://imortio.github.io/tags/versioncontrolsystem/</guid>
       <description></description>
       <content></content>
     </item>
     
     <item>
       <title>Donation</title>
-      <link>//localhost:1313/tags/donation/</link>
+      <link>https://imortio.github.io/tags/donation/</link>
       <pubDate>Sun, 20 Oct 2024 05:00:27 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/donation/</guid>
+      <guid>https://imortio.github.io/tags/donation/</guid>
       <description></description>
       <content></content>
     </item>
     
     <item>
       <title>Support</title>
-      <link>//localhost:1313/tags/support/</link>
+      <link>https://imortio.github.io/tags/support/</link>
       <pubDate>Sun, 20 Oct 2024 05:00:27 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/support/</guid>
+      <guid>https://imortio.github.io/tags/support/</guid>
       <description></description>
       <content></content>
     </item>
     
     <item>
       <title>Instal</title>
-      <link>//localhost:1313/tags/instal/</link>
+      <link>https://imortio.github.io/tags/instal/</link>
       <pubDate>Fri, 11 Oct 2024 09:08:37 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/instal/</guid>
+      <guid>https://imortio.github.io/tags/instal/</guid>
       <description></description>
       <content></content>
     </item>
     
     <item>
       <title>Introduction</title>
-      <link>//localhost:1313/tags/introduction/</link>
+      <link>https://imortio.github.io/tags/introduction/</link>
       <pubDate>Sun, 06 Oct 2024 13:09:21 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/introduction/</guid>
+      <guid>https://imortio.github.io/tags/introduction/</guid>
       <description></description>
       <content></content>
     </item>
     
     <item>
       <title>Homepage</title>
-      <link>//localhost:1313/tags/homepage/</link>
+      <link>https://imortio.github.io/tags/homepage/</link>
       <pubDate>Sun, 06 Oct 2024 12:21:01 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/homepage/</guid>
+      <guid>https://imortio.github.io/tags/homepage/</guid>
       <description></description>
       <content></content>
     </item>

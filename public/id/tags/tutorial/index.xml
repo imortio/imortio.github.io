@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tutorial on imortio</title>
-    <link>//localhost:1313/id/tags/tutorial/</link>
+    <link>https://imortio.github.io/id/tags/tutorial/</link>
     <description>Recent content in Tutorial on imortio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>id</language>
-    <lastBuildDate>Mon, 04 Nov 2024 14:20:47 +0000</lastBuildDate><atom:link href="//localhost:1313/id/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Nov 2024 14:20:47 +0000</lastBuildDate><atom:link href="https://imortio.github.io/id/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git-#1: Instalasi</title>
-      <link>//localhost:1313/id/posts/git/1-pemasangan-git/</link>
+      <link>https://imortio.github.io/id/posts/git/1-pemasangan-git/</link>
       <pubDate>Fri, 11 Oct 2024 09:08:37 +0000</pubDate>
       
-      <guid>//localhost:1313/id/posts/git/1-pemasangan-git/</guid>
+      <guid>https://imortio.github.io/id/posts/git/1-pemasangan-git/</guid>
       <description>Panduan ini memandu kamu melalui proses instalasi Git di Windows, macOS, dan Linux. Memberikan langkah-langkah yang jelas untuk memastikan pengaturan yang lancar, sehingga mudah diakses oleh pemula. Mulailah menggunakan Git untuk kontrol versi dan permudah proses pengembangan perangkat lunak Anda.</description>
       <content>&lt;p&gt;Halo semuanya, kita kembali bersama ku lagi. Terakhir kali kita belajar sedikit tentang apa itu Git, aku yakin kalian semua sudah memahaminya, apa yang dilakukannya dan mengapa ia penting, jadi dalam artikel ini kita akan melanjutkan topik kita ke:&lt;/p&gt;
 &lt;h1 id=&#34;git-1-menginstall-git&#34;&gt;Git-#1: Menginstall Git&lt;/h1&gt;
@@ -41,7 +41,7 @@
 &lt;p&gt;setelah instalasi selesai, kamu bisa menjalankan perintah ini untuk melihat versi git yang kamu instal&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git --version
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;jika ada ditampilkan nomor versi seperti ini maka kamu sudah siap:
-&lt;img alt=&#34;git &amp;ndash;version result&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/gitversion.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;git &amp;ndash;version result&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/gitversion.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;2-menginstal-git-di-macos&#34;&gt;2. Menginstal Git di macOS&lt;/h2&gt;
 &lt;p&gt;Pengguna macOS memiliki beberapa cara untuk menginstal Git, tetapi metode termudah adalah melalui Homebrew, manajer paket untuk macOS:&lt;/p&gt;
 &lt;ol&gt;
@@ -75,35 +75,35 @@
 &lt;li&gt;&lt;strong&gt;Git-2.47.0-32-bit.exe&lt;/strong&gt; (untuk Windows 32-bit)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Git-2.47.0-64-bit.exe&lt;/strong&gt; (untuk Windows 64-bit)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt=&#34;GitHub assets&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/gitwindowsselect.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;GitHub assets&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/gitwindowsselect.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;2-jalankan-installer&#34;&gt;2. Jalankan Installer&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Setelah mengunduh, klik dua kali pada installer (file &lt;code&gt;.exe&lt;/code&gt;). kamu akan melihat layar sambutan. Cukup klik &lt;strong&gt;Next&lt;/strong&gt; seperti pengguna Windows yang baik.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Greeting screen&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/greet.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Greeting screen&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/greet.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;3-pilih-jalur-instalasi&#34;&gt;3. Pilih Jalur Instalasi&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Installer akan menanyakan di mana menginstal Git. Jalur default tidak masalah, tetapi jika kamu ingin eksplorasi, silakan ubah. Jika tidak, cukup klik &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Choose path&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/location.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Choose path&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/location.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;4-pilih-komponen&#34;&gt;4. Pilih Komponen&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Sekarang kamu melihat banyak kotak centang dengan opsi untuk komponen tambahan. Standarnya baik-baik saja, tidak perlu diubah kecuali kamu tahu apa yang kamu lakukan. Klik &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Component selection&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/component.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Component selection&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/component.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;5-folder-start-menu&#34;&gt;5. Folder Start Menu&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Bagian ini menanyakan di mana Git harus membuat pintasan di Start Menu. Biarkan saja apa adanya, karena, jujur saja, adakah orang yang benar-benar menggunakan Start Menu lagi? Klik &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Start menu folder&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/folder.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Start menu folder&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/folder.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;6-pilih-editor-teks-mu&#34;&gt;6. Pilih Editor Teks Mu&lt;/h3&gt;
@@ -115,79 +115,79 @@
 &lt;li&gt;&lt;strong&gt;Atom&lt;/strong&gt;, &lt;strong&gt;Sublime Text&lt;/strong&gt;, or &lt;strong&gt;Notepad++&lt;/strong&gt; juga bisa digunakan jika kamu menyukai kesederhanaan.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Pilih editor mu dan klik &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Editor selection&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/editorselect.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Editor selection&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/editorselect.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;7-sesuaikan-nama-cabang-awal&#34;&gt;7. Sesuaikan Nama Cabang Awal&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Installer akan meminta kamu untuk mengatur nama cabang default untuk repositori baru. Secara default, nama defaultnya adalah &lt;strong&gt;master&lt;/strong&gt;, tetapi untuk inklusivitas, kita bisa mengubahnya menjadi &lt;strong&gt;main&lt;/strong&gt;. Pilih &lt;strong&gt;Override the default&lt;/strong&gt; dan tetapkan &lt;strong&gt;&amp;lsquo;main&amp;rsquo;&lt;/strong&gt;. Klik &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Branch name&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/branchname.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Branch name&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/branchname.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;8-pilih-path-environment&#34;&gt;8. Pilih Path Environment&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Sekarang, kamu akan melihat opsi untuk Path Environment Git. Pilih saja &lt;strong&gt;Git from the command line and also from 3rd-party software&lt;/strong&gt; (kecuali jika kamu punya alasan khusus untuk tidak memilihnya). Klik &lt;strong&gt;Next&lt;/strong&gt;.
-&lt;img alt=&#34;Path environment&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/commandline.png&#34;&gt;&lt;/li&gt;
+&lt;img alt=&#34;Path environment&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/commandline.png&#34;&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;9-pilih-ssh-executable&#34;&gt;9. Pilih SSH Executable&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Kamu akan ditanya SSH Executable untuk digunakan. Biarkan pada default, &lt;strong&gt;Use bundled OpenSSH&lt;/strong&gt;, kecuali jika kamu memiliki pengaturan SSH khusus. Klik &lt;strong&gt;Next&lt;/strong&gt;.
-&lt;img alt=&#34;SSH selection&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/ssh.png&#34;&gt;&lt;/li&gt;
+&lt;img alt=&#34;SSH selection&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/ssh.png&#34;&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;10-pilih-backend-https&#34;&gt;10. Pilih Backend HTTPS&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Git sekarang akan menanyakan backend mana yang akan digunakan untuk HTTPS. Pilihlah &lt;strong&gt;Use the OpenSSL Library&lt;/strong&gt; untuk kompatibilitas dan keamanan maksimum. Klik &lt;strong&gt;Next&lt;/strong&gt;.
-&lt;img alt=&#34;HTTPS backend&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/ssl.png&#34;&gt;&lt;/li&gt;
+&lt;img alt=&#34;HTTPS backend&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/ssl.png&#34;&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;11-mengkonfigurasi-line-ending&#34;&gt;11. Mengkonfigurasi Line Ending&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Bagian ini berisi tentang bagaimana Git menangani Line Ending antara Windows (&lt;code&gt;CRLF&lt;/code&gt;) dan sistem berbasis Unix (&lt;code&gt;LF&lt;/code&gt;). Pertahankan default &lt;strong&gt;Checkout Windows-style, commit Unix-style line endings&lt;/strong&gt;. Klik &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Line endings&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/lineending.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Line endings&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/lineending.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;12-pilih-terminal-emulator&#34;&gt;12. Pilih Terminal Emulator&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Git menawarkan dua opsi untuk emulator terminal: &lt;strong&gt;MinTTY&lt;/strong&gt; atau &lt;strong&gt;Konsol default Windows&lt;/strong&gt;. Pilih &lt;strong&gt;Windows&amp;rsquo; default console&lt;/strong&gt; untuk menghindari kebingungan (pengguna Windows sudah cukup terbiasa). Klik &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Terminal emulator&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/terminal.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Terminal emulator&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/terminal.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;13-perilaku-git-pull-default&#34;&gt;13. Perilaku &lt;code&gt;git pull&lt;/code&gt; default&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Tentukan bagaimana Git harus menangani &lt;code&gt;git pull&lt;/code&gt;. Biarkan pada default: &lt;strong&gt;Default (fast-forward or merge)&lt;/strong&gt;. Klik &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Git pull behavior&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/gitpull.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Git pull behavior&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/gitpull.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;14-pengelola-kredensial-git&#34;&gt;14. Pengelola Kredensial Git&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Kamu akan diminta untuk memilih bagaimana Git mengelola kredensial. Pilihlah &lt;strong&gt;Git Credential Manager&lt;/strong&gt; (disarankan). Klik &lt;strong&gt;Next&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Git credentials&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/credential.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Git credentials&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/credential.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;15-mengonfigurasi-opsi-tambahan&#34;&gt;15. Mengonfigurasi Opsi Tambahan&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Di sini, kamu akan melihat beberapa pengaturan opsional, seperti mengaktifkan fitur eksperimental. Lewati saja kecuali kamu ingin sedikit eksplorasi. Klik &lt;strong&gt;Next&lt;/strong&gt;.
-&lt;img alt=&#34;Extra options&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/extraoptions.png&#34;&gt;&lt;/li&gt;
+&lt;img alt=&#34;Extra options&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/extraoptions.png&#34;&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;16-instal-git&#34;&gt;16. Instal Git&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Terakhir, klik &lt;strong&gt;Install&lt;/strong&gt; untuk memulai proses. Bar progress akan muncul saat Git sedang diinstal di sistem mu.
-&lt;img alt=&#34;Installing progress&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/installing.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;Installing progress&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/installing.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Setelah instalasi selesai, kamu akan ditanya apakah kamu ingin meluncurkan &lt;strong&gt;Git Bash&lt;/strong&gt; dan melihat catatan rilis. Hapus centang pada &lt;strong&gt;View Release Note&lt;/strong&gt; kecuali jika kamu ingin menyelami hal-hal kecil. Klik &lt;strong&gt;Finish&lt;/strong&gt;.
-&lt;img alt=&#34;Install complete&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/installcomplete.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;Install complete&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/installcomplete.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Selamat, kamu telah berhasil menginstal Git di Windows. Sekarang kamu akhirnya bisa bekerja dengan Git pada sistem yang seperti lingkungan development versi IKEA-hampir tidak berfungsi tetapi entah bagaimana bisa menyelesaikan pekerjaan.&lt;/p&gt;
 &lt;p&gt;Sekarang mari kita periksa versinya dan verifikasi bahwa git telah berhasil diinstal dengan menekan tombol Windows&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; + R, dan ketik cmd pada bar pencarian, lalu klik enter, tuliskan perintah ini pada cmd:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git --version
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img alt=&#34;Git Version on Windows&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/gitversionwin.png&#34;&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img alt=&#34;Git Version on Windows&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/gitversionwin.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Jika kamu merasa masokis, kamu bahkan dapat menggunakan Git Bash&amp;hellip;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;mengkonfigurasi-git&#34;&gt;Mengkonfigurasi Git&lt;/h2&gt;
@@ -230,7 +230,7 @@
 &lt;p&gt;Untuk melihat konfigurasi Git yang telah kamu siapkan, jalankan:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git config --list
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ini adalah hasil milik ku:
-&lt;img alt=&#34;Git config &amp;ndash;list result&#34; src=&#34;//localhost:1313/posts/git/1-git-installation/gitconfig.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;Git config &amp;ndash;list result&#34; src=&#34;https://imortio.github.io/posts/git/1-git-installation/gitconfig.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Punyaku tidak terlalu banyak karena aku hanya mengatur yang paling penting saja. Bagaimanapun, ini akan menampilkan konfigurasi global mu, termasuk nama pengguna, email, dan pengaturan lain seperti preferensi warna. Jika ada yang salah, jalankan kembali perintah dengan nilai yang benar.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;mengakhiri-konfigurasi&#34;&gt;Mengakhiri Konfigurasi&lt;/h3&gt;
@@ -252,10 +252,10 @@
     
     <item>
       <title>Git-#2: Akun &amp; Repo</title>
-      <link>//localhost:1313/id/posts/git/2-akun-dan-repo/</link>
+      <link>https://imortio.github.io/id/posts/git/2-akun-dan-repo/</link>
       <pubDate>Mon, 04 Nov 2024 14:20:47 +0000</pubDate>
       
-      <guid>//localhost:1313/id/posts/git/2-akun-dan-repo/</guid>
+      <guid>https://imortio.github.io/id/posts/git/2-akun-dan-repo/</guid>
       <description>Pada bab ini, kamu akan menginisialisasi sebuah repositori Git, membuat akun Github baru dan mengaturnya sedikit. Pada akhirnya, kamu akan dapat menghandle kontrol versi projekmu baik secara lokal maupun remote</description>
       <content>&lt;p&gt;Halo, kembali bersamaku lagi untuk melanjutkan topik kita sebelumnya, maaf untuk update materi yang lama karena aku sedikit sibuk beberapa minggu belakangan menghadiri acara dari kampus dan juga dari temanku, tapi bagaimanapun juga, mari kita lewati bagian itu dan kita lanjut ke&lt;/p&gt;
 &lt;h1 id=&#34;git-2-akun--repo&#34;&gt;Git-#2: Akun &amp;amp; Repo&lt;/h1&gt;
@@ -268,43 +268,51 @@
 &lt;h2 id=&#34;1-membuat-repositori-baru&#34;&gt;1. Membuat repositori baru&lt;/h2&gt;
 &lt;p&gt;Untuk membuat repositori git pertamamu, kalian bisa mengikuti panduan dibawah ini:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Buka Terminal
-Jalankan terminal pilihanmu (atau command prompt jika kalian menggunakan Windows)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Arahkan ke folder projek yang kalian inginkan
-Gunakan perintah &lt;code&gt;cd&lt;/code&gt; untuk berganti folder secara cepat ke folder yang ingin kamu jadikan sebagai repositori, sebagai contoh:&lt;/p&gt;
+&lt;li&gt;Buka Terminal&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Jalankan terminal pilihanmu (atau command prompt jika kalian menggunakan Windows)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Arahkan ke folder projek yang kalian inginkan&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Gunakan perintah &lt;code&gt;cd&lt;/code&gt; untuk berganti folder secara cepat ke folder yang ingin kamu jadikan sebagai repositori, sebagai contoh:&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd jalur/ke/repositori/milikmu
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Pada Windows kita menggunakan &lt;code&gt;\&lt;/code&gt; daripada &lt;code&gt;/&lt;/code&gt;, jadi perintahnya akan terlihat seperti ini:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd jalur&lt;span style=&#34;color:#ae81ff&#34;&gt;\k&lt;/span&gt;e&lt;span style=&#34;color:#ae81ff&#34;&gt;\r&lt;/span&gt;epositori&lt;span style=&#34;color:#ae81ff&#34;&gt;\m&lt;/span&gt;ilikmu
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;
-&lt;p&gt;Inisialisasi repositorinya
-Setelah kalian berada di folder yang kalian inginkan, jalankan perintah ini untuk membuta folder saat ini kmau berada menjadi sebuah repositori Git yang baru:&lt;/p&gt;
+&lt;p&gt;Inisialisasi repositorinya&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Setelah kalian berada di folder yang kalian inginkan, jalankan perintah ini untuk membuta folder saat ini kmau berada menjadi sebuah repositori Git yang baru:&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git init
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Perintah ini akan membangun sebuah subdirektori baru bernama .git didalam folder yang kalian tempati sekarang, yang memuat semua metadata (ini bekerja seperti hal nya identitas pada dunia nyata) untuk repositori ini.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Verifikasi repositori tersebut
-Kalian bisa mengkonfirmasi bahwa repositori tersebut sudah berhasil dibuat dengan mengecek statusnya menggunakan:&lt;/p&gt;
+&lt;p&gt;Verifikasi repositori tersebut&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Kalian bisa mengkonfirmasi bahwa repositori tersebut sudah berhasil dibuat dengan mengecek statusnya menggunakan:&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git status
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Jika reponya sudah berhasil dibuat, kalian akan melihat sebuah pesan menandakan bahwa kalian berada di cabang default. Biasanya cabang ini akan bernama &lt;code&gt;master&lt;/code&gt; atau &lt;code&gt;main&lt;/code&gt;, tapi sejak pada artikel sebelumnya kalian sudah mengatur cabang defaultnya menjadi &lt;code&gt;main&lt;/code&gt; maka secara otomatis semua cabang default kalian akan bernama &lt;code&gt;main&lt;/code&gt; termasuk yang ini juga.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Begitulah caranya membuat sebuah repoitori Git, dan kalian sudah berhasil membuat satu, sekarang waktunya menambahkan berapa file kedalamnya, dan setelah itu kalian bisa cek lagi meggunakan
-&lt;code&gt;bash git status &lt;/code&gt;
-Dan kalian akan melihat beberapa output seperti ini
-&lt;img alt=&#34;git status setelah ditambahkan file baru&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/gitstatusaftd.webp&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Kalian bisa mengatur status filenya mnejadi &lt;code&gt;staged&lt;/code&gt; dengan menggunakan perintah:
-&lt;code&gt;bash git add namefile &lt;/code&gt;
-Atau jika kalian ingin mengatur semua file menjadi &lt;code&gt;staged&lt;/code&gt; kalian bisa menggunakan ini:
-&lt;code&gt;bash git add . &lt;/code&gt;
-Setelah itu jalankan perintah untuk mengecek status lagi dan kalian akan melihat hasil seperti ini:
-&lt;img alt=&#34;git setelah staged&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/gitaftstaged.webp&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Kemudian untuk melakukan &lt;code&gt;commit&lt;/code&gt; terhadap file yang sudah distaging ke penyimpanan git, kalian perlu menjalankan perintah ini:
-&lt;code&gt;bash git commit -m &amp;quot;commit pertama&amp;quot; &lt;/code&gt;
-flag &lt;code&gt;-m&lt;/code&gt; digunakan untuk memberitahu git bahwa kalian ingin menambakan pesan deskripsi ke commit yang kalian lakukan, jadi nantinya kalian tidak akan bingung jika sudah memiliki banyak commit. Kalian bisa mengganti &amp;ldquo;commit pertama&amp;rdquo; ke kalimat apapun yang kalian inginkan, tapi jika kalian berkolaborasi dengan developer lain kalian harus membuatnya tetap bersih dan jelas.&lt;/p&gt;
+&lt;p&gt;Begitulah caranya membuat sebuah repoitori Git, dan kalian sudah berhasil membuat satu, sekarang waktunya menambahkan berapa file kedalamnya, dan setelah itu kalian bisa cek lagi menggunakan:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git status
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Dan kalian akan melihat beberapa output seperti ini
+&lt;img alt=&#34;git status setelah ditambahkan file baru&#34; src=&#34;https://imortio.github.io/posts/git/2-account-and-repo/images/gitstatusaftd.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Kalian bisa mengatur status filenya mnejadi &lt;code&gt;staged&lt;/code&gt; dengan menggunakan perintah:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add namefile
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Atau jika kalian ingin mengatur semua file menjadi &lt;code&gt;staged&lt;/code&gt; kalian bisa menggunakan ini:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Setelah itu jalankan perintah untuk mengecek status lagi dan kalian akan melihat hasil seperti ini:
+&lt;img alt=&#34;git setelah staged&#34; src=&#34;https://imortio.github.io/posts/git/2-account-and-repo/images/gitaftstaged.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Kemudian untuk melakukan &lt;code&gt;commit&lt;/code&gt; terhadap file yang sudah distaging ke penyimpanan git, kalian perlu menjalankan perintah ini:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;commit pertama&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;flag &lt;code&gt;-m&lt;/code&gt; digunakan untuk memberitahu git bahwa kalian ingin menambakan pesan deskripsi ke commit yang kalian lakukan, jadi nantinya kalian tidak akan bingung jika sudah memiliki banyak commit. Kalian bisa mengganti &amp;ldquo;commit pertama&amp;rdquo; ke kalimat apapun yang kalian inginkan, tapi jika kalian berkolaborasi dengan developer lain kalian harus membuatnya tetap bersih dan jelas.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Selamat! kalian sudah membuat repositori Git pertama dan bahkan menambahkan commit kedalamnya!. Sekarang kita akan ke topik berikutnya yang sedikit lebih lanjut yaitu&lt;/p&gt;
 &lt;h2 id=&#34;2-membuat-akun-github&#34;&gt;2. Membuat Akun Github&lt;/h2&gt;
@@ -313,7 +321,7 @@ flag &lt;code&gt;-m&lt;/code&gt; digunakan untuk memberitahu git bahwa kalian in
 &lt;li&gt;Buka &lt;a href=&#34;https://github.com/&#34;&gt;github.com&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;Buka browser kalian dan ketikkan &lt;a href=&#34;https://github.com&#34;&gt;github.com&lt;/a&gt; pada bar pencarian dan tekan enter, kalian akan dibawa ke halaman web seperti ini:
-&lt;img alt=&#34;Beranda Github&#34; src=&#34;//localhost:1313/posts/git/2-account-and-repo/images/1-homepage.webp&#34;&gt;&lt;/li&gt;
+&lt;img alt=&#34;Beranda Github&#34; src=&#34;https://imortio.github.io/posts/git/2-account-and-repo/images/1-homepage.webp&#34;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Klik pada Sign Up
@@ -323,10 +331,79 @@ flag &lt;code&gt;-m&lt;/code&gt; digunakan untuk memberitahu git bahwa kalian in
 &lt;/li&gt;
 &lt;li&gt;Isi kredensial Githubmu
 &lt;ul&gt;
-&lt;li&gt;Setelah kalian mengklik Sign Up, kalian akan dibawa ke halaman lain untuk mendaftarkan diri sebagai pengguna Github yang baru, isi kredensialmu seperti Username, Email, dan Password. Kalian juga mungkin ingin menyamakan username dan email dengan yang kalian gunakan pada pada perangkat kalian sebelumnya untuk menghindari konflik dan kebingungan nantinya, yang mengacu pada &lt;a href=&#34;//localhost:1313/id/posts/git/1-pemasangan-git/#mengkonfigurasi-git&#34;&gt;panduan ini&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Setelah kalian mengklik Sign Up, kalian akan dibawa ke halaman lain untuk mendaftarkan diri sebagai pengguna Github yang baru, isi kredensialmu seperti Username, Email, dan Password. Kalian juga mungkin ingin menyamakan username dan email dengan yang kalian gunakan pada pada perangkat kalian sebelumnya untuk menghindari konflik dan kebingungan nantinya, yang mengacu pada &lt;a href=&#34;https://imortio.github.io/id/posts/git/1-pemasangan-git/#mengkonfigurasi-git&#34;&gt;panduan ini&lt;/a&gt; jika sekiranya kalian sudah lupa:
+&lt;img alt=&#34;Form pendaftaran sudah diisi&#34; src=&#34;https://imortio.github.io/posts/git/2-account-and-repo/images/2-credentials.webp&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Selesaikan captcha
+&lt;ul&gt;
+&lt;li&gt;Biasanya kalian akan diberikan beberapa captcha, ini bertujuan sebagai alasan keamanan, jadi cukup selesaikan saja
+&lt;img alt=&#34;Captcha&#34; src=&#34;https://imortio.github.io/posts/git/2-account-and-repo/images/3-captcha.webp&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Verifikasi emailmu
+&lt;ul&gt;
+&lt;li&gt;Biasanya, untuk alasan keamanan, Github akan meminta kalian untuk mengkonfirmasi email yang kalian gunakan saat mendaftar ke Github, jadi cek inbox emailmu dan cari email yang berasal dari pihak Github, lalu konfirmasi dengan mengklik tombol Verify
+&lt;img alt=&#34;Verifikasi email terkonfirmasi&#34; src=&#34;https://imortio.github.io/posts/git/2-account-and-repo/images/4-verify.webp&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Deskripsikan dirimu
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Deskripsikan siapa kamu dan apa tujuanmu membuat akun Github, seperti ini:
+&lt;img alt=&#34;Deskripsikan dirimu&#34; src=&#34;https://imortio.github.io/posts/git/2-account-and-repo/images/5-describe.webp&#34;&gt;
+&lt;img alt=&#34;Pilih tujuanmu&#34; src=&#34;https://imortio.github.io/posts/git/2-account-and-repo/images/6-purpose.webp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Kalian bisa mengkostumisasi pilihannya semau kalian berdasarkan pilihan yang ada, tapi pada kebanyakan kasus, pilihan yang kupilih di atas adalah yang paling umum diantara pengguna Github yang baru.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Pilih plan Github
+&lt;ul&gt;
+&lt;li&gt;Github memberikan kalian beberapa pilihan plan, ini seperti Github premium atau semacamnya, untuk orang yang sudah ahli atau developer besar ini bisa jadi menguntungkan, tapi untuk penggunan dasar atau personal sudah cukup dengan menggunakan plan gratis, versi gratisnya saja sudah mencakup hampir semua fungsi dasar dan penting dari Git (Github), kalian benar benar tidak perlu semua hal mewah itu jika hanya untuk penggunan personal yang mendasar
+&lt;img alt=&#34;Pilih plan gratis&#34; src=&#34;https://imortio.github.io/posts/git/2-account-and-repo/images/7-freeplan.webp&#34;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;Sudah, selesai, sekarang kalian sudah siap, tapi mungkin kalian ingin membuat sebuah repositori github yang baru, begini caramu melakukannya:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Buka dashboard Githubmu
+&lt;ul&gt;
+&lt;li&gt;Buka dashboard Github dan arahkan ke tab repositori
+&lt;img alt=&#34;Dashboard Github&#34; src=&#34;https://imortio.github.io/posts/git/2-account-and-repo/images/8-dashboard.webp&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Klik &lt;code&gt;Create Repository&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;Kalian tidak akan punya repositori pada awalnya, jadi untuk membuatnya cukup klik pada &lt;code&gt;Create Repository&lt;/code&gt; dan kalian akan diberikan sebuah form seperti ini:
+&lt;img alt=&#34;Form pembuatan repo Github&#34; src=&#34;https://imortio.github.io/posts/git/2-account-and-repo/images/8.5-repocreation.webp&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Isi informasi repositori
+&lt;ul&gt;
+&lt;li&gt;Sekarang isi formnya sesuai keinginanmu, seperti nama repo, tipe repo (Privat/Publik), dan Lisensi untuk repositorimu&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Selesaikan pembuatan repo&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Setelah kalian mengisi informasi repo, lalu klik pada Create, dan repo milikmu akan denga cepat dibuat, kalian bisa menemukannya di tab Repository, tapi biasanya juga ditampilkan pada dashboard profil.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Selamat! sekarang kamu sudah berhasil membuat repositori baru untuk Githubmu, setelah itu kalian akan diberikan beberapa cara untuk mengkoneksikan atau mengakses repositori github kalian dari berbagai perangkat.
+&lt;img alt=&#34;koneksi repo Github&#34; src=&#34;https://imortio.github.io/posts/git/2-account-and-repo/images/9-connecting.webp&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;penutup&#34;&gt;Penutup&lt;/h2&gt;
+&lt;p&gt;sekarang mungkin kalian ingin menghubungkan repositori lokalmu (yang ada pada komputer/perangkatmu), disitu ada beberapa cara seperti yang ditampilkan diatas, itu cukup jelas dan lugas, tapi mungkin beberapa dari kalian ada yang belum paham karena kurang familiar dengan perintah pada terminal, tidak apa apa, di artikel selanjutnya aku akan membahas tentang cara menghubungkan repositori github dengan mesin lokalmu (contohnya komputer/laptop milikmu), tetap pantau untuk topik selanjutnya dan sampai jumpa :D&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Artikel ini belum sempurna, kalian sangat diharapkan memberikan saran untuk perubahan atau umpan balik agar saya dapat memperbaikinya nanti. Jangan ragu untuk menghubungiku kapan saja jika kalian mau, di sini: &lt;a href=&#34;mailto:nixvoid@proton.me&#34;&gt;Email&lt;/a&gt; atau &lt;a href=&#34;https://wa.me/+6282284528116&#34;&gt;Chat di Whatsapp&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Memilih sebuah lisensi itu sangat penting untuk repositorimu, ia menjelaskan apa status dan ketersediaan dari repomu ke publik, tanpa lisensi mereka tidak punya hak untuk mengakses, menyalin, mengubah, atau melakukan apapun ke repositori milikmu, itu penting terutama ketika kalian berhadapan dengan project kolaborasi, jika kalian bingung dengan lisensi mana yang harus kalian gunakan, kalian bisa menggunakan &lt;a href=&#34;https://choosealicense.com&#34;&gt;referensi ini&lt;/a&gt; untuk menentukan lisensi mana yang sesuai untuk project repomu sekarang.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
 </content>
     </item>
     
